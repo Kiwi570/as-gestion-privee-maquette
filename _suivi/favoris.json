@@ -1,0 +1,254 @@
+{
+ "explication": "Maquettes favorites de l'utilisateur : le niveau et le style visés, sur l'accueil ET les pages intérieures. Jamais à copier (ni leur idée, ni leur mise en page) : même harmonie, même fluidité, même soin.",
+ "activite": [
+  "finance"
+ ],
+ "metier": "conseiller en gestion de patrimoine courtier crédit",
+ "besoin": [],
+ "ton": [
+  "sobre"
+ ],
+ "univers": [],
+ "ambiance": [],
+ "concept": [],
+ "depot": "as-gestion-privee-maquette",
+ "favorites_dans_la_bibliotheque": 22,
+ "favorites": [
+  {
+   "rang": 1,
+   "maquette": "exco-maquette",
+   "client": "réseau de cabinets indépendants d'expertise comptable, d'audit et de conseil (139 cabinets, 23 groupes, France et 14 autres pays), site bilingue de 215 pages",
+   "metier": "réseau d'experts-comptables",
+   "pourquoi": "Réseau d'experts-comptables : 215 pages dans un seul système, cabinets ouverts en direct, trouveur de 139 cabinets.",
+   "proche": [
+    "même activité",
+    "ambiance sobre"
+   ],
+   "lumiere": "mixte",
+   "note_maquette": 88,
+   "en_ligne": "https://exco-maquette.vercel.app",
+   "vues": [
+    {
+     "page": "accueil",
+     "role": "ouverture",
+     "id": "exco-maquette/hero",
+     "note_section": 5,
+     "titre": "Rendre simple et naturel l’entrepreneuriat.",
+     "capture": "medias/exco-maquette/hero-p1440.jpg",
+     "video": "medias/exco-maquette/hero-p720.mp4",
+     "fiche": "sections/exco-maquette/hero.json",
+     "en_ligne": "https://exco-maquette.vercel.app"
+    },
+    {
+     "page": "accueil",
+     "role": "carte",
+     "id": "exco-maquette/cabinets",
+     "note_section": 5,
+     "titre": "Trouvez votre cabinet",
+     "capture": "medias/exco-maquette/cabinets-p1440.jpg",
+     "video": "medias/exco-maquette/cabinets-p720.mp4",
+     "fiche": "sections/exco-maquette/cabinets.json",
+     "en_ligne": "https://exco-maquette.vercel.app"
+    },
+    {
+     "page": "cabinets",
+     "role": "ouverture",
+     "id": "exco-maquette/cabinets-ihero",
+     "note_section": 4,
+     "titre": "Trouver un cabinet Exco",
+     "capture": "medias/exco-maquette/cabinets-ihero-p1440.jpg",
+     "video": "medias/exco-maquette/cabinets-ihero-p720.mp4",
+     "fiche": "sections/exco-maquette/cabinets-ihero.json",
+     "en_ligne": "https://exco-maquette.vercel.app/cabinets"
+    },
+    {
+     "page": "services/expertise-comptable",
+     "role": "agenda",
+     "id": "exco-maquette/services-expertise-comptable-band-3",
+     "note_section": 5,
+     "titre": "L’année comptable, mois par mois",
+     "capture": "medias/exco-maquette/services-expertise-comptable-band-3-p1440.jpg",
+     "video": "medias/exco-maquette/services-expertise-comptable-band-3-p720.mp4",
+     "fiche": "sections/exco-maquette/services-expertise-comptable-band-3.json",
+     "en_ligne": "https://exco-maquette.vercel.app/services/expertise-comptable"
+    }
+   ]
+  },
+  {
+   "rang": 2,
+   "maquette": "observatoire-des-cse-maquette",
+   "client": "observatoire indépendant des relations sociales qui mène des enquêtes auprès des élus de CSE",
+   "metier": "observatoire social et études",
+   "pourquoi": "Observatoire social : crème et bleu marine, ligne de pouls qui traverse la page, graphiques de vraies données.",
+   "proche": [
+    "activité proche",
+    "ambiance sobre"
+   ],
+   "lumiere": "mixte",
+   "note_maquette": 90,
+   "en_ligne": "https://observatoire-des-cse-maquette.vercel.app",
+   "vues": [
+    {
+     "page": "accueil",
+     "role": "ouverture",
+     "id": "observatoire-des-cse-maquette/haut",
+     "note_section": 4,
+     "titre": "Héros prise de pouls",
+     "capture": "medias/observatoire-des-cse-maquette/haut-p1440.jpg",
+     "video": "medias/observatoire-des-cse-maquette/haut-p720.mp4",
+     "fiche": "sections/observatoire-des-cse-maquette/haut.json",
+     "en_ligne": "https://observatoire-des-cse-maquette.vercel.app"
+    },
+    {
+     "page": "accueil",
+     "role": "étapes",
+     "id": "observatoire-des-cse-maquette/participer",
+     "note_section": 5,
+     "titre": "Téléphone épinglé du parcours",
+     "capture": "medias/observatoire-des-cse-maquette/participer-p1440.jpg",
+     "video": "medias/observatoire-des-cse-maquette/participer-p720.mp4",
+     "fiche": "sections/observatoire-des-cse-maquette/participer.json",
+     "en_ligne": "https://observatoire-des-cse-maquette.vercel.app"
+    },
+    {
+     "page": "enquete-rps-2026",
+     "role": "ouverture",
+     "id": "observatoire-des-cse-maquette/enquete-rps-2026-phero",
+     "note_section": 3,
+     "titre": "Tête de la page enquête",
+     "capture": "medias/observatoire-des-cse-maquette/enquete-rps-2026-phero-p1440.jpg",
+     "video": null,
+     "fiche": "sections/observatoire-des-cse-maquette/enquete-rps-2026-phero.json",
+     "en_ligne": "https://observatoire-des-cse-maquette.vercel.app/enquete-rps-2026"
+    },
+    {
+     "page": "resultats",
+     "role": "chiffres",
+     "id": "observatoire-des-cse-maquette/resultats-etude-1",
+     "note_section": 4,
+     "titre": "Bascule avec ou sans syndicat",
+     "capture": "medias/observatoire-des-cse-maquette/resultats-etude-1-p1440.jpg",
+     "video": "medias/observatoire-des-cse-maquette/resultats-etude-1-p720.mp4",
+     "fiche": "sections/observatoire-des-cse-maquette/resultats-etude-1.json",
+     "en_ligne": "https://observatoire-des-cse-maquette.vercel.app/resultats"
+    }
+   ]
+  },
+  {
+   "rang": 3,
+   "maquette": "laure-polin-maquette",
+   "client": "sculptrice (ardoise taillée, bronze, pneu recyclé), atelier à Bagnolet, vente d'œuvres",
+   "metier": "sculptrice",
+   "pourquoi": "Sculptrice : sombre et minimal, œuvres en grand, Cormorant Garamond.",
+   "proche": [],
+   "lumiere": "sombre",
+   "note_maquette": 90,
+   "en_ligne": "https://laure-polin-maquette.vercel.app",
+   "vues": [
+    {
+     "page": "accueil",
+     "role": "ouverture",
+     "id": "laure-polin-maquette/hero",
+     "note_section": 5,
+     "titre": "Œuvres recomposées en poussière d'ardoise",
+     "capture": "medias/laure-polin-maquette/hero-p1440.jpg",
+     "video": "medias/laure-polin-maquette/hero-p720.mp4",
+     "fiche": "sections/laure-polin-maquette/hero.json",
+     "en_ligne": "https://laure-polin-maquette.vercel.app"
+    },
+    {
+     "page": "accueil",
+     "role": "manifeste",
+     "id": "laure-polin-maquette/manifeste",
+     "note_section": 4,
+     "titre": "Manifeste au portrait collant",
+     "capture": "medias/laure-polin-maquette/manifeste-p1440.jpg",
+     "video": "medias/laure-polin-maquette/manifeste-p720.mp4",
+     "fiche": "sections/laure-polin-maquette/manifeste.json",
+     "en_ligne": "https://laure-polin-maquette.vercel.app"
+    },
+    {
+     "page": "oeuvre",
+     "role": "ouverture",
+     "id": "laure-polin-maquette/oeuvre-fiche-entree",
+     "note_section": 3,
+     "titre": "Entrée de la fiche d'œuvre",
+     "capture": "medias/laure-polin-maquette/oeuvre-fiche-entree-p1440.jpg",
+     "video": null,
+     "fiche": "sections/laure-polin-maquette/oeuvre-fiche-entree.json",
+     "en_ligne": "https://laure-polin-maquette.vercel.app/oeuvre"
+    },
+    {
+     "page": "salle",
+     "role": "galerie",
+     "id": "laure-polin-maquette/salle-salle-zone",
+     "note_section": 4,
+     "titre": "Salle horizontale à l'échelle",
+     "capture": "medias/laure-polin-maquette/salle-salle-zone-p1440.jpg",
+     "video": "medias/laure-polin-maquette/salle-salle-zone-p720.mp4",
+     "fiche": "sections/laure-polin-maquette/salle-salle-zone.json",
+     "en_ligne": "https://laure-polin-maquette.vercel.app/salle"
+    }
+   ]
+  },
+  {
+   "rang": 4,
+   "maquette": "nolanis-maquette",
+   "client": "Agence de communication visuelle à Strasbourg : print et web, espaces publicitaires, publipostage, photo et vidéo, objets publicitaires, sauvegarde en ligne, formation photo",
+   "metier": "agence de communication visuelle",
+   "pourquoi": "Agence de communication : beige, éventail de couleurs, cartes nettes, sommaire des métiers.",
+   "proche": [
+    "activité proche"
+   ],
+   "lumiere": "clair",
+   "note_maquette": 86,
+   "en_ligne": "https://nolanis-maquette.vercel.app",
+   "vues": [
+    {
+     "page": "accueil",
+     "role": "ouverture",
+     "id": "nolanis-maquette/debut",
+     "note_section": 5,
+     "titre": "Votre agence de communication visuelle à Strasbourg",
+     "capture": "medias/nolanis-maquette/debut-p1440.jpg",
+     "video": "medias/nolanis-maquette/debut-p720.mp4",
+     "fiche": "sections/nolanis-maquette/debut.json",
+     "en_ligne": "https://nolanis-maquette.vercel.app"
+    },
+    {
+     "page": "accueil",
+     "role": "services",
+     "id": "nolanis-maquette/services",
+     "note_section": 4,
+     "titre": "La liasse des épreuves",
+     "capture": "medias/nolanis-maquette/services-p1440.jpg",
+     "video": "medias/nolanis-maquette/services-p720.mp4",
+     "fiche": "sections/nolanis-maquette/services.json",
+     "en_ligne": "https://nolanis-maquette.vercel.app"
+    },
+    {
+     "page": "formations",
+     "role": "ouverture",
+     "id": "nolanis-maquette/formations-debut",
+     "note_section": 4,
+     "titre": "Choisir l’image juste",
+     "capture": "medias/nolanis-maquette/formations-debut-p1440.jpg",
+     "video": "medias/nolanis-maquette/formations-debut-p720.mp4",
+     "fiche": "sections/nolanis-maquette/formations-debut.json",
+     "en_ligne": "https://nolanis-maquette.vercel.app/formations"
+    },
+    {
+     "page": "contact",
+     "role": "outil-interactif",
+     "id": "nolanis-maquette/contact-devis",
+     "note_section": 4,
+     "titre": "Votre demande, en trois étapes",
+     "capture": "medias/nolanis-maquette/contact-devis-p1440.jpg",
+     "video": "medias/nolanis-maquette/contact-devis-p720.mp4",
+     "fiche": "sections/nolanis-maquette/contact-devis.json",
+     "en_ligne": "https://nolanis-maquette.vercel.app/contact"
+    }
+   ]
+  }
+ ]
+}

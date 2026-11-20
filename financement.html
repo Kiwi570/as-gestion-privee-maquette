@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="fr" data-v="1" data-curseur>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Financement · AS Gestion Privée, Nantes</title>
+<meta name="description" content="Simulez votre capacité d&#39;emprunt et vos mensualités, puis confiez la négociation de votre crédit immobilier à Julien Morinière, jusqu&#39;à la signature chez le notaire.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://as-gestion-privee-maquette.vercel.app/financement">
+<style>:root{--fond:#F4EFE6;--texte:#1A1F24;--voile-fond:#1D252C;--ouverture-fond:#1D252C;--menu-fond:#1D252C}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/newsreader-italique.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/modules.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#F4EFE6">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AS Gestion Privée">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Financement · AS Gestion Privée, Nantes">
+<meta property="og:description" content="Simulez votre capacité d&#39;emprunt et vos mensualités, puis confiez la négociation de votre crédit immobilier à Julien Morinière, jusqu&#39;à la signature chez le notaire.">
+<meta property="og:url" content="https://as-gestion-privee-maquette.vercel.app/financement">
+<meta property="og:image" content="https://as-gestion-privee-maquette.vercel.app/assets/partage/financement-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Financement : votre crédit immobilier, négocié pour vous">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FinancialService","name":"AS Gestion Privée","legalName":"AS GESTION PRIVEE","url":"https://as-gestion-privee-maquette.vercel.app/","telephone":"+33606660011","email":"julien.moriniere@asgestionprivee.fr","foundingDate":"2015","founder":{"@type":"Person","name":"Julien Morinière"},"address":{"@type":"PostalAddress","streetAddress":"5 rue Le Nôtre","postalCode":"44000","addressLocality":"Nantes","addressCountry":"FR"},"identifier":[{"@type":"PropertyValue","propertyID":"ORIAS","value":"15006348"},{"@type":"PropertyValue","propertyID":"SIREN","value":"814246815"}],"description":"Intermédiaire en crédit immobilier et conseiller en gestion de patrimoine à Nantes : financement, placements, immobilier, assurances."}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="rideau" aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="56" height="56"><span data-voile-libelle>Financement</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <div class="intro-mono" data-ouverture-objet><svg viewBox="-224 -74 2773 1624" aria-hidden="true"><path class="intro-a" d="M380 913 399 857H1070L1052 913ZM1153 1412 1298 1450 1292 1470H798L804 1450L962 1414L824 250H848L78 1407L234 1450L228 1470H-164L-158 1450L13 1404L942 20H978Z"/><path class="intro-s" d="M2375 221Q2332 153 2256.5 109.5Q2181 66 2080 66Q1982 66 1914.5 98.0Q1847 130 1812.0 189.5Q1777 249 1777 331Q1777 412 1809.5 466.0Q1842 520 1895.0 558.5Q1948 597 2010 634Q2072 671 2135.5 717.0Q2199 763 2242.0 835.5Q2285 908 2285 1026Q2285 1162 2216.5 1267.0Q2148 1372 2023.0 1431.0Q1898 1490 1728 1490Q1635 1490 1548.0 1474.5Q1461 1459 1392 1428L1387 1057H1415L1546 1448L1449 1344Q1515 1393 1579.5 1421.5Q1644 1450 1740 1450Q1859 1450 1947.5 1413.0Q2036 1376 2084.5 1299.5Q2133 1223 2133 1105Q2133 1027 2105.5 974.0Q2078 921 2034.0 884.0Q1990 847 1940.0 819.0Q1890 791 1846 763Q1787 725 1740.5 681.5Q1694 638 1667.5 576.5Q1641 515 1641 425Q1641 306 1698.5 215.0Q1756 124 1861.5 72.0Q1967 20 2109 20Q2214 20 2295.5 47.5Q2377 75 2457 128L2351 96L2473 -14H2489L2432 449H2411L2333 127Z"/></svg></div>
+  <span class="ouverture-trait"></span>
+  <p class="ouverture-ligne">Affectio societatis</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil">
+      <img src="/assets/images/logo.svg" alt="" width="51" height="30"><span>AS Gestion Privée</span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/financement" data-libelle="Financement" aria-current="page">Financement</a></li><li><a href="/patrimoine" data-libelle="Patrimoine">Patrimoine</a></li><li><a href="/cabinet" data-libelle="Le cabinet">Le cabinet</a></li><li><a href="/honoraires" data-libelle="Honoraires">Honoraires</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/contact#rendez-vous" data-libelle="Contact">Prendre rendez-vous</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/financement" class="menu-lien" data-libelle="Financement" aria-current="page">Financement</a></li><li style="--i:2"><a href="/patrimoine" class="menu-lien" data-libelle="Patrimoine">Patrimoine</a></li><li style="--i:3"><a href="/cabinet" class="menu-lien" data-libelle="Le cabinet">Le cabinet</a></li><li style="--i:4"><a href="/honoraires" class="menu-lien" data-libelle="Honoraires">Honoraires</a></li><li style="--i:5"><a href="/contact" class="menu-lien" data-libelle="Contact">Contact</a></li></ul>
+  <p><a class="bouton" href="tel:+33606660011">Appeler 06 06 66 00 11</a></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="ouv ouv--bandeau" id="debut">
+  <div class="conteneur ouv-grille">
+    <div class="ouv-col-titre">
+      <p class="surtitre ouv-suite" data-anime="gsap">Financement</p>
+      <h1 class="" data-anime="gsap"><span class="ligne-masque"><span class="ouv-ligne">Votre crédit immobilier,</span></span><span class="ligne-masque"><span class="ouv-ligne"><em>négocié pour vous.</em></span></span></h1>
+    </div>
+    <div class="ouv-col-texte">
+      <p class="ouv-texte ouv-suite" data-anime="gsap">Étude du budget, négociation du taux, suivi du dossier : vous avancez avec un seul interlocuteur, jusqu&#39;à la signature chez le notaire.</p>
+      <p class="ouv-actions ouv-suite" data-anime="gsap">
+        <a href="/contact?sujet=financement#rendez-vous" class="bouton" data-libelle="Contact" data-action-principale data-survol="magnetique">Faire étudier mon financement</a>
+        <a class="lien-fleche" href="#simulateurs">Ma capacité d&#39;emprunt<svg class="fleche" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </p>
+      <p class="ouv-info ouv-suite" data-info-cle data-anime="gsap">Aucun versement avant l&#39;obtention de votre prêt</p>
+    </div>
+  </div>
+  <div class="conteneur">
+    <figure class="media ouv-bandeau" data-grok data-iris-centre data-effet="bandeau" style="--cadrage:50% 88%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/financement-ouverture-mobile-640.webp 640w, /assets/images/grok/financement-ouverture-mobile-1080.webp 1080w" sizes="(max-width: 1240px) 100vw, 1240px">
+    <img src="/assets/images/grok/financement-ouverture-1280.webp" srcset="/assets/images/grok/financement-ouverture-640.webp 640w, /assets/images/grok/financement-ouverture-1280.webp 1280w, /assets/images/grok/financement-ouverture-1920.webp 1920w" sizes="(max-width: 1240px) 100vw, 1240px" alt="Table en chêne d&#39;une étude de notaire avec un dossier fermé et un stylo plume" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  </div>
+</section>
+<section class="simulateur theme-sombre" id="simulateurs">
+  <div class="conteneur simu-grille">
+    <div class="simu-tete"><div class="tete-section ">
+  <p class="surtitre">Simulateurs</p>
+  <h2 class="titre-section" data-anime="lignes">Vos chiffres, <em>avant le rendez-vous.</em></h2>
+  <p class="tete-texte" data-anime>Deux calculs pour préparer le premier échange : ce que vous pouvez emprunter, et ce que coûtera votre crédit.</p>
+</div></div>
+    <form class="simu simu--capacite" data-simu="capacite" data-effet="simulateur" novalidate>
+  <div class="simu-entrees">
+    <div class="simu-champ">
+  <label for="fcap-revenus">Revenus nets mensuels du foyer</label>
+  <output for="fcap-revenus" class="simu-valeur" data-valeur-de="fcap-revenus" data-unite="€">4200</output>
+  <input type="range" id="fcap-revenus" name="fcap-revenus" min="1500" max="15000" step="100" value="4200">
+</div>
+    <div class="simu-champ">
+  <label for="fcap-charges">Crédits en cours (mensualités)</label>
+  <output for="fcap-charges" class="simu-valeur" data-valeur-de="fcap-charges" data-unite="€">0</output>
+  <input type="range" id="fcap-charges" name="fcap-charges" min="0" max="3000" step="50" value="0">
+</div>
+    <div class="simu-champ">
+  <label for="fcap-apport">Apport personnel</label>
+  <output for="fcap-apport" class="simu-valeur" data-valeur-de="fcap-apport" data-unite="€">20000</output>
+  <input type="range" id="fcap-apport" name="fcap-apport" min="0" max="200000" step="1000" value="20000">
+</div>
+    <fieldset class="simu-champ simu-durees">
+  <legend>Durée</legend>
+  <div class="simu-puces"><label class="simu-puce"><input type="radio" name="fcap-duree" value="10"><span>10 ans</span></label><label class="simu-puce"><input type="radio" name="fcap-duree" value="15"><span>15 ans</span></label><label class="simu-puce"><input type="radio" name="fcap-duree" value="20" checked><span>20 ans</span></label><label class="simu-puce"><input type="radio" name="fcap-duree" value="25"><span>25 ans</span></label></div>
+</fieldset>
+    <div class="simu-champ">
+  <label for="fcap-taux">Taux annuel, assurance comprise</label>
+  <output for="fcap-taux" class="simu-valeur" data-valeur-de="fcap-taux" data-unite="%">3.8</output>
+  <input type="range" id="fcap-taux" name="fcap-taux" min="1" max="7" step="0.05" value="3.8">
+  <p class="simu-aide">Exemple à remplacer par le taux proposé par votre banque.</p>
+</div>
+  </div>
+  <div class="simu-resultats" aria-live="polite">
+    <div class="jauge" data-visuel>
+      <svg viewBox="0 0 200 200" aria-hidden="true">
+        <circle class="jauge-fond" cx="100" cy="100" r="84" pathLength="100"/>
+        <circle class="jauge-charges" cx="100" cy="100" r="84" pathLength="100"/>
+        <circle class="jauge-neuf" cx="100" cy="100" r="84" pathLength="100"/>
+      </svg>
+      <p class="jauge-texte"><span class="jauge-chiffre" data-sortie="effort">35 %</span><span>35 % au plus</span></p>
+    </div>
+    <dl class="simu-chiffres">
+      <div class="simu-principal"><dt>Capacité d&#39;emprunt</dt><dd data-sortie="capacite" data-prix>0 €</dd></div>
+      <div><dt>Mensualité maximale</dt><dd data-sortie="mensualite" data-prix>0 €</dd></div>
+      <div><dt>Budget avec apport <small>hors frais de notaire et de garantie</small></dt><dd data-sortie="budget" data-prix>0 €</dd></div>
+    </dl>
+  </div>
+</form>
+  </div>
+  <div class="conteneur simu-mentions">
+    <p>Simulation indicative, sans valeur d&#39;offre de prêt. Le taux et la capacité réels dépendent de votre dossier et des banques.</p>
+    <p><strong>Un crédit vous engage et doit être remboursé. Vérifiez vos capacités de remboursement avant de vous engager.</strong></p>
+  </div>
+</section>
+<section class="role conteneur" id="role">
+  <div class="tete-section tete-section--large">
+  <p class="surtitre">Le rôle de Julien</p>
+  <h2 class="titre-section" data-anime="lignes">Ce que le cabinet <em>fait pour vous.</em></h2>
+</div>
+  <ol class="role-grille" data-anime="cascade">
+    <li class="role-carte" data-fx="vitesse" data-fx-force="1.5">
+      <svg class="role-icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19h16M6 16V9m4 7V5m4 11v-6m4 6V8"/></svg>
+      <h3>Étudier votre budget</h3><p>Revenus, charges, apport : votre capacité d&#39;emprunt et votre plan de financement, posés avant de chercher.</p>
+    </li><li class="role-carte" data-fx="vitesse" data-fx-force="1.5">
+      <svg class="role-icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h6l2-3 2 6 2-3h4"/><circle cx="12" cy="12" r="9"/></svg>
+      <h3>Négocier votre taux</h3><p>Votre dossier présenté et défendu pour obtenir des conditions adaptées à votre projet.</p>
+    </li><li class="role-carte" data-fx="vitesse" data-fx-force="1.5">
+      <svg class="role-icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l4 4v14H7zM14 3v4h4M10 12h5M10 16h5"/></svg>
+      <h3>Suivre votre dossier</h3><p>Pièces, échéances, réponses des banques : un seul interlocuteur du début à la fin.</p>
+    </li><li class="role-carte" data-fx="vitesse" data-fx-force="1.5">
+      <svg class="role-icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20c4-1 6-5 8-9s4-7 8-7M4 20h16"/></svg>
+      <h3>Vous accompagner jusqu&#39;au notaire</h3><p>Le suivi de votre budget continue jusqu&#39;à la signature de l&#39;acte.</p>
+    </li>
+  </ol>
+</section>
+<section class="etapes" id="etapes">
+  <div class="conteneur etapes-grille">
+    <div class="etapes-tete"><div class="tete-section ">
+  <p class="surtitre">Étapes</p>
+  <h2 class="titre-section" data-anime="lignes">Jusqu'à la signature <em>chez le notaire.</em></h2>
+</div></div>
+    <div class="etapes-corps" data-effet="signature">
+      <span class="sig-fil" aria-hidden="true"></span>
+      <ol class="etapes-liste">
+        <li class="etape"><span class="etape-num" aria-hidden="true">1</span><h3>Premier rendez-vous</h3><p>Votre projet, vos revenus, votre apport, votre calendrier.</p></li><li class="etape"><span class="etape-num" aria-hidden="true">2</span><h3>Étude du budget</h3><p>Capacité d&#39;emprunt, mensualités, plan de financement.</p></li><li class="etape"><span class="etape-num" aria-hidden="true">3</span><h3>Négociation</h3><p>Votre dossier présenté aux banques et le taux négocié.</p></li><li class="etape"><span class="etape-num" aria-hidden="true">4</span><h3>Offre de prêt</h3><p>Vous recevez l&#39;offre ; la loi vous laisse 10 jours de réflexion avant de l&#39;accepter.</p></li><li class="etape"><span class="etape-num" aria-hidden="true">5</span><h3>Signature chez le notaire</h3><p>Les fonds sont débloqués, le projet devient réalité.</p></li>
+      </ol>
+      <svg class="sig-paraphe" viewBox="0 0 420 120" aria-hidden="true" data-visuel><path d="M8 88c26-6 44-40 58-62 8-12 14-6 9 8-9 26-20 52-14 58 8 8 30-40 42-48 9-6 7 12 3 22-4 12 2 18 12 8 14-14 22-36 36-38 12-2 6 22 16 24 14 2 28-24 44-22 14 2 6 22 22 22 22 0 48-24 74-22 30 2 58 12 102 4" pathLength="1"/></svg>
+    </div>
+  </div>
+</section>
+<section class="regles theme-sombre" id="regles">
+  <div class="conteneur">
+    <div class="tete-section tete-section--large">
+  <p class="surtitre">Les règles des banques</p>
+  <h2 class="titre-section" data-anime="lignes">Deux chiffres <em>à connaître.</em></h2>
+</div>
+    <div class="regles-grille" data-anime="cascade">
+      <div class="regle"><p class="regle-chiffre"><span data-compteur="35">35</span>&nbsp;%</p><p>de vos revenus nets, assurance comprise, au plus pour vos mensualités</p></div>
+      <div class="regle"><p class="regle-chiffre"><span data-compteur="25">25</span>&nbsp;ans</p><p>de durée au plus (27 ans quand l&#39;entrée dans le logement est décalée : neuf, gros travaux)</p></div>
+    </div>
+    <p class="regles-note" data-anime>Norme du Haut Conseil de stabilité financière, maintenue en 2026. Les banques peuvent y déroger pour 20 % de leurs dossiers.</p>
+  </div>
+</section>
+<section class="mensualite" id="mensualite">
+  <div class="conteneur simu-grille">
+    <div class="simu-tete"><div class="tete-section ">
+  <p class="surtitre">Mensualité</p>
+  <h2 class="titre-section" data-anime="lignes">Ce que coûtera <em>votre crédit.</em></h2>
+  <p class="tete-texte" data-anime>Montant, durée, taux : la mensualité, le coût des intérêts et la part de capital remboursée chaque année.</p>
+</div></div>
+    <form class="simu simu--mensualite" data-simu="mensualite" novalidate>
+  <div class="simu-entrees">
+    <div class="simu-champ">
+  <label for="fmen-montant">Montant emprunté</label>
+  <output for="fmen-montant" class="simu-valeur" data-valeur-de="fmen-montant" data-unite="€">220000</output>
+  <input type="range" id="fmen-montant" name="fmen-montant" min="20000" max="800000" step="5000" value="220000">
+</div>
+    <fieldset class="simu-champ simu-durees">
+  <legend>Durée</legend>
+  <div class="simu-puces"><label class="simu-puce"><input type="radio" name="fmen-duree" value="10"><span>10 ans</span></label><label class="simu-puce"><input type="radio" name="fmen-duree" value="15"><span>15 ans</span></label><label class="simu-puce"><input type="radio" name="fmen-duree" value="20" checked><span>20 ans</span></label><label class="simu-puce"><input type="radio" name="fmen-duree" value="25"><span>25 ans</span></label></div>
+</fieldset>
+    <div class="simu-champ">
+  <label for="fmen-taux">Taux annuel, assurance comprise</label>
+  <output for="fmen-taux" class="simu-valeur" data-valeur-de="fmen-taux" data-unite="%">3.8</output>
+  <input type="range" id="fmen-taux" name="fmen-taux" min="1" max="7" step="0.05" value="3.8">
+  <p class="simu-aide">Exemple à remplacer par le taux proposé par votre banque.</p>
+</div>
+  </div>
+  <div class="simu-resultats" aria-live="polite">
+    <dl class="simu-chiffres">
+      <div class="simu-principal"><dt>Mensualité</dt><dd data-sortie="mensualite" data-prix>0 €</dd></div>
+      <div><dt>Coût des intérêts</dt><dd data-sortie="interets" data-prix>0 €</dd></div>
+      <div><dt>Total remboursé</dt><dd data-sortie="total" data-prix>0 €</dd></div>
+    </dl>
+    <figure class="courbe" data-effet="courbe" data-visuel>
+      <figcaption>Capital et intérêts, année par année</figcaption>
+      <svg viewBox="0 0 600 240" preserveAspectRatio="none" aria-hidden="true"><g class="courbe-barres"></g><line class="courbe-axe" x1="0" y1="239" x2="600" y2="239"/></svg>
+      <p class="courbe-legende"><span class="cl-capital">Capital remboursé</span><span class="cl-interets">Intérêts</span></p>
+    </figure>
+  </div>
+</form>
+  </div>
+</section>
+<section class="faq conteneur" id="questions">
+  <h2 class="titre-section" data-anime="lignes">Questions <em>fréquentes.</em></h2>
+  <div class="faq-liste" data-anime="cascade"><details class="faq-item"><summary>Dois-je payer quelque chose avant d&#39;obtenir mon prêt ?</summary><p>Non. Aucun versement, de quelque nature que ce soit, ne peut être exigé d&#39;un particulier avant l&#39;obtention d&#39;un ou plusieurs prêts d&#39;argent.</p></details><details class="faq-item"><summary>Combien de temps ai-je pour accepter l&#39;offre de prêt ?</summary><p>La loi vous laisse 10 jours de réflexion : vous ne pouvez pas accepter l&#39;offre avant le onzième jour suivant sa réception.</p></details><details class="faq-item"><summary>Quel taux d&#39;endettement les banques acceptent-elles ?</summary><p>35 % de vos revenus nets, assurance comprise, sur 25 ans au plus. Les banques peuvent y déroger pour 20 % de leurs dossiers.</p></details><details class="faq-item"><summary>Comment le cabinet est-il rémunéré ?</summary><p>Par des frais de courtage, inclus dans une solution clé en main. Le détail est sur la page Honoraires.</p></details></div>
+</section>
+<section class="mentions conteneur" id="mentions" data-sans-effet data-sans-visuel>
+  <p data-anime>AS Gestion Privée intervient en qualité de mandataire d&#39;intermédiaire en opérations de banque et en services de paiement (MIOBSP), inscrit à l&#39;ORIAS sous le n° 15006348. Aucun versement, de quelque nature que ce soit, ne peut être exigé d&#39;un particulier avant l&#39;obtention d&#39;un ou plusieurs prêts d&#39;argent.</p>
+</section>
+<section class="appel theme-sombre" id="appel">
+  <div class="conteneur appel-grille">
+    <div class="appel-texte">
+      <h2 class="titre-section" data-anime="lignes">Parlons de <em>votre projet.</em></h2>
+      <p data-anime>Un premier échange pour faire le point sur votre situation, vos objectifs et votre calendrier.</p>
+      <p class="appel-actions" data-anime>
+        <a href="/contact#rendez-vous" class="bouton bouton--clair" data-libelle="Contact" data-survol="magnetique">Prendre rendez-vous</a>
+        <span class="appel-ou">ou appelez le <a href="tel:+33606660011">06 06 66 00 11</a></span>
+      </p>
+    </div>
+    <div class="appel-visuel" data-visuel><svg class="deux-traits deux-traits--appel" viewBox="0 0 1200 220" preserveAspectRatio="xMidYMid meet" aria-hidden="true" data-effet="deux-traits" data-visuel>
+  <path class="dt-a" d="M0 40 C 260 40, 420 196, 600 110" pathLength="1"/>
+  <path class="dt-b" d="M1200 190 C 940 190, 780 24, 600 110" pathLength="1"/>
+  <circle class="dt-point" cx="600" cy="110" r="11"/>
+  <circle class="dt-halo" cx="600" cy="110" r="26"/>
+</svg><img class="appel-mono" src="/assets/images/logo-clair.svg" alt="" width="170" height="100"></div>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <p class="pied-logo"><img src="/assets/images/logo-clair.svg" alt="" width="68" height="40"><strong>AS Gestion Privée</strong></p>
+      <p>Intermédiaire en crédit immobilier · Conseiller en gestion de patrimoine</p>
+    </div>
+    <div>
+      <p class="pied-titre">Contact</p>
+      <p><a href="tel:+33606660011">06 06 66 00 11</a><br><span class="selectionnable">julien.moriniere@asgestionprivee.fr</span><br>5 rue Le Nôtre, 44000 Nantes</p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p class="pied-titre">Sommaire</p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/financement" data-libelle="Financement" aria-current="page">Financement</a></li><li><a href="/patrimoine" data-libelle="Patrimoine">Patrimoine</a></li><li><a href="/cabinet" data-libelle="Le cabinet">Le cabinet</a></li><li><a href="/honoraires" data-libelle="Honoraires">Honoraires</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li><li><a href="#haut" data-sans-transition>Retour en haut</a></li></ul>
+    </nav>
+  </div>
+  <div class="conteneur pied-bas">
+    <p>SARL AS Gestion Privée · ORIAS 15006348 (orias.fr) · mandataire d&#39;intermédiaire en opérations de banque et en services de paiement (MIOBSP), courtier d&#39;assurance (COA), conseiller en investissements financiers (CIF) · membre de La Compagnie IOBSP, de La Compagnie CIF et de la CNCEF Assurance.</p>
+    <p>Aucun versement, de quelque nature que ce soit, ne peut être exigé d&#39;un particulier avant l&#39;obtention d&#39;un ou plusieurs prêts d&#39;argent.</p>
+    <p>Mentions légales · Politique de confidentialité : à compléter · Maquette de démonstration : formulaires et simulations sans envoi réel.</p>
+  </div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33606660011">Appeler</a>
+  <a class="bouton" href="/contact#rendez-vous" data-libelle="Contact">Prendre rendez-vous</a>
+</div>
+</body>
+</html>

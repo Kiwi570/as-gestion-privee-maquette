@@ -1,0 +1,1465 @@
+{
+  "dossier": "/Users/paul/Downloads/as-gestion-privee-recu",
+  "date": "2026-11-20T19:18:17.740Z",
+  "detection": "Vision (macOS) + mesures sharp",
+  "planches": [
+    "planche.jpg"
+  ],
+  "legende_planche": "cadre jaune : sujet ; croix rouge : cadrage ; fond rose : à vérifier",
+  "doublons": [],
+  "images": [
+    {
+      "fichier": "logo-clair.png",
+      "nom": "logo-clair",
+      "drapeau": "logo",
+      "largeur": 862,
+      "hauteur": 485,
+      "ratio": "16:9",
+      "ratio_valeur": 1.777,
+      "orientation": "paysage",
+      "format": "png",
+      "poids": 52997,
+      "transparence": true,
+      "sujet": {
+        "x": 39.7,
+        "y": 29.4,
+        "l": 22.1,
+        "h": 30.9,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        51,
+        45
+      ],
+      "cadrage_css": "51% 45%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 1,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "bas",
+          "score": 1,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.99,
+          "ton": "clair",
+          "recouvre_sujet": 0.01
+        },
+        {
+          "cote": "haut",
+          "score": 0.99,
+          "ton": "clair",
+          "recouvre_sujet": 0.04
+        }
+      ],
+      "qualite": {
+        "nettete": 0.8,
+        "bruit": 0.03,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "0000000000000000",
+      "drapeaux": [
+        "logo",
+        "calme gauche/bas/droite/haut"
+      ]
+    },
+    {
+      "fichier": "as-gestion-privee.jpg",
+      "nom": "as-gestion-privee",
+      "drapeau": "autre",
+      "largeur": 896,
+      "hauteur": 1200,
+      "ratio": "3:4",
+      "ratio_valeur": 0.747,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 474177,
+      "transparence": false,
+      "sujet": {
+        "x": 48.8,
+        "y": 4.6,
+        "l": 51.2,
+        "h": 63.9,
+        "source": "visage"
+      },
+      "visages": 1,
+      "cadrage": [
+        89,
+        39
+      ],
+      "cadrage_css": "89% 39%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.67,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "bas",
+          "score": 0.49,
+          "ton": "moyen",
+          "recouvre_sujet": 0.05
+        },
+        {
+          "cote": "haut",
+          "score": 0.45,
+          "ton": "clair",
+          "recouvre_sujet": 0.44
+        },
+        {
+          "cote": "droite",
+          "score": 0.12,
+          "ton": "moyen",
+          "recouvre_sujet": 0.64
+        }
+      ],
+      "qualite": {
+        "nettete": 26,
+        "bruit": 1.39,
+        "compression": 0.9,
+        "faible": true,
+        "raisons": [
+          "896 px de large"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "e8e9d290c1063636",
+      "drapeaux": [
+        "autre",
+        "visage",
+        "petite",
+        "calme gauche"
+      ]
+    },
+    {
+      "fichier": "as-gestion-privee-2.jpg",
+      "nom": "as-gestion-privee-2",
+      "drapeau": "autre",
+      "largeur": 1000,
+      "hauteur": 1000,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "jpeg",
+      "poids": 186623,
+      "transparence": false,
+      "sujet": {
+        "x": 9.3,
+        "y": 28,
+        "l": 68,
+        "h": 56.4,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        53
+      ],
+      "cadrage_css": "49% 53%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.78,
+          "ton": "clair",
+          "recouvre_sujet": 0.14
+        },
+        {
+          "cote": "droite",
+          "score": 0.52,
+          "ton": "clair",
+          "recouvre_sujet": 0.24
+        },
+        {
+          "cote": "gauche",
+          "score": 0.4,
+          "ton": "moyen",
+          "recouvre_sujet": 0.43
+        },
+        {
+          "cote": "bas",
+          "score": 0.23,
+          "ton": "clair",
+          "recouvre_sujet": 0.38
+        }
+      ],
+      "qualite": {
+        "nettete": 5.1,
+        "bruit": 0.29,
+        "compression": 1.74,
+        "faible": true,
+        "raisons": [
+          "1000 px de large",
+          "floue",
+          "compression visible"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "faf671e9584b27c4",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "floue",
+        "compression visible",
+        "calme haut"
+      ]
+    },
+    {
+      "fichier": "as-gestion-privee-3.jpg",
+      "nom": "as-gestion-privee-3",
+      "drapeau": "autre",
+      "largeur": 1000,
+      "hauteur": 1000,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "jpeg",
+      "poids": 191223,
+      "transparence": false,
+      "sujet": {
+        "x": 2.5,
+        "y": 17.2,
+        "l": 96.7,
+        "h": 70.9,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        44,
+        46
+      ],
+      "cadrage_css": "44% 46%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.49,
+          "ton": "clair",
+          "recouvre_sujet": 0.49
+        },
+        {
+          "cote": "bas",
+          "score": 0.49,
+          "ton": "clair",
+          "recouvre_sujet": 0.64
+        },
+        {
+          "cote": "droite",
+          "score": 0.4,
+          "ton": "clair",
+          "recouvre_sujet": 0.69
+        },
+        {
+          "cote": "gauche",
+          "score": 0.21,
+          "ton": "clair",
+          "recouvre_sujet": 0.66
+        }
+      ],
+      "qualite": {
+        "nettete": 12.9,
+        "bruit": 0.36,
+        "compression": 1.51,
+        "faible": true,
+        "raisons": [
+          "1000 px de large",
+          "compression visible"
+        ]
+      },
+      "lisible": {
+        "niveau": "decoratif",
+        "a_verifier": false,
+        "texte": "cors Earnings",
+        "blocs": 1,
+        "surface": 0.4,
+        "details": [
+          {
+            "texte": "cors Earnings",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "98303130387ddcf1",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "compression visible",
+        "texte décoratif"
+      ]
+    },
+    {
+      "fichier": "cb-scout5-hdpi.png",
+      "nom": "cb-scout5-hdpi",
+      "drapeau": "autre",
+      "largeur": 430,
+      "hauteur": 1670,
+      "ratio": "0.26",
+      "ratio_valeur": 0.257,
+      "orientation": "portrait",
+      "format": "png",
+      "poids": 104139,
+      "transparence": true,
+      "sujet": {
+        "x": 5.9,
+        "y": 4.4,
+        "l": 69.1,
+        "h": 63.2,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        37,
+        34
+      ],
+      "cadrage_css": "37% 34%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.77,
+          "ton": "clair",
+          "recouvre_sujet": 0.24
+        },
+        {
+          "cote": "bas",
+          "score": 0.65,
+          "ton": "clair",
+          "recouvre_sujet": 0.05
+        },
+        {
+          "cote": "haut",
+          "score": 0.28,
+          "ton": "clair",
+          "recouvre_sujet": 0.6
+        },
+        {
+          "cote": "gauche",
+          "score": 0.14,
+          "ton": "clair",
+          "recouvre_sujet": 0.54
+        }
+      ],
+      "qualite": {
+        "nettete": 54.7,
+        "bruit": 0.17,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "430 px de large"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "d7555552d0d0d0d0",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "calme droite/bas"
+      ]
+    },
+    {
+      "fichier": "as-gestion-privee-contact.webp",
+      "nom": "as-gestion-privee-contact",
+      "drapeau": "autre",
+      "largeur": 512,
+      "hauteur": 512,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "webp",
+      "poids": 42358,
+      "transparence": false,
+      "sujet": {
+        "x": 32.4,
+        "y": 2.9,
+        "l": 54.4,
+        "h": 70.6,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        58,
+        44
+      ],
+      "cadrage_css": "58% 44%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.48,
+          "ton": "clair",
+          "recouvre_sujet": 0.13
+        },
+        {
+          "cote": "haut",
+          "score": 0.43,
+          "ton": "clair",
+          "recouvre_sujet": 0.5
+        },
+        {
+          "cote": "bas",
+          "score": 0.43,
+          "ton": "clair",
+          "recouvre_sujet": 0.13
+        },
+        {
+          "cote": "droite",
+          "score": 0.36,
+          "ton": "clair",
+          "recouvre_sujet": 0.47
+        }
+      ],
+      "qualite": {
+        "nettete": 73.4,
+        "bruit": 0.73,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "512 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "decoratif",
+        "a_verifier": false,
+        "texte": "D164 · Bla · tchâteau · Campbon · Fay-de-Breta · Savenay · E60 · agne · Vigneu: · Paimbœuf · Cordemais",
+        "blocs": 11,
+        "surface": 8.5,
+        "details": [
+          {
+            "texte": "D164",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Bla",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "tchâteau",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Campbon",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Fay-de-Breta",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Savenay",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "E60",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "agne",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Vigneu:",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Paimbœuf",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Cordemais",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "5248c9d08ea7a476",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "texte décoratif"
+      ]
+    },
+    {
+      "fichier": "as-gestion-privee-contact-2.webp",
+      "nom": "as-gestion-privee-contact-2",
+      "drapeau": "autre",
+      "largeur": 512,
+      "hauteur": 512,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "webp",
+      "poids": 69672,
+      "transparence": false,
+      "sujet": {
+        "x": 8.8,
+        "y": 7.4,
+        "l": 72.1,
+        "h": 66.2,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        43,
+        39
+      ],
+      "cadrage_css": "43% 39%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.32,
+          "ton": "clair",
+          "recouvre_sujet": 0.18
+        },
+        {
+          "cote": "droite",
+          "score": 0.2,
+          "ton": "clair",
+          "recouvre_sujet": 0.35
+        },
+        {
+          "cote": "gauche",
+          "score": 0.18,
+          "ton": "clair",
+          "recouvre_sujet": 0.52
+        },
+        {
+          "cote": "haut",
+          "score": 0.11,
+          "ton": "clair",
+          "recouvre_sujet": 0.57
+        }
+      ],
+      "qualite": {
+        "nettete": 77.4,
+        "bruit": 1.31,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "512 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "decoratif",
+        "a_verifier": false,
+        "texte": "Orvault · Saint-Juli · N444 · Nantes · Saint-Herblain · N844 · D723 · Bouguenais Reze · Vertou · D751 · Les Sorinières · Bouaye · Pont-Saint-Martin · La Chevrol",
+        "blocs": 17,
+        "surface": 16.4,
+        "details": [
+          {
+            "texte": "Orvault",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Saint-Juli",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "N444",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Nantes",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Saint-Herblain",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "N844",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "D723",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Bouguenais Reze",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Vertou",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "D751",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Les Sorinières",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Bouaye",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "14310752432329da",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "texte décoratif"
+      ]
+    },
+    {
+      "fichier": "as-gestion-privee-contact-3.webp",
+      "nom": "as-gestion-privee-contact-3",
+      "drapeau": "autre",
+      "largeur": 512,
+      "hauteur": 512,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "webp",
+      "poids": 33728,
+      "transparence": false,
+      "sujet": {
+        "x": 59.7,
+        "y": 42.2,
+        "l": 29.7,
+        "h": 37.6,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        67,
+        52
+      ],
+      "cadrage_css": "67% 52%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.55,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.45,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.33,
+          "ton": "clair",
+          "recouvre_sujet": 0.28
+        },
+        {
+          "cote": "bas",
+          "score": 0.28,
+          "ton": "clair",
+          "recouvre_sujet": 0.13
+        }
+      ],
+      "qualite": {
+        "nettete": 77.3,
+        "bruit": 0.64,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "512 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "decoratif",
+        "a_verifier": false,
+        "texte": "Saffré · Nort-sur-Erdre · gne · Héric · Grandchamp-des-Fontaines · •Suce-sur-Erdre · Saint-Mars · ‹-de-Bretagne Treillières · Carquefou:",
+        "blocs": 9,
+        "surface": 12.5,
+        "details": [
+          {
+            "texte": "Saffré",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Nort-sur-Erdre",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "gne",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Héric",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Grandchamp-des-Fontaines",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "•Suce-sur-Erdre",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Saint-Mars",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "‹-de-Bretagne Treillières",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Carquefou:",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "8cd111b535237d99",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "texte décoratif"
+      ]
+    },
+    {
+      "fichier": "as-gestion-privee-contact-4.webp",
+      "nom": "as-gestion-privee-contact-4",
+      "drapeau": "autre",
+      "largeur": 512,
+      "hauteur": 512,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "webp",
+      "poids": 46598,
+      "transparence": false,
+      "sujet": {
+        "x": 10.3,
+        "y": 26.5,
+        "l": 58.8,
+        "h": 45.6,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        40,
+        52
+      ],
+      "cadrage_css": "40% 52%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.59,
+          "ton": "clair",
+          "recouvre_sujet": 0.1
+        },
+        {
+          "cote": "haut",
+          "score": 0.57,
+          "ton": "clair",
+          "recouvre_sujet": 0.14
+        },
+        {
+          "cote": "bas",
+          "score": 0.45,
+          "ton": "clair",
+          "recouvre_sujet": 0.12
+        },
+        {
+          "cote": "gauche",
+          "score": 0.29,
+          "ton": "clair",
+          "recouvre_sujet": 0.34
+        }
+      ],
+      "qualite": {
+        "nettete": 62.8,
+        "bruit": 0.84,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "512 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "decoratif",
+        "a_verifier": false,
+        "texte": "nialle · Teillé · Mouzeil · Mésanger · Ligné · -du-Désert · A11 · Orée-d'Anjou · Le Cellier · Loi · -Loire--",
+        "blocs": 11,
+        "surface": 8.4,
+        "details": [
+          {
+            "texte": "nialle",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Teillé",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Mouzeil",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Mésanger",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Ligné",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "-du-Désert",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "A11",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Orée-d'Anjou",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Le Cellier",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Loi",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "-Loire--",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "b95255ccb41a4af3",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "texte décoratif"
+      ]
+    },
+    {
+      "fichier": "as-gestion-privee-contact-5.webp",
+      "nom": "as-gestion-privee-contact-5",
+      "drapeau": "autre",
+      "largeur": 512,
+      "hauteur": 512,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "webp",
+      "poids": 53324,
+      "transparence": false,
+      "sujet": {
+        "x": 4.4,
+        "y": 1.5,
+        "l": 57.4,
+        "h": 47.1,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        28,
+        19
+      ],
+      "cadrage_css": "28% 19%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.57,
+          "ton": "clair",
+          "recouvre_sujet": 0.02
+        },
+        {
+          "cote": "bas",
+          "score": 0.47,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.18,
+          "ton": "clair",
+          "recouvre_sujet": 0.42
+        },
+        {
+          "cote": "haut",
+          "score": 0.15,
+          "ton": "clair",
+          "recouvre_sujet": 0.55
+        }
+      ],
+      "qualite": {
+        "nettete": 75.2,
+        "bruit": 0.97,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "512 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "decoratif",
+        "a_verifier": false,
+        "texte": "•Divatte-sur-Loire · en-de-Concelles · : Loroux-Bottereau · D763 · Montrev · Vallet · E62) · Clisson · e-sur-Maine · D75",
+        "blocs": 10,
+        "surface": 8.3,
+        "details": [
+          {
+            "texte": "•Divatte-sur-Loire",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "en-de-Concelles",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": ": Loroux-Bottereau",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "D763",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Montrev",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Vallet",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "E62)",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Clisson",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "e-sur-Maine",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "D75",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "a52cacd459915e94",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "texte décoratif"
+      ]
+    },
+    {
+      "fichier": "as-gestion-privee-contact-6.webp",
+      "nom": "as-gestion-privee-contact-6",
+      "drapeau": "autre",
+      "largeur": 512,
+      "hauteur": 512,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "webp",
+      "poids": 30458,
+      "transparence": false,
+      "sujet": {
+        "x": 20.6,
+        "y": 26.5,
+        "l": 39.7,
+        "h": 48.5,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        39,
+        51
+      ],
+      "cadrage_css": "39% 51%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.59,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.58,
+          "ton": "clair",
+          "recouvre_sujet": 0.1
+        },
+        {
+          "cote": "gauche",
+          "score": 0.31,
+          "ton": "clair",
+          "recouvre_sujet": 0.24
+        },
+        {
+          "cote": "bas",
+          "score": 0.29,
+          "ton": "clair",
+          "recouvre_sujet": 0.11
+        }
+      ],
+      "qualite": {
+        "nettete": 73.6,
+        "bruit": 0.53,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "512 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "decoratif",
+        "a_verifier": false,
+        "texte": "Saint-Père-en-Retz · f-Chef · Chauvé · Chaumes-en-Retz · rnic · D751 · Sainte-Pazanne · La Bernerie-en-Retz · Villeneuve-en-Rotz",
+        "blocs": 9,
+        "surface": 9.8,
+        "details": [
+          {
+            "texte": "Saint-Père-en-Retz",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "f-Chef",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Chauvé",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Chaumes-en-Retz",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "rnic",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "D751",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Sainte-Pazanne",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "La Bernerie-en-Retz",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Villeneuve-en-Rotz",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "92c9ec9296a0f16c",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "texte décoratif"
+      ]
+    },
+    {
+      "fichier": "staticmapservice.png",
+      "nom": "staticmapservice",
+      "drapeau": "autre",
+      "largeur": 540,
+      "hauteur": 360,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "png",
+      "poids": 65537,
+      "transparence": false,
+      "sujet": {
+        "x": 30.9,
+        "y": 33.8,
+        "l": 29.4,
+        "h": 29.4,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        45,
+        48
+      ],
+      "cadrage_css": "45% 48%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.5,
+          "ton": "clair",
+          "recouvre_sujet": 0.07
+        },
+        {
+          "cote": "bas",
+          "score": 0.44,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.42,
+          "ton": "clair",
+          "recouvre_sujet": 0.01
+        },
+        {
+          "cote": "droite",
+          "score": 0.4,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        }
+      ],
+      "qualite": {
+        "nettete": 104.9,
+        "bruit": 1.17,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "540 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "document",
+        "a_verifier": true,
+        "texte": "Grandchamp-des-Fontaines Saint-Mars-du-Désert · Sucé-sur-Erdre · Vigneux-de-Bretagne Treillières · Le Cellier · Orée-d'Anjou · Cordemais · Carquefou® · Orvault ",
+        "blocs": 27,
+        "surface": 16.6,
+        "details": [
+          {
+            "texte": "Grandchamp-des-Fontaines Saint-Mars-du-Désert",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Sucé-sur-Erdre",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Vigneux-de-Bretagne Treillières",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Le Cellier",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Orée-d'Anjou",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Cordemais",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Carquefou®",
+            "niveau": "marque"
+          },
+          {
+            "texte": "Orvault",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Divatte-sur-Loire",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Saint-Julien-de-Concelles",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Le Loroux-Bottereau",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "D763",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "951993930e8c4d13",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "document lisible"
+      ]
+    },
+    {
+      "fichier": "as-gestion-privee-combien.jpg",
+      "nom": "as-gestion-privee-combien",
+      "drapeau": "autre",
+      "largeur": 1000,
+      "hauteur": 562,
+      "ratio": "16:9",
+      "ratio_valeur": 1.779,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 136762,
+      "transparence": false,
+      "sujet": {
+        "x": 21.6,
+        "y": 12.7,
+        "l": 78.4,
+        "h": 67.8,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        42
+      ],
+      "cadrage_css": "50% 42%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.22,
+          "ton": "clair",
+          "recouvre_sujet": 0.31
+        },
+        {
+          "cote": "haut",
+          "score": 0.22,
+          "ton": "clair",
+          "recouvre_sujet": 0.5
+        },
+        {
+          "cote": "bas",
+          "score": 0.18,
+          "ton": "clair",
+          "recouvre_sujet": 0.35
+        },
+        {
+          "cote": "droite",
+          "score": 0.13,
+          "ton": "moyen",
+          "recouvre_sujet": 0.68
+        }
+      ],
+      "qualite": {
+        "nettete": 18.3,
+        "bruit": 0.5,
+        "compression": 1.33,
+        "faible": true,
+        "raisons": [
+          "1000 px de large"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "51d0988981d0d050",
+      "drapeaux": [
+        "autre",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "as-gestion-privee-combien-2.jpg",
+      "nom": "as-gestion-privee-combien-2",
+      "drapeau": "autre",
+      "largeur": 1000,
+      "hauteur": 562,
+      "ratio": "16:9",
+      "ratio_valeur": 1.779,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 154928,
+      "transparence": false,
+      "sujet": {
+        "x": 5,
+        "y": 1.9,
+        "l": 67,
+        "h": 83.8,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        38,
+        49
+      ],
+      "cadrage_css": "38% 49%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.16,
+          "ton": "clair",
+          "recouvre_sujet": 0.25
+        },
+        {
+          "cote": "bas",
+          "score": 0.14,
+          "ton": "clair",
+          "recouvre_sujet": 0.4
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.73
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.63
+        }
+      ],
+      "qualite": {
+        "nettete": 18.9,
+        "bruit": 0.54,
+        "compression": 1.24,
+        "faible": true,
+        "raisons": [
+          "1000 px de large"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "4c5736242c4c6c6c",
+      "drapeaux": [
+        "autre",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "as-gestion-privee-combien-3.jpg",
+      "nom": "as-gestion-privee-combien-3",
+      "drapeau": "autre",
+      "largeur": 1000,
+      "hauteur": 562,
+      "ratio": "16:9",
+      "ratio_valeur": 1.779,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 129986,
+      "transparence": false,
+      "sujet": {
+        "x": 6.2,
+        "y": 22.4,
+        "l": 89.3,
+        "h": 77.6,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        42,
+        54
+      ],
+      "cadrage_css": "42% 54%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.54,
+          "ton": "clair",
+          "recouvre_sujet": 0.32
+        },
+        {
+          "cote": "droite",
+          "score": 0.3,
+          "ton": "clair",
+          "recouvre_sujet": 0.69
+        },
+        {
+          "cote": "gauche",
+          "score": 0.26,
+          "ton": "clair",
+          "recouvre_sujet": 0.66
+        },
+        {
+          "cote": "bas",
+          "score": 0.22,
+          "ton": "clair",
+          "recouvre_sujet": 0.89
+        }
+      ],
+      "qualite": {
+        "nettete": 23.2,
+        "bruit": 0.48,
+        "compression": 1.43,
+        "faible": true,
+        "raisons": [
+          "1000 px de large"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "922661233266f0f0",
+      "drapeaux": [
+        "autre",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "as-gestion-privee-sommes.jpg",
+      "nom": "as-gestion-privee-sommes",
+      "drapeau": "autre",
+      "largeur": 701,
+      "hauteur": 701,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "jpeg",
+      "poids": 82575,
+      "transparence": false,
+      "sujet": {
+        "x": 12.5,
+        "y": 0,
+        "l": 77.2,
+        "h": 82.5,
+        "source": "visage"
+      },
+      "visages": 1,
+      "cadrage": [
+        51,
+        38
+      ],
+      "cadrage_css": "51% 38%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.43,
+          "ton": "moyen",
+          "recouvre_sujet": 0.57
+        },
+        {
+          "cote": "bas",
+          "score": 0.4,
+          "ton": "sombre",
+          "recouvre_sujet": 0.39
+        },
+        {
+          "cote": "droite",
+          "score": 0.36,
+          "ton": "clair",
+          "recouvre_sujet": 0.61
+        },
+        {
+          "cote": "haut",
+          "score": 0.35,
+          "ton": "clair",
+          "recouvre_sujet": 0.77
+        }
+      ],
+      "qualite": {
+        "nettete": 13.7,
+        "bruit": 0.34,
+        "compression": 1.38,
+        "faible": true,
+        "raisons": [
+          "701 px de large"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "4f96978f1733db59",
+      "drapeaux": [
+        "autre",
+        "visage",
+        "petite"
+      ]
+    }
+  ]
+}

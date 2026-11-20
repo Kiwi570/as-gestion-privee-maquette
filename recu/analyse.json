@@ -1,0 +1,74 @@
+{
+  "dossier": "/home/claude/projet/as-gestion-privee-maquette/recu",
+  "date": "2026-11-20T20:41:04.128Z",
+  "detection": "mesures sharp seulement",
+  "planches": [
+    "planche.jpg"
+  ],
+  "legende_planche": "cadre jaune : sujet ; croix rouge : cadrage ; fond rose : à vérifier",
+  "doublons": [],
+  "images": [
+    {
+      "fichier": "julien-nb-1344.jpg",
+      "nom": "julien-nb-1344",
+      "drapeau": null,
+      "largeur": 1344,
+      "hauteur": 1800,
+      "ratio": "3:4",
+      "ratio_valeur": 0.747,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 405093,
+      "transparence": false,
+      "sujet": {
+        "x": 12.5,
+        "y": 3.1,
+        "l": 87.5,
+        "h": 96.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        68
+      ],
+      "cadrage_css": "50% 68%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.43,
+          "ton": "clair",
+          "recouvre_sujet": 0.67
+        },
+        {
+          "cote": "haut",
+          "score": 0.33,
+          "ton": "clair",
+          "recouvre_sujet": 0.8
+        },
+        {
+          "cote": "bas",
+          "score": 0.2,
+          "ton": "moyen",
+          "recouvre_sujet": 0.88
+        },
+        {
+          "cote": "droite",
+          "score": 0.01,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        }
+      ],
+      "qualite": {
+        "nettete": 21.2,
+        "bruit": 0.6,
+        "compression": 1.15,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "e8e9d290c0063636",
+      "drapeaux": []
+    }
+  ]
+}

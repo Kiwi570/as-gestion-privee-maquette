@@ -1,0 +1,777 @@
+{
+  "julien-nb": {
+    "nom": "julien-nb",
+    "source": "recu/julien-nb-1344.jpg",
+    "role": "portrait",
+    "alt": "Julien Morinière, conseiller en gestion de patrimoine, portrait en noir et blanc",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "d8e319fb8adc4bf4",
+    "ratio": "3:4",
+    "largeurs": [
+      480,
+      720,
+      960,
+      1280
+    ],
+    "mobile": {
+      "ratio": "4:5",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "78% 34%"
+    },
+    "cadrage": "78% 32%",
+    "sujet": {
+      "x": 12.5,
+      "y": 2.7,
+      "l": 87.5,
+      "h": 97.3
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.43,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.33,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.2,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.01,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 8,
+      "width": 1344,
+      "height": 1792,
+      "source": [
+        1344,
+        1800
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "julien-nb-480.webp",
+      "julien-nb-720.webp",
+      "julien-nb-960.webp",
+      "julien-nb-1280.webp",
+      "julien-nb-mobile-640.webp",
+      "julien-nb-mobile-1080.webp"
+    ],
+    "poids": {
+      "julien-nb-480.webp": 11764,
+      "julien-nb-720.webp": 30238,
+      "julien-nb-960.webp": 54728,
+      "julien-nb-1280.webp": 88378,
+      "julien-nb-mobile-640.webp": 21496,
+      "julien-nb-mobile-1080.webp": 64136
+    },
+    "media": "c.media({ nom: 'julien-nb', alt: \"Julien Morinière, conseiller en gestion de patrimoine, portrait en noir et blanc\", cadrage: '78% 32%', cadrageMobile: '78% 34%', sizes: '(max-width: 760px) 100vw, 40vw', ratio: '3 / 4' })"
+  },
+  "julien-couleur": {
+    "nom": "julien-couleur",
+    "source": "recu/site/as-gestion-privee-recu/as-gestion-privee-sommes.jpg",
+    "role": "portrait",
+    "alt": "Julien Morinière, fondateur d'AS Gestion Privée",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "f4900e5235e4f350",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      560
+    ],
+    "mobile": null,
+    "cadrage": "50% 40%",
+    "sujet": {
+      "x": 3.1,
+      "y": 0,
+      "l": 96.5,
+      "h": 82.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.43,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.4,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.36,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.35,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 70,
+      "top": 0,
+      "width": 561,
+      "height": 701,
+      "source": [
+        701,
+        701
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "701 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "julien-couleur-480.webp",
+      "julien-couleur-560.webp"
+    ],
+    "poids": {
+      "julien-couleur-480.webp": 11042,
+      "julien-couleur-560.webp": 13630
+    },
+    "media": "c.media({ nom: 'julien-couleur', alt: \"Julien Morinière, fondateur d'AS Gestion Privée\", cadrage: '50% 40%', sizes: '(max-width: 760px) 100vw, 40vw', ratio: '4 / 5' })"
+  },
+  "grok/mission-financement": {
+    "nom": "grok/mission-financement",
+    "source": "recu/grok/mission-financement.jpg",
+    "role": "galerie",
+    "alt": "Clés d'une maison posées sur un dossier, à côté d'un stylo plume",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "38e57ef753444011",
+    "ratio": "4:5",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "45% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 95.5,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.09,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.01,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 257,
+      "width": 1320,
+      "height": 1650,
+      "source": [
+        1320,
+        1967
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/mission-financement-640.webp",
+      "grok/mission-financement-960.webp",
+      "grok/mission-financement-1280.webp"
+    ],
+    "poids": {
+      "grok/mission-financement-640.webp": 32778,
+      "grok/mission-financement-960.webp": 56004,
+      "grok/mission-financement-1280.webp": 80670
+    },
+    "media": "c.media({ nom: 'grok/mission-financement', alt: \"Clés d'une maison posées sur un dossier, à côté d'un stylo plume\", cadrage: '45% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "grok/mission-placements": {
+    "nom": "grok/mission-placements",
+    "source": "recu/grok/mission-placements.jpg",
+    "role": "galerie",
+    "alt": "Carnet ouvert sur des courbes tracées à l'encre, un stylo plume en travers",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "ffb062d2df68c0c9",
+    "ratio": "4:5",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "48% 55%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 95.5,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.04,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.01,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 317,
+      "width": 1320,
+      "height": 1650,
+      "source": [
+        1320,
+        1967
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/mission-placements-640.webp",
+      "grok/mission-placements-960.webp",
+      "grok/mission-placements-1280.webp"
+    ],
+    "poids": {
+      "grok/mission-placements-640.webp": 40946,
+      "grok/mission-placements-960.webp": 72816,
+      "grok/mission-placements-1280.webp": 105382
+    },
+    "media": "c.media({ nom: 'grok/mission-placements', alt: \"Carnet ouvert sur des courbes tracées à l'encre, un stylo plume en travers\", cadrage: '48% 55%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "grok/mission-immobilier": {
+    "nom": "grok/mission-immobilier",
+    "source": "recu/grok/mission-immobilier.jpg",
+    "role": "galerie",
+    "alt": "Façade d'un hôtel particulier en pierre claire aux balcons en fer forgé",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 5,
+    "empreinte": "7d537abe16d5b508",
+    "ratio": "4:5",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "52% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 95.5,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.11,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 139,
+      "width": 1320,
+      "height": 1650,
+      "source": [
+        1320,
+        1967
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/mission-immobilier-640.webp",
+      "grok/mission-immobilier-960.webp",
+      "grok/mission-immobilier-1280.webp"
+    ],
+    "poids": {
+      "grok/mission-immobilier-640.webp": 80350,
+      "grok/mission-immobilier-960.webp": 147936,
+      "grok/mission-immobilier-1280.webp": 218458
+    },
+    "media": "c.media({ nom: 'grok/mission-immobilier', alt: \"Façade d'un hôtel particulier en pierre claire aux balcons en fer forgé\", cadrage: '52% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "grok/mission-assurances": {
+    "nom": "grok/mission-assurances",
+    "source": "recu/grok/mission-assurances.jpg",
+    "role": "galerie",
+    "alt": "Couple âgé marchant bras dessus bras dessous au bord d'un fleuve, vu de dos",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 5,
+    "empreinte": "2c14379ef0c4549e",
+    "ratio": "4:5",
+    "largeurs": [
+      640,
+      960,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "35% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 3.6,
+      "l": 95.5,
+      "h": 96.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.06,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.02,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 1,
+      "width": 1320,
+      "height": 1650,
+      "source": [
+        1320,
+        1967
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/mission-assurances-640.webp",
+      "grok/mission-assurances-960.webp",
+      "grok/mission-assurances-1280.webp"
+    ],
+    "poids": {
+      "grok/mission-assurances-640.webp": 119792,
+      "grok/mission-assurances-960.webp": 194714,
+      "grok/mission-assurances-1280.webp": 273792
+    },
+    "media": "c.media({ nom: 'grok/mission-assurances', alt: \"Couple âgé marchant bras dessus bras dessous au bord d'un fleuve, vu de dos\", cadrage: '35% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "grok/accueil-appel": {
+    "nom": "grok/accueil-appel",
+    "source": "recu/grok/accueil-appel.jpg",
+    "role": "section-fond",
+    "alt": "Deux fauteuils face à face autour d'une table en chêne, près d'une grande fenêtre",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "f96ee9800366b1b7",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "4:5",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 47%"
+    },
+    "cadrage": "66% 50%",
+    "sujet": {
+      "x": 15.6,
+      "y": 0,
+      "l": 81.3,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.44,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.17,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.06,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 55,
+      "width": 1600,
+      "height": 900,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 1600 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/accueil-appel-640.webp",
+      "grok/accueil-appel-1280.webp",
+      "grok/accueil-appel-1920.webp",
+      "grok/accueil-appel-mobile-640.webp",
+      "grok/accueil-appel-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/accueil-appel-640.webp": 32670,
+      "grok/accueil-appel-1280.webp": 106978,
+      "grok/accueil-appel-1920.webp": 171260,
+      "grok/accueil-appel-mobile-640.webp": 60370,
+      "grok/accueil-appel-mobile-1080.webp": 116622
+    },
+    "media": "c.media({ nom: 'grok/accueil-appel', alt: \"Deux fauteuils face à face autour d'une table en chêne, près d'une grande fenêtre\", cadrage: '66% 50%', cadrageMobile: '50% 47%', sizes: '100vw' })"
+  },
+  "grok/financement-ouverture": {
+    "nom": "grok/financement-ouverture",
+    "source": "recu/grok/financement-ouverture.jpg",
+    "role": "section-fond",
+    "alt": "Table en chêne d'une étude de notaire avec un dossier fermé et un stylo plume",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "9841ef41faf59416",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "4:5",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 44%"
+    },
+    "cadrage": "44% 53%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.11,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "haut",
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1600,
+      "height": 900,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 1600 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/financement-ouverture-640.webp",
+      "grok/financement-ouverture-1280.webp",
+      "grok/financement-ouverture-1920.webp",
+      "grok/financement-ouverture-mobile-640.webp",
+      "grok/financement-ouverture-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/financement-ouverture-640.webp": 21978,
+      "grok/financement-ouverture-1280.webp": 56236,
+      "grok/financement-ouverture-1920.webp": 92068,
+      "grok/financement-ouverture-mobile-640.webp": 33754,
+      "grok/financement-ouverture-mobile-1080.webp": 65336
+    },
+    "media": "c.media({ nom: 'grok/financement-ouverture', alt: \"Table en chêne d'une étude de notaire avec un dossier fermé et un stylo plume\", cadrage: '44% 53%', cadrageMobile: '50% 44%', sizes: '100vw' })"
+  },
+  "grok/patrimoine-ouverture": {
+    "nom": "grok/patrimoine-ouverture",
+    "source": "recu/grok/patrimoine-ouverture.jpg",
+    "role": "ouverture",
+    "alt": "Quai bordé d'hôtels particuliers en pierre claire au bord d'un fleuve",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 5,
+    "empreinte": "d6f8b0c4c5fae0f8",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 48%"
+    },
+    "cadrage": "52% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.3,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 1,
+      "width": 1600,
+      "height": 900,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 1600 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/patrimoine-ouverture-640.webp",
+      "grok/patrimoine-ouverture-1280.webp",
+      "grok/patrimoine-ouverture-1920.webp",
+      "grok/patrimoine-ouverture-mobile-640.webp",
+      "grok/patrimoine-ouverture-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/patrimoine-ouverture-640.webp": 46642,
+      "grok/patrimoine-ouverture-1280.webp": 149968,
+      "grok/patrimoine-ouverture-1920.webp": 238124,
+      "grok/patrimoine-ouverture-mobile-640.webp": 116966,
+      "grok/patrimoine-ouverture-mobile-1080.webp": 222832
+    },
+    "media": "c.media({ nom: 'grok/patrimoine-ouverture', alt: \"Quai bordé d'hôtels particuliers en pierre claire au bord d'un fleuve\", cadrage: '52% 50%', cadrageMobile: '50% 48%', sizes: '100vw', priorite: true })"
+  },
+  "grok/page-404": {
+    "nom": "grok/page-404",
+    "source": "recu/grok/404.jpg",
+    "role": "404",
+    "alt": "Bureau vide avec un carnet fermé et un crayon",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "2197ffcb0c5a6246",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "4:5",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 45%"
+    },
+    "cadrage": "66% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.24,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.06,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 33,
+      "width": 1600,
+      "height": 900,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 1600 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/page-404-640.webp",
+      "grok/page-404-1280.webp",
+      "grok/page-404-1920.webp",
+      "grok/page-404-mobile-640.webp",
+      "grok/page-404-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/page-404-640.webp": 18216,
+      "grok/page-404-1280.webp": 48636,
+      "grok/page-404-1920.webp": 83976,
+      "grok/page-404-mobile-640.webp": 33802,
+      "grok/page-404-mobile-1080.webp": 67392
+    },
+    "media": "c.media({ nom: 'grok/page-404', alt: \"Bureau vide avec un carnet fermé et un crayon\", cadrage: '66% 50%', cadrageMobile: '50% 45%', sizes: '100vw', ratio: '16 / 9' })"
+  }
+}

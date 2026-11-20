@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="fr" data-v="1" data-curseur>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AS Gestion Privée · Crédit immobilier et gestion de patrimoine à Nantes</title>
+<meta name="description" content="Julien Morinière, conseiller à Nantes depuis 2015 : financement de votre crédit immobilier, placements, immobilier et assurances, de la constitution à la transmission.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://as-gestion-privee-maquette.vercel.app/">
+<style>:root{--fond:#F4EFE6;--texte:#1A1F24;--voile-fond:#1D252C;--ouverture-fond:#1D252C;--menu-fond:#1D252C}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/newsreader-italique.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/modules.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#F4EFE6">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AS Gestion Privée">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="AS Gestion Privée · Crédit immobilier et gestion de patrimoine à Nantes">
+<meta property="og:description" content="Julien Morinière, conseiller à Nantes depuis 2015 : financement de votre crédit immobilier, placements, immobilier et assurances, de la constitution à la transmission.">
+<meta property="og:url" content="https://as-gestion-privee-maquette.vercel.app/">
+<meta property="og:image" content="https://as-gestion-privee-maquette.vercel.app/assets/partage/accueil-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="AS Gestion Privée : atteindre vos objectifs, ensemble">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FinancialService","name":"AS Gestion Privée","legalName":"AS GESTION PRIVEE","url":"https://as-gestion-privee-maquette.vercel.app/","telephone":"+33606660011","email":"julien.moriniere@asgestionprivee.fr","foundingDate":"2015","founder":{"@type":"Person","name":"Julien Morinière"},"address":{"@type":"PostalAddress","streetAddress":"5 rue Le Nôtre","postalCode":"44000","addressLocality":"Nantes","addressCountry":"FR"},"identifier":[{"@type":"PropertyValue","propertyID":"ORIAS","value":"15006348"},{"@type":"PropertyValue","propertyID":"SIREN","value":"814246815"}],"description":"Intermédiaire en crédit immobilier et conseiller en gestion de patrimoine à Nantes : financement, placements, immobilier, assurances."}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="rideau" aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="56" height="56"><span data-voile-libelle>Accueil</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <div class="intro-mono" data-ouverture-objet><svg viewBox="-224 -74 2773 1624" aria-hidden="true"><path class="intro-a" d="M380 913 399 857H1070L1052 913ZM1153 1412 1298 1450 1292 1470H798L804 1450L962 1414L824 250H848L78 1407L234 1450L228 1470H-164L-158 1450L13 1404L942 20H978Z"/><path class="intro-s" d="M2375 221Q2332 153 2256.5 109.5Q2181 66 2080 66Q1982 66 1914.5 98.0Q1847 130 1812.0 189.5Q1777 249 1777 331Q1777 412 1809.5 466.0Q1842 520 1895.0 558.5Q1948 597 2010 634Q2072 671 2135.5 717.0Q2199 763 2242.0 835.5Q2285 908 2285 1026Q2285 1162 2216.5 1267.0Q2148 1372 2023.0 1431.0Q1898 1490 1728 1490Q1635 1490 1548.0 1474.5Q1461 1459 1392 1428L1387 1057H1415L1546 1448L1449 1344Q1515 1393 1579.5 1421.5Q1644 1450 1740 1450Q1859 1450 1947.5 1413.0Q2036 1376 2084.5 1299.5Q2133 1223 2133 1105Q2133 1027 2105.5 974.0Q2078 921 2034.0 884.0Q1990 847 1940.0 819.0Q1890 791 1846 763Q1787 725 1740.5 681.5Q1694 638 1667.5 576.5Q1641 515 1641 425Q1641 306 1698.5 215.0Q1756 124 1861.5 72.0Q1967 20 2109 20Q2214 20 2295.5 47.5Q2377 75 2457 128L2351 96L2473 -14H2489L2432 449H2411L2333 127Z"/></svg></div>
+  <span class="ouverture-trait"></span>
+  <p class="ouverture-ligne">Affectio societatis</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil" aria-current="page">
+      <img src="/assets/images/logo.svg" alt="" width="51" height="30"><span>AS Gestion Privée</span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/financement" data-libelle="Financement">Financement</a></li><li><a href="/patrimoine" data-libelle="Patrimoine">Patrimoine</a></li><li><a href="/cabinet" data-libelle="Le cabinet">Le cabinet</a></li><li><a href="/honoraires" data-libelle="Honoraires">Honoraires</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/contact#rendez-vous" data-libelle="Contact">Prendre rendez-vous</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil" aria-current="page">Accueil</a></li><li style="--i:1"><a href="/financement" class="menu-lien" data-libelle="Financement">Financement</a></li><li style="--i:2"><a href="/patrimoine" class="menu-lien" data-libelle="Patrimoine">Patrimoine</a></li><li style="--i:3"><a href="/cabinet" class="menu-lien" data-libelle="Le cabinet">Le cabinet</a></li><li style="--i:4"><a href="/honoraires" class="menu-lien" data-libelle="Honoraires">Honoraires</a></li><li style="--i:5"><a href="/contact" class="menu-lien" data-libelle="Contact">Contact</a></li></ul>
+  <p><a class="bouton" href="tel:+33606660011">Appeler 06 06 66 00 11</a></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="hero" id="debut">
+  <div class="hero-texte">
+    <p class="surtitre hero-surtitre" data-anime="gsap">Crédit immobilier · Patrimoine · Nantes</p>
+    <h1 class="hero-titre" data-anime="gsap"><span class="ligne-masque"><span class="hero-ligne">Atteindre</span></span><span class="ligne-masque"><span class="hero-ligne">vos objectifs,</span></span><span class="ligne-masque"><span class="hero-ligne"><em>ensemble.</em></span></span></h1>
+    <p class="hero-intro" data-anime="gsap">Financement, placements, immobilier, assurances : Julien Morinière vous accompagne de la constitution à la transmission de votre patrimoine.</p>
+    <p class="hero-actions" data-anime="gsap">
+      <a href="/contact#rendez-vous" class="bouton" data-libelle="Contact" data-action-principale data-survol="magnetique">Prendre rendez-vous</a>
+      <a class="lien-fleche" href="#simulateur">Simuler mon emprunt<svg class="fleche" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </p>
+    <p class="hero-info" data-info-cle data-anime="gsap">Cabinet créé à Nantes en 2015 · ORIAS 15006348</p>
+  </div>
+  <div class="hero-portrait">
+    <figure class="media hero-media" data-iris-centre data-boucle-css style="--cadrage:78% 30%;--cadrage-mobile:72% 30%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/julien-nb-mobile-640.webp 640w, /assets/images/julien-nb-mobile-1080.webp 1080w" sizes="(max-width: 760px) 100vw, 46vw">
+    <img src="/assets/images/julien-nb-1280.webp" srcset="/assets/images/julien-nb-480.webp 480w, /assets/images/julien-nb-720.webp 720w, /assets/images/julien-nb-960.webp 960w, /assets/images/julien-nb-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 46vw" alt="Julien Morinière, conseiller en gestion de patrimoine, portrait en noir et blanc" width="1280" height="1707" fetchpriority="high" loading="eager" decoding="async">
+  </picture>
+</figure>
+    <span class="hero-jonction" aria-hidden="true"><span class="hero-point" data-effet="jonction"></span></span>
+    <p class="hero-legende">Julien Morinière, fondateur</p>
+  </div>
+</section>
+<section class="missions" id="metiers">
+  <div class="conteneur">
+    <div class="tete-section tete-section--large">
+  <p class="surtitre">Quatre métiers</p>
+  <h2 class="titre-section" data-anime="lignes">Un seul interlocuteur, <em>quatre métiers.</em></h2>
+  <p class="tete-texte" data-anime>Votre crédit, votre épargne, vos biens et votre famille se décident ensemble. Le cabinet les regarde d&#39;un même œil.</p>
+</div>
+  </div>
+  <ul class="missions-grille conteneur" data-anime="cascade">
+    <li class="mission-cellule">
+      <a class="mission" href="/financement" data-libelle="Financement" data-fx="vitesse" data-fx-force="2">
+        <figure class="media mission-media" data-grok style="--cadrage:50% 50%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/grok/mission-financement-1280.webp" srcset="/assets/images/grok/mission-financement-640.webp 640w, /assets/images/grok/mission-financement-960.webp 960w, /assets/images/grok/mission-financement-1280.webp 1280w" sizes="(max-width: 760px) 86vw, (max-width: 1100px) 45vw, 24vw" alt="Clés d&#39;une maison posées sur un dossier, à côté d&#39;un stylo plume" width="1280" height="1600" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+        <span class="mission-corps">
+          <span class="mission-titre">Financement</span>
+          <span class="mission-texte">Négociation de votre taux et suivi de votre budget, jusqu&#39;à la signature chez le notaire.</span>
+          <span class="mission-points"><span>Négociation du taux</span><span>Suivi du dossier</span><span>Jusqu&#39;au notaire</span></span>
+          <span class="mission-lien">Découvrir<svg class="fleche" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </span>
+      </a>
+    </li><li class="mission-cellule">
+      <a class="mission" href="/patrimoine#placements" data-libelle="Patrimoine" data-fx="vitesse" data-fx-force="2">
+        <figure class="media mission-media" data-grok style="--cadrage:50% 50%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/grok/mission-placements-1280.webp" srcset="/assets/images/grok/mission-placements-640.webp 640w, /assets/images/grok/mission-placements-960.webp 960w, /assets/images/grok/mission-placements-1280.webp 1280w" sizes="(max-width: 760px) 86vw, (max-width: 1100px) 45vw, 24vw" alt="Carnet ouvert sur des courbes tracées à l&#39;encre, un stylo plume en travers" width="1280" height="1600" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+        <span class="mission-corps">
+          <span class="mission-titre">Placements</span>
+          <span class="mission-texte">Gestion de portefeuilles selon vos objectifs, diversification et optimisation fiscale.</span>
+          <span class="mission-points"><span>Objectifs fixés avec vous</span><span>Diversification</span><span>Optimisation fiscale</span></span>
+          <span class="mission-lien">Découvrir<svg class="fleche" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </span>
+      </a>
+    </li><li class="mission-cellule">
+      <a class="mission" href="/patrimoine#immobilier" data-libelle="Patrimoine" data-fx="vitesse" data-fx-force="2">
+        <figure class="media mission-media" data-grok style="--cadrage:50% 50%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/grok/mission-immobilier-1280.webp" srcset="/assets/images/grok/mission-immobilier-640.webp 640w, /assets/images/grok/mission-immobilier-960.webp 960w, /assets/images/grok/mission-immobilier-1280.webp 1280w" sizes="(max-width: 760px) 86vw, (max-width: 1100px) 45vw, 24vw" alt="Façade d&#39;un hôtel particulier en pierre claire aux balcons en fer forgé" width="1280" height="1600" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+        <span class="mission-corps">
+          <span class="mission-titre">Immobilier</span>
+          <span class="mission-texte">Investir pour l&#39;avenir : développer votre patrimoine et vos revenus.</span>
+          <span class="mission-points"><span>Immobilier locatif</span><span>Revenus</span><span>Financement compris</span></span>
+          <span class="mission-lien">Découvrir<svg class="fleche" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </span>
+      </a>
+    </li><li class="mission-cellule">
+      <a class="mission" href="/patrimoine#assurances" data-libelle="Patrimoine" data-fx="vitesse" data-fx-force="2">
+        <figure class="media mission-media" data-grok style="--cadrage:50% 50%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/grok/mission-assurances-1280.webp" srcset="/assets/images/grok/mission-assurances-640.webp 640w, /assets/images/grok/mission-assurances-960.webp 960w, /assets/images/grok/mission-assurances-1280.webp 1280w" sizes="(max-width: 760px) 86vw, (max-width: 1100px) 45vw, 24vw" alt="Couple âgé marchant bras dessus bras dessous au bord d&#39;un fleuve, vu de dos" width="1280" height="1600" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+        <span class="mission-corps">
+          <span class="mission-titre">Assurances</span>
+          <span class="mission-texte">Retraite et prévoyance : protéger votre famille et préparer la transmission.</span>
+          <span class="mission-points"><span>Retraite</span><span>Prévoyance</span><span>Transmission</span></span>
+          <span class="mission-lien">Découvrir<svg class="fleche" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </span>
+      </a>
+    </li>
+  </ul>
+</section>
+<section class="simulateur theme-sombre" id="simulateur">
+  <div class="conteneur simu-grille">
+    <div class="simu-tete">
+      <div class="tete-section ">
+  <p class="surtitre">Simulateur</p>
+  <h2 class="titre-section" data-anime="lignes">Combien pouvez-vous <em>emprunter ?</em></h2>
+  <p class="tete-texte" data-anime>Une première estimation selon la règle des banques : vos mensualités, assurance comprise, ne dépassent pas 35 % de vos revenus, sur 25 ans au plus.</p>
+</div>
+      <p class="simu-cta" data-anime>
+        <a href="/contact?sujet=financement#rendez-vous" class="bouton bouton--clair" data-libelle="Contact" data-survol="magnetique">Faire étudier mon financement</a>
+        <a href="/financement#simulateurs" class="lien-fleche" data-libelle="Financement">Mensualité et coût du crédit<svg class="fleche" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </p>
+    </div>
+    <form class="simu simu--capacite" data-simu="capacite" data-effet="simulateur" novalidate>
+  <div class="simu-entrees">
+    <div class="simu-champ">
+  <label for="cap-revenus">Revenus nets mensuels du foyer</label>
+  <output for="cap-revenus" class="simu-valeur" data-valeur-de="cap-revenus" data-unite="€">4200</output>
+  <input type="range" id="cap-revenus" name="cap-revenus" min="1500" max="15000" step="100" value="4200">
+</div>
+    <div class="simu-champ">
+  <label for="cap-charges">Crédits en cours (mensualités)</label>
+  <output for="cap-charges" class="simu-valeur" data-valeur-de="cap-charges" data-unite="€">0</output>
+  <input type="range" id="cap-charges" name="cap-charges" min="0" max="3000" step="50" value="0">
+</div>
+    <div class="simu-champ">
+  <label for="cap-apport">Apport personnel</label>
+  <output for="cap-apport" class="simu-valeur" data-valeur-de="cap-apport" data-unite="€">20000</output>
+  <input type="range" id="cap-apport" name="cap-apport" min="0" max="200000" step="1000" value="20000">
+</div>
+    <fieldset class="simu-champ simu-durees">
+  <legend>Durée</legend>
+  <div class="simu-puces"><label class="simu-puce"><input type="radio" name="cap-duree" value="10"><span>10 ans</span></label><label class="simu-puce"><input type="radio" name="cap-duree" value="15"><span>15 ans</span></label><label class="simu-puce"><input type="radio" name="cap-duree" value="20" checked><span>20 ans</span></label><label class="simu-puce"><input type="radio" name="cap-duree" value="25"><span>25 ans</span></label></div>
+</fieldset>
+    <div class="simu-champ">
+  <label for="cap-taux">Taux annuel, assurance comprise</label>
+  <output for="cap-taux" class="simu-valeur" data-valeur-de="cap-taux" data-unite="%">3.8</output>
+  <input type="range" id="cap-taux" name="cap-taux" min="1" max="7" step="0.05" value="3.8">
+  <p class="simu-aide">Exemple à remplacer par le taux proposé par votre banque.</p>
+</div>
+  </div>
+  <div class="simu-resultats" aria-live="polite">
+    <div class="jauge" data-visuel>
+      <svg viewBox="0 0 200 200" aria-hidden="true">
+        <circle class="jauge-fond" cx="100" cy="100" r="84" pathLength="100"/>
+        <circle class="jauge-charges" cx="100" cy="100" r="84" pathLength="100"/>
+        <circle class="jauge-neuf" cx="100" cy="100" r="84" pathLength="100"/>
+      </svg>
+      <p class="jauge-texte"><span class="jauge-chiffre" data-sortie="effort">35 %</span><span>35 % au plus</span></p>
+    </div>
+    <dl class="simu-chiffres">
+      <div class="simu-principal"><dt>Capacité d&#39;emprunt</dt><dd data-sortie="capacite" data-prix>0 €</dd></div>
+      <div><dt>Mensualité maximale</dt><dd data-sortie="mensualite" data-prix>0 €</dd></div>
+      <div><dt>Budget avec apport <small>hors frais de notaire et de garantie</small></dt><dd data-sortie="budget" data-prix>0 €</dd></div>
+    </dl>
+  </div>
+</form>
+  </div>
+  <div class="conteneur simu-mentions">
+    <p>Simulation indicative, sans valeur d&#39;offre de prêt. Le taux et la capacité réels dépendent de votre dossier et des banques.</p>
+    <p><strong>Un crédit vous engage et doit être remboursé. Vérifiez vos capacités de remboursement avant de vous engager.</strong></p>
+  </div>
+</section>
+<section class="manifeste" id="affectio">
+  <div class="conteneur manifeste-cadre">
+    <h2 class="manifeste-latin" lang="la" data-anime="mots"><span>Affectio</span> <em>societatis</em></h2>
+    <div class="manifeste-definition">
+      <p class="surtitre">Pourquoi « AS » ?</p>
+      <p class="manifeste-nature" data-anime>locution latine</p>
+      <p class="manifeste-texte" data-anime>La volonté de s&#39;associer afin de poursuivre un objectif commun. C&#39;est le nom du cabinet, et sa promesse :</p>
+      <p class="manifeste-devise" data-anime>« Notre objectif : atteindre vos objectifs. »</p>
+      <p data-anime><a href="/cabinet" class="lien-fleche" data-libelle="Le cabinet">Le cabinet et son fondateur<svg class="fleche" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+    </div>
+  </div>
+  <div class="conteneur"><svg class="deux-traits deux-traits--manifeste" viewBox="0 0 1200 220" preserveAspectRatio="xMidYMid meet" aria-hidden="true" data-effet="deux-traits" data-visuel>
+  <path class="dt-a" d="M0 40 C 260 40, 420 196, 600 110" pathLength="1"/>
+  <path class="dt-b" d="M1200 190 C 940 190, 780 24, 600 110" pathLength="1"/>
+  <circle class="dt-point" cx="600" cy="110" r="11"/>
+  <circle class="dt-halo" cx="600" cy="110" r="26"/>
+</svg></div>
+</section>
+<section class="garanties" id="garanties">
+  <div class="conteneur garanties-grille-tete">
+    <div class="tete-section ">
+  <p class="surtitre">Garanties</p>
+  <h2 class="titre-section" data-anime="lignes">Des garanties <em>vérifiables.</em></h2>
+  <p class="tete-texte" data-anime>Tout intermédiaire en crédit, en assurance ou en placements doit être inscrit à l&#39;ORIAS. Celui-ci l&#39;est depuis 2015.</p>
+  <p data-anime><a class="lien-fleche" href="https://www.orias.fr/" target="_blank" rel="noopener">Vérifier sur orias.fr<svg class="fleche" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+</div>
+    <svg class="cachet" viewBox="0 0 220 220" aria-hidden="true" data-fx="trace" data-visuel>
+      <circle cx="110" cy="110" r="96"/><circle cx="110" cy="110" r="80"/>
+      <path d="M66 112l28 28 60-64"/>
+      <path d="M40 110a70 70 0 0 1 140 0" data-fx-trait/>
+    </svg>
+  </div>
+  <ul class="conteneur garanties-grille" data-anime="cascade">
+    <li class="garantie"><p class="garantie-grand">15006348</p><h3>Numéro ORIAS</h3><p>Inscrit au registre unique des intermédiaires en assurance, banque et finance.</p></li><li class="garantie"><p class="garantie-grand garantie-grand--petit">IOBSP · COA · CIF</p><h3>Trois inscriptions</h3><p>Crédit immobilier, assurance et placements. Membre de La Compagnie IOBSP, de La Compagnie CIF et de la CNCEF Assurance.</p></li><li class="garantie"><p class="garantie-grand">Master II</p><h3>Gestion de patrimoine</h3><p>Université de Nantes, mention finance et affaires internationales.</p></li><li class="garantie"><p class="garantie-grand">2015</p><h3>Création du cabinet</h3><p>À Nantes, par Julien Morinière.</p></li>
+  </ul>
+</section>
+<section class="avis theme-sombre" id="avis">
+  <div class="conteneur avis-grille tep" data-module="temoignages-en-pile">
+    <div class="tep__tete">
+      <div class="tete-section ">
+  <p class="surtitre">Avis</p>
+  <h2 class="titre-section" data-anime="lignes">Ce qu'en disent <em>les clients.</em></h2>
+  <p class="tete-texte" data-anime>Six avis publiés sur le site du cabinet. Faites glisser la carte, ou utilisez les flèches.</p>
+  <p data-anime><a class="lien-fleche" href="https://www.google.com/search?q=as+gestion+priv%C3%A9e+nantes" target="_blank" rel="noopener">Voir les avis Google<svg class="fleche" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+</div>
+    </div>
+    <div class="tep__scene" data-effet="pile">
+      <ol class="tep__pile">
+        <li class="tep__carte">
+          <blockquote class="tep__citation"><p>Des conseils personnalisés en parfaite adéquation avec ma demande.</p></blockquote>
+          <p class="tep__auteur"><span class="tep__nom">Jean-Marc</span></p>
+          <p class="tep__source">Avis publié sur asgestionprivee.fr</p>
+        </li><li class="tep__carte">
+          <blockquote class="tep__citation"><p>Merci Julien, pour ton professionnalisme dans la résolution de notre dossier qui n&#39;était pas simple.</p></blockquote>
+          <p class="tep__auteur"><span class="tep__nom">Sabine et Nicolas</span></p>
+          <p class="tep__source">Avis publié sur asgestionprivee.fr</p>
+        </li><li class="tep__carte">
+          <blockquote class="tep__citation"><p>Julien nous a accompagné tout au long de notre projet d&#39;achat.</p></blockquote>
+          <p class="tep__auteur"><span class="tep__nom">Marie et Hugues</span></p>
+          <p class="tep__source">Avis publié sur asgestionprivee.fr</p>
+        </li><li class="tep__carte">
+          <blockquote class="tep__citation"><p>Julien est de très bon conseil et d&#39;une grande aide.</p></blockquote>
+          <p class="tep__auteur"><span class="tep__nom">Pauline</span></p>
+          <p class="tep__source">Avis publié sur asgestionprivee.fr</p>
+        </li><li class="tep__carte">
+          <blockquote class="tep__citation"><p>Des conseils avisés pour un placement qui correspond à nos attentes et notre besoin.</p></blockquote>
+          <p class="tep__auteur"><span class="tep__nom">Anita</span></p>
+          <p class="tep__source">Avis publié sur asgestionprivee.fr</p>
+        </li><li class="tep__carte">
+          <blockquote class="tep__citation"><p>Très bon professionnel, à l&#39;écoute et toujours disponible.</p></blockquote>
+          <p class="tep__auteur"><span class="tep__nom">Grégoire</span></p>
+          <p class="tep__source">Avis publié sur asgestionprivee.fr</p>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+<section class="hono conteneur" id="honoraires">
+  <div class="tete-section tete-section--large">
+  <p class="surtitre">Honoraires</p>
+  <h2 class="titre-section" data-anime="lignes">Combien <em>ça coûte ?</em></h2>
+  <p class="tete-texte" data-anime>Trois modes de rémunération, selon la mission. La rémunération du cabinet est liée au service rendu.</p>
+</div>
+  <ol class="hono-grille" data-anime="cascade">
+    <li>
+      <a class="hono-carte" href="/honoraires#conseil" data-libelle="Honoraires" data-survol="incline" data-survol-force="4">
+        <svg class="hono-icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M5 7h14M7 7l-3 7a3 3 0 0 0 6 0Zm10 0-3 7a3 3 0 0 0 6 0Z"/></svg>
+        <span class="hono-nom">Honoraires de conseil</span>
+        <span class="hono-prix">selon la complexité</span>
+        <span class="hono-resume">Audit de patrimoine, SCI, donation</span>
+      </a>
+    </li><li>
+      <a class="hono-carte" href="/honoraires#courtage" data-libelle="Honoraires" data-survol="incline" data-survol-force="4">
+        <svg class="hono-icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V9l8-5 8 5v11M9 20v-6h6v6"/></svg>
+        <span class="hono-nom">Frais de courtage</span>
+        <span class="hono-prix">inclus</span>
+        <span class="hono-resume">Immobilier, financement, contrats, placements</span>
+      </a>
+    </li><li>
+      <a class="hono-carte" href="/honoraires#assistance" data-libelle="Honoraires" data-survol="incline" data-survol-force="4">
+        <svg class="hono-icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l4 4v14H7zM14 3v4h4M10 12h5M10 16h5"/></svg>
+        <span class="hono-nom">Assistance administrative</span>
+        <span class="hono-prix">50 % déductibles*</span>
+        <span class="hono-resume">Services à la personne</span>
+      </a>
+    </li>
+  </ol>
+  <p data-anime><a href="/honoraires" class="lien-fleche" data-libelle="Honoraires">Le détail des honoraires<svg class="fleche" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+</section>
+<section class="appel theme-sombre appel--photo" id="rendez-vous">
+  <div class="conteneur appel-grille">
+    <div class="appel-texte">
+      <h2 class="titre-section" data-anime="lignes">Parlons de <em>votre projet.</em></h2>
+      <p data-anime>Un premier échange pour faire le point sur votre situation, vos objectifs et votre calendrier.</p>
+      <p class="appel-actions" data-anime>
+        <a href="/contact#rendez-vous" class="bouton bouton--clair" data-libelle="Contact" data-survol="magnetique">Prendre rendez-vous</a>
+        <span class="appel-ou">ou appelez le <a href="tel:+33606660011">06 06 66 00 11</a></span>
+      </p>
+    </div>
+    <figure class="media appel-media" data-grok data-fx="parallaxe" style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/accueil-appel-mobile-640.webp 640w, /assets/images/grok/accueil-appel-mobile-1080.webp 1080w" sizes="(max-width: 760px) 100vw, 50vw">
+    <img src="/assets/images/grok/accueil-appel-1280.webp" srcset="/assets/images/grok/accueil-appel-640.webp 640w, /assets/images/grok/accueil-appel-1280.webp 1280w, /assets/images/grok/accueil-appel-1920.webp 1920w" sizes="(max-width: 760px) 100vw, 50vw" alt="Deux fauteuils face à face autour d&#39;une table en chêne, près d&#39;une grande fenêtre" width="1280" height="720" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <p class="pied-logo"><img src="/assets/images/logo-clair.svg" alt="" width="68" height="40"><strong>AS Gestion Privée</strong></p>
+      <p>Intermédiaire en crédit immobilier · Conseiller en gestion de patrimoine</p>
+    </div>
+    <div>
+      <p class="pied-titre">Contact</p>
+      <p><a href="tel:+33606660011">06 06 66 00 11</a><br><span class="selectionnable">julien.moriniere@asgestionprivee.fr</span><br>5 rue Le Nôtre, 44000 Nantes</p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p class="pied-titre">Sommaire</p>
+      <ul><li><a href="/" data-libelle="Accueil" aria-current="page">Accueil</a></li><li><a href="/financement" data-libelle="Financement">Financement</a></li><li><a href="/patrimoine" data-libelle="Patrimoine">Patrimoine</a></li><li><a href="/cabinet" data-libelle="Le cabinet">Le cabinet</a></li><li><a href="/honoraires" data-libelle="Honoraires">Honoraires</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li><li><a href="#haut" data-sans-transition>Retour en haut</a></li></ul>
+    </nav>
+  </div>
+  <div class="conteneur pied-bas">
+    <p>SARL AS Gestion Privée · ORIAS 15006348 (orias.fr) · mandataire d&#39;intermédiaire en opérations de banque et en services de paiement (MIOBSP), courtier d&#39;assurance (COA), conseiller en investissements financiers (CIF) · membre de La Compagnie IOBSP, de La Compagnie CIF et de la CNCEF Assurance.</p>
+    <p>Aucun versement, de quelque nature que ce soit, ne peut être exigé d&#39;un particulier avant l&#39;obtention d&#39;un ou plusieurs prêts d&#39;argent.</p>
+    <p>Mentions légales · Politique de confidentialité : à compléter · Maquette de démonstration : formulaires et simulations sans envoi réel.</p>
+  </div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33606660011">Appeler</a>
+  <a class="bouton" href="/contact#rendez-vous" data-libelle="Contact">Prendre rendez-vous</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,326 @@
+{
+ "commun": {
+  "navigation": "Navigation principale",
+  "menu": "Menu",
+  "fermer": "Fermer",
+  "actionEntete": "Prendre rendez-vous",
+  "appeler": "Appeler",
+  "sommaire": "Sommaire",
+  "retourHaut": "Retour en haut",
+  "maquette": "Maquette de démonstration : formulaires et simulations sans envoi réel.",
+  "evitement": "Aller au contenu",
+  "mentionIa": "Illustration générée",
+  "pause": "Pause",
+  "lecture": "Lecture",
+  "introDevise": "Affectio societatis",
+  "metier": "Intermédiaire en crédit immobilier · Conseiller en gestion de patrimoine",
+  "contactTitre": "Contact",
+  "telephone": "Téléphone",
+  "email": "E-mail",
+  "adresse": "Bureau",
+  "legal": "Mentions légales · Politique de confidentialité : à compléter",
+  "orias": "SARL AS Gestion Privée · ORIAS 15006348 (orias.fr) · mandataire d'intermédiaire en opérations de banque et en services de paiement (MIOBSP), courtier d'assurance (COA), conseiller en investissements financiers (CIF) · membre de La Compagnie IOBSP, de La Compagnie CIF et de la CNCEF Assurance.",
+  "aucunVersement": "Aucun versement, de quelque nature que ce soit, ne peut être exigé d'un particulier avant l'obtention d'un ou plusieurs prêts d'argent.",
+  "creditEngage": "Un crédit vous engage et doit être remboursé. Vérifiez vos capacités de remboursement avant de vous engager.",
+  "appelTitre": "Parlons de <em>votre projet.</em>",
+  "appelTexte": "Un premier échange pour faire le point sur votre situation, vos objectifs et votre calendrier.",
+  "appelAction": "Prendre rendez-vous",
+  "appelOu": "ou appelez le",
+  "siteMaquette": "Maquette"
+ },
+ "pages": {
+  "accueil": {
+   "titre": "AS Gestion Privée · Crédit immobilier et gestion de patrimoine à Nantes",
+   "description": "Julien Morinière, conseiller à Nantes depuis 2015 : financement de votre crédit immobilier, placements, immobilier et assurances, de la constitution à la transmission.",
+   "nav": "Accueil",
+   "partageAlt": "AS Gestion Privée : atteindre vos objectifs, ensemble",
+   "accroche": "Atteindre vos objectifs, ensemble."
+  },
+  "financement": {
+   "titre": "Financement · AS Gestion Privée, Nantes",
+   "description": "Simulez votre capacité d'emprunt et vos mensualités, puis confiez la négociation de votre crédit immobilier à Julien Morinière, jusqu'à la signature chez le notaire.",
+   "nav": "Financement",
+   "partageAlt": "Financement : votre crédit immobilier, négocié pour vous",
+   "accroche": "Votre crédit immobilier, négocié pour vous."
+  },
+  "patrimoine": {
+   "titre": "Patrimoine · AS Gestion Privée, Nantes",
+   "description": "Placements, immobilier, assurances : un accompagnement de la constitution à la transmission de votre patrimoine.",
+   "nav": "Patrimoine",
+   "partageAlt": "Patrimoine : de la constitution à la transmission",
+   "accroche": "De la constitution à la transmission."
+  },
+  "cabinet": {
+   "titre": "Le cabinet · AS Gestion Privée, Nantes",
+   "description": "Affectio societatis : la volonté de s'associer pour un objectif commun. Le parcours de Julien Morinière, ses engagements et ses garanties.",
+   "nav": "Le cabinet",
+   "partageAlt": "Le cabinet AS Gestion Privée et Julien Morinière",
+   "accroche": "Affectio societatis."
+  },
+  "honoraires": {
+   "titre": "Honoraires · AS Gestion Privée, Nantes",
+   "description": "Combien ça coûte ? Honoraires de conseil, frais de courtage inclus, assistance administrative : les trois modes de rémunération du cabinet.",
+   "nav": "Honoraires",
+   "partageAlt": "Honoraires : combien ça coûte ?",
+   "accroche": "Combien ça coûte ?"
+  },
+  "contact": {
+   "titre": "Contact · AS Gestion Privée, Nantes",
+   "description": "Prendre rendez-vous avec Julien Morinière : 06 06 66 00 11, 5 rue Le Nôtre à Nantes.",
+   "nav": "Contact",
+   "partageAlt": "Prendre rendez-vous avec AS Gestion Privée",
+   "accroche": "Prenons rendez-vous."
+  },
+  "404": {
+   "titre": "Page introuvable · AS Gestion Privée",
+   "description": "Cette page n'existe pas ou a changé d'adresse.",
+   "nav": "Page introuvable",
+   "partageAlt": "Page introuvable",
+   "accroche": "Page introuvable"
+  }
+ },
+ "accueil": {
+  "hero": {
+   "surtitre": "Crédit immobilier · Patrimoine · Nantes",
+   "titre1": "Atteindre",
+   "titre2": "vos objectifs,",
+   "titre3": "ensemble.",
+   "texte": "Financement, placements, immobilier, assurances : Julien Morinière vous accompagne de la constitution à la transmission de votre patrimoine.",
+   "action": "Prendre rendez-vous",
+   "simuler": "Simuler mon emprunt",
+   "info": "Cabinet créé à Nantes en 2015 · ORIAS 15006348",
+   "legende": "Julien Morinière, fondateur"
+  },
+  "missions": {
+   "surtitre": "Quatre métiers",
+   "titre": "Un seul interlocuteur, <em>quatre métiers.</em>",
+   "texte": "Votre crédit, votre épargne, vos biens et votre famille se décident ensemble. Le cabinet les regarde d'un même œil.",
+   "lien": "Découvrir"
+  },
+  "simulateur": {
+   "surtitre": "Simulateur",
+   "titre": "Combien pouvez-vous <em>emprunter ?</em>",
+   "texte": "Une première estimation selon la règle des banques : vos mensualités, assurance comprise, ne dépassent pas 35 % de vos revenus, sur 25 ans au plus.",
+   "action": "Faire étudier mon financement",
+   "detail": "Mensualité et coût du crédit"
+  },
+  "manifeste": {
+   "surtitre": "Pourquoi « AS » ?",
+   "mot1": "Affectio",
+   "mot2": "societatis",
+   "texte": "La volonté de s'associer afin de poursuivre un objectif commun. C'est le nom du cabinet, et sa promesse :",
+   "devise": "« Notre objectif : atteindre vos objectifs. »",
+   "lien": "Le cabinet et son fondateur",
+   "nature": "locution latine"
+  },
+  "garanties": {
+   "surtitre": "Garanties",
+   "titre": "Des garanties <em>vérifiables.</em>",
+   "texte": "Tout intermédiaire en crédit, en assurance ou en placements doit être inscrit à l'ORIAS. Celui-ci l'est depuis 2015.",
+   "verifier": "Vérifier sur orias.fr"
+  },
+  "avis": {
+   "surtitre": "Avis",
+   "titre": "Ce qu'en disent <em>les clients.</em>",
+   "texte": "Six avis publiés sur le site du cabinet. Faites glisser la carte, ou utilisez les flèches.",
+   "google": "Voir les avis Google",
+   "source": "Avis publié sur asgestionprivee.fr"
+  },
+  "honoraires": {
+   "surtitre": "Honoraires",
+   "titre": "Combien <em>ça coûte ?</em>",
+   "texte": "Trois modes de rémunération, selon la mission. La rémunération du cabinet est liée au service rendu.",
+   "lien": "Le détail des honoraires"
+  },
+  "appel": {
+   "alt": "Deux fauteuils face à face autour d'une table en chêne, près d'une grande fenêtre"
+  }
+ },
+ "simu": {
+  "revenus": "Revenus nets mensuels du foyer",
+  "charges": "Crédits en cours (mensualités)",
+  "apport": "Apport personnel",
+  "duree": "Durée",
+  "taux": "Taux annuel, assurance comprise",
+  "tauxAide": "Exemple à remplacer par le taux proposé par votre banque.",
+  "ans": "ans",
+  "capacite": "Capacité d'emprunt",
+  "mensualiteMax": "Mensualité maximale",
+  "budget": "Budget avec apport",
+  "budgetAide": "hors frais de notaire et de garantie",
+  "effort": "Taux d'effort",
+  "effortAide": "35 % au plus",
+  "montant": "Montant emprunté",
+  "mensualite": "Mensualité",
+  "interets": "Coût des intérêts",
+  "total": "Total remboursé",
+  "ongletCapacite": "Ma capacité d'emprunt",
+  "ongletMensualite": "Ma mensualité",
+  "courbeTitre": "Capital et intérêts, année par année",
+  "courbeCapital": "Capital remboursé",
+  "courbeInterets": "Intérêts",
+  "avertissement": "Simulation indicative, sans valeur d'offre de prêt. Le taux et la capacité réels dépendent de votre dossier et des banques."
+ },
+ "financement": {
+  "ouverture": {
+   "surtitre": "Financement",
+   "titre": "Votre crédit immobilier, <em>négocié pour vous.</em>",
+   "texte": "Étude du budget, négociation du taux, suivi du dossier : vous avancez avec un seul interlocuteur, jusqu'à la signature chez le notaire.",
+   "action": "Faire étudier mon financement",
+   "info": "Aucun versement avant l'obtention de votre prêt",
+   "alt": "Table en chêne d'une étude de notaire avec un dossier fermé et un stylo plume"
+  },
+  "simulateurs": {
+   "surtitre": "Simulateurs",
+   "titre": "Vos chiffres, <em>avant le rendez-vous.</em>",
+   "texte": "Deux calculs pour préparer le premier échange : ce que vous pouvez emprunter, et ce que coûtera votre crédit."
+  },
+  "role": {
+   "surtitre": "Le rôle de Julien",
+   "titre": "Ce que le cabinet <em>fait pour vous.</em>"
+  },
+  "etapes": {
+   "surtitre": "Étapes",
+   "titre": "Jusqu'à la signature <em>chez le notaire.</em>"
+  },
+  "regles": {
+   "surtitre": "Les règles des banques",
+   "titre": "Deux chiffres <em>à connaître.</em>",
+   "effort": "de vos revenus nets, assurance comprise, au plus pour vos mensualités",
+   "duree": "de durée au plus (27 ans quand l'entrée dans le logement est décalée : neuf, gros travaux)",
+   "note": "Norme du Haut Conseil de stabilité financière, maintenue en 2026. Les banques peuvent y déroger pour 20 % de leurs dossiers."
+  },
+  "faq": {
+   "titre": "Questions <em>fréquentes.</em>"
+  },
+  "mentions": "AS Gestion Privée intervient en qualité de mandataire d'intermédiaire en opérations de banque et en services de paiement (MIOBSP), inscrit à l'ORIAS sous le n° 15006348.",
+  "mensualite": {
+   "surtitre": "Mensualité",
+   "titre": "Ce que coûtera <em>votre crédit.</em>",
+   "texte": "Montant, durée, taux : la mensualité, le coût des intérêts et la part de capital remboursée chaque année."
+  }
+ },
+ "patrimoine": {
+  "ouverture": {
+   "surtitre": "Patrimoine",
+   "titre": "De la constitution <em>à la transmission.</em>",
+   "texte": "Placements, immobilier, assurances : des solutions pensées ensemble, selon vos objectifs et votre horizon.",
+   "action": "Faire le point sur mon patrimoine",
+   "info": "Conseiller en investissements financiers · ORIAS 15006348",
+   "alt": "Quai bordé d'hôtels particuliers en pierre claire au bord d'un fleuve"
+  },
+  "temps": {
+   "surtitre": "Un patrimoine, quatre temps",
+   "titre": "Chaque étape <em>a ses solutions.</em>",
+   "texte": "Faites défiler : le conseil suit votre vie, de la première épargne à la transmission."
+  },
+  "placements": {
+   "surtitre": "Placements",
+   "titre": "Des placements <em>à votre mesure.</em>",
+   "texte": "Gestion de portefeuilles selon vos objectifs de rendement, diversification et optimisation fiscale."
+  },
+  "immobilier": {
+   "surtitre": "Immobilier",
+   "titre": "Investir <em>pour l'avenir.</em>",
+   "texte": "L'immobilier locatif est une spécialité du cabinet : développer votre patrimoine et vos revenus, et financer l'opération au même endroit."
+  },
+  "assurances": {
+   "surtitre": "Assurances",
+   "titre": "Protéger <em>ceux qui comptent.</em>",
+   "texte": "Retraite et prévoyance : protéger votre famille et préparer la transmission de votre patrimoine."
+  },
+  "conseil": {
+   "surtitre": "Missions de conseil",
+   "titre": "Quand il faut <em>un regard d'ensemble.</em>",
+   "lien": "Comment ces missions sont facturées"
+  },
+  "risques": "Tout investissement comporte des risques, notamment un risque de perte en capital. Les performances passées ne préjugent pas des performances futures. Conseil en investissements financiers délivré par AS Gestion Privée, CIF inscrit à l'ORIAS sous le n° 15006348, membre de La Compagnie CIF."
+ },
+ "cabinet": {
+  "ouverture": {
+   "surtitre": "Le cabinet",
+   "mot1": "Affectio",
+   "mot2": "societatis",
+   "texte": "La volonté de s'associer afin de poursuivre un objectif commun : c'est le sens du nom du cabinet, créé à Nantes en 2015 par Julien Morinière.",
+   "action": "Prendre rendez-vous",
+   "info": "Nantes · depuis 2015",
+   "alt": "Julien Morinière, fondateur d'AS Gestion Privée"
+  },
+  "parcours": {
+   "surtitre": "Parcours",
+   "titre": "Du service client <em>au conseil.</em>"
+  },
+  "engagements": {
+   "surtitre": "Engagements",
+   "titre": "Trois phrases <em>qui engagent.</em>",
+   "remuneration": "Une rémunération liée au service rendu."
+  },
+  "avis": {
+   "surtitre": "Avis",
+   "titre": "Six clients, <em>six projets.</em>"
+  },
+  "garanties": {
+   "surtitre": "Garanties",
+   "titre": "Le registre, <em>ligne par ligne.</em>",
+   "texte": "Extrait du registre ORIAS, consulté le 20 novembre 2026."
+  },
+  "bureau": {
+   "surtitre": "Le bureau",
+   "titre": "Au centre <em>de Nantes.</em>",
+   "texte": "Bureaux Nantes Centre, 5 rue Le Nôtre, 44000 Nantes.",
+   "plan": "Plan schématique"
+  }
+ },
+ "honoraires": {
+  "ouverture": {
+   "surtitre": "Honoraires",
+   "titre": "Combien <em>ça coûte ?</em>",
+   "texte": "Trois modes de rémunération, selon la mission. La rémunération du cabinet est liée au service rendu.",
+   "action": "En parler avec Julien",
+   "info": "Aucun versement avant l'obtention de votre prêt"
+  },
+  "modes": {
+   "surtitre": "Trois modes",
+   "titre": "Selon <em>la mission.</em>",
+   "parler": "En parler"
+  },
+  "calcul": {
+   "surtitre": "Assistance administrative",
+   "titre": "Le coût réel, <em>après crédit d'impôt.</em>",
+   "texte": "Les sommes versées au titre des services à la personne ouvrent droit à 50 % de réduction ou de crédit d'impôt, dans la limite des plafonds annuels.",
+   "montant": "Sommes versées dans l'année",
+   "credit": "Crédit ou réduction d'impôt (50 %)",
+   "reste": "Reste à votre charge",
+   "reserve": "Sous réserve de la déclaration du cabinet comme organisme de services à la personne. Calcul indicatif."
+  },
+  "faq": {
+   "titre": "Questions <em>fréquentes.</em>"
+  }
+ },
+ "contact": {
+  "ouverture": {
+   "surtitre": "Contact",
+   "titre": "Prenons <em>rendez-vous.</em>",
+   "texte": "Un appel, un e-mail ou le formulaire ci-dessous : précisez votre projet, Julien Morinière revient vers vous pour fixer un rendez-vous.",
+   "action": "Remplir la demande",
+   "info": "06 06 66 00 11"
+  },
+  "formulaire": {
+   "surtitre": "Demande de rendez-vous",
+   "titre": "Quatre étapes, <em>deux minutes.</em>",
+   "simule": "Maquette : la demande n'est pas envoyée."
+  },
+  "carte": {
+   "titre": "5 rue Le Nôtre, <em>Nantes.</em>",
+   "texte": "Bureaux Nantes Centre.",
+   "plan": "Plan schématique de Nantes : la Loire, l'Erdre et le bureau"
+  }
+ },
+ "introuvable": {
+  "surtitre": "Erreur 404",
+  "titre": "Ce chemin <em>ne mène nulle part.</em>",
+  "texte": "La page demandée n'existe pas ou a changé d'adresse. Reprenons depuis le début.",
+  "retour": "Revenir à l'accueil",
+  "alt": "Bureau vide avec un dossier fermé et un crayon"
+ }
+}

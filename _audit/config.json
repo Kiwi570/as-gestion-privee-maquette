@@ -1,0 +1,6 @@
+{
+  "siteActuel": "www.asgestionprivee.fr",
+  "pagesTypes": ["/", "/financement", "/patrimoine", "/cabinet", "/honoraires", "/contact"],
+  "effets": ["jonction", "deux-traits", "simulateur", "courbe", "signature", "frise", "devise", "interrogation", "credit-impot", "carte"],
+  "grille": { "dispenses": {} }
+}

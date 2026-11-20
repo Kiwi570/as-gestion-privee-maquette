@@ -1,0 +1,16 @@
+{
+  "nom": "AS Gestion Privée",
+  "adresse": "https://as-gestion-privee-maquette.vercel.app",
+  "siteActuel": "www.asgestionprivee.fr",
+  "version": 1,
+  "langues": ["fr"],
+  "navigation": ["accueil", "financement", "patrimoine", "cabinet", "honoraires", "contact"],
+  "actionEntete": { "page": "contact", "ancre": "rendez-vous" },
+  "couleurs": { "fond": "#F4EFE6", "texte": "#1A1F24", "voile": "#1D252C", "theme": "#F4EFE6", "ouverture": "#1D252C", "menu": "#1D252C" },
+  "formeVoile": "rideau",
+  "contact": { "telephone": "06 06 66 00 11", "telephoneLien": "+33606660011", "email": "julien.moriniere@asgestionprivee.fr", "adresse": "5 rue Le Nôtre, 44000 Nantes" },
+  "orias": "15006348",
+  "polices": ["/assets/fonts/newsreader.woff2", "/assets/fonts/newsreader-italique.woff2", "/assets/fonts/instrument-sans.woff2"],
+  "imagePartage": "julien-nb-960.webp",
+  "curseur": true
+}

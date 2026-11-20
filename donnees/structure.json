@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FinancialService",
+  "name": "AS Gestion Privée",
+  "legalName": "AS GESTION PRIVEE",
+  "url": "https://as-gestion-privee-maquette.vercel.app/",
+  "telephone": "+33606660011",
+  "email": "julien.moriniere@asgestionprivee.fr",
+  "foundingDate": "2015",
+  "founder": { "@type": "Person", "name": "Julien Morinière" },
+  "address": { "@type": "PostalAddress", "streetAddress": "5 rue Le Nôtre", "postalCode": "44000", "addressLocality": "Nantes", "addressCountry": "FR" },
+  "identifier": [{ "@type": "PropertyValue", "propertyID": "ORIAS", "value": "15006348" }, { "@type": "PropertyValue", "propertyID": "SIREN", "value": "814246815" }],
+  "description": "Intermédiaire en crédit immobilier et conseiller en gestion de patrimoine à Nantes : financement, placements, immobilier, assurances."
+}

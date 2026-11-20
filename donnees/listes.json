@@ -1,0 +1,333 @@
+{
+ "financement.role.items": [
+  {
+   "titre": "Étudier votre budget",
+   "texte": "Revenus, charges, apport : votre capacité d'emprunt et votre plan de financement, posés avant de chercher."
+  },
+  {
+   "titre": "Négocier votre taux",
+   "texte": "Votre dossier présenté et défendu pour obtenir des conditions adaptées à votre projet."
+  },
+  {
+   "titre": "Suivre votre dossier",
+   "texte": "Pièces, échéances, réponses des banques : un seul interlocuteur du début à la fin."
+  },
+  {
+   "titre": "Vous accompagner jusqu'au notaire",
+   "texte": "Le suivi de votre budget continue jusqu'à la signature de l'acte."
+  }
+ ],
+ "financement.etapes.items": [
+  {
+   "titre": "Premier rendez-vous",
+   "texte": "Votre projet, vos revenus, votre apport, votre calendrier."
+  },
+  {
+   "titre": "Étude du budget",
+   "texte": "Capacité d'emprunt, mensualités, plan de financement."
+  },
+  {
+   "titre": "Négociation",
+   "texte": "Votre dossier présenté aux banques et le taux négocié."
+  },
+  {
+   "titre": "Offre de prêt",
+   "texte": "Vous recevez l'offre ; la loi vous laisse 10 jours de réflexion avant de l'accepter."
+  },
+  {
+   "titre": "Signature chez le notaire",
+   "texte": "Les fonds sont débloqués, le projet devient réalité."
+  }
+ ],
+ "financement.faq.items": [
+  {
+   "q": "Dois-je payer quelque chose avant d'obtenir mon prêt ?",
+   "r": "Non. Aucun versement, de quelque nature que ce soit, ne peut être exigé d'un particulier avant l'obtention d'un ou plusieurs prêts d'argent."
+  },
+  {
+   "q": "Combien de temps ai-je pour accepter l'offre de prêt ?",
+   "r": "La loi vous laisse 10 jours de réflexion : vous ne pouvez pas accepter l'offre avant le onzième jour suivant sa réception."
+  },
+  {
+   "q": "Quel taux d'endettement les banques acceptent-elles ?",
+   "r": "35 % de vos revenus nets, assurance comprise, sur 25 ans au plus. Les banques peuvent y déroger pour 20 % de leurs dossiers."
+  },
+  {
+   "q": "Comment le cabinet est-il rémunéré ?",
+   "r": "Par des frais de courtage, inclus dans une solution clé en main. Le détail est sur la page Honoraires."
+  }
+ ],
+ "patrimoine.temps.items": [
+  {
+   "titre": "Constituer",
+   "texte": "Épargner, placer, investir pour la première fois, avec des objectifs clairs."
+  },
+  {
+   "titre": "Développer",
+   "texte": "Faire grandir le patrimoine et les revenus, notamment par l'immobilier locatif."
+  },
+  {
+   "titre": "Protéger",
+   "texte": "Prévoyance et protection de la famille face aux aléas."
+  },
+  {
+   "titre": "Préparer la retraite",
+   "texte": "Anticiper les revenus de demain, dès aujourd'hui."
+  },
+  {
+   "titre": "Transmettre",
+   "texte": "Donation, SCI, succession : préparer la suite, sereinement."
+  }
+ ],
+ "patrimoine.placements.points": [
+  "Objectifs fixés avec vous",
+  "Diversification",
+  "Optimisation fiscale"
+ ],
+ "patrimoine.immobilier.points": [
+  "Immobilier locatif",
+  "Développement des revenus",
+  "Financement de l'opération"
+ ],
+ "patrimoine.assurances.points": [
+  "Préparation de la retraite",
+  "Prévoyance",
+  "Transmission"
+ ],
+ "patrimoine.conseil.items": [
+  {
+   "titre": "Audit de patrimoine",
+   "texte": "Un état des lieux complet de votre situation, pour décider en connaissance de cause."
+  },
+  {
+   "titre": "Création d'une SCI",
+   "texte": "Détenir et transmettre un bien immobilier à plusieurs."
+  },
+  {
+   "titre": "Donation",
+   "texte": "Transmettre de votre vivant, en préparant la suite."
+  }
+ ],
+ "cabinet.parcours.items": [
+  {
+   "date": "Formation",
+   "titre": "Master II, université de Nantes",
+   "texte": "Droit, économie et gestion, mention finance et affaires internationales, spécialité gestion de patrimoine."
+  },
+  {
+   "date": "Débuts",
+   "titre": "Le service client",
+   "texte": "Les premières années de métier, au service des clients."
+  },
+  {
+   "date": "2015",
+   "titre": "Création d'AS Gestion Privée",
+   "texte": "Inscription à l'ORIAS comme conseiller en investissements financiers et courtier d'assurance, le 27 novembre 2015."
+  },
+  {
+   "date": "2019",
+   "titre": "Le crédit immobilier",
+   "texte": "Inscription comme mandataire d'intermédiaire en opérations de banque, le 12 mars 2019."
+  }
+ ],
+ "cabinet.engagements.items": [
+  {
+   "citation": "Mon souhait est de tisser une relation de confiance sur la durée.",
+   "auteur": "Julien Morinière"
+  },
+  {
+   "citation": "Notre objectif : atteindre vos objectifs.",
+   "auteur": "La devise du cabinet"
+  },
+  {
+   "citation": "Votre satisfaction reste notre première publicité.",
+   "auteur": "Le cabinet"
+  }
+ ],
+ "cabinet.garanties.lignes": [
+  {
+   "cle": "Numéro ORIAS",
+   "valeur": "15006348"
+  },
+  {
+   "cle": "Crédit immobilier",
+   "valeur": "Mandataire d'intermédiaire en opérations de banque et en services de paiement (MIOBSP), depuis le 12 mars 2019"
+  },
+  {
+   "cle": "Assurance",
+   "valeur": "Courtier d'assurance ou de réassurance (COA), depuis le 27 novembre 2015"
+  },
+  {
+   "cle": "Placements",
+   "valeur": "Conseiller en investissements financiers (CIF), depuis le 27 novembre 2015"
+  },
+  {
+   "cle": "Associations",
+   "valeur": "La Compagnie IOBSP, La Compagnie CIF, CNCEF Assurance"
+  },
+  {
+   "cle": "Encaissement de fonds",
+   "valeur": "Non autorisé"
+  }
+ ],
+ "honoraires.faq.items": [
+  {
+   "q": "Quand les frais de courtage sont-ils dus ?",
+   "r": "Aucun versement, de quelque nature que ce soit, ne peut être exigé d'un particulier avant l'obtention d'un ou plusieurs prêts d'argent."
+  },
+  {
+   "q": "Comment est fixé le montant des honoraires de conseil ?",
+   "r": "Il est fonction de la complexité du sujet soumis : un audit de patrimoine, la création d'une SCI ou une donation ne demandent pas le même travail."
+  },
+  {
+   "q": "Qu'appelle-t-on solution clé en main ?",
+   "r": "Pour un investissement immobilier, son financement, des contrats ou des placements, les frais sont inclus dans la solution proposée."
+  }
+ ],
+ "avis": [
+  {
+   "nom": "Jean-Marc",
+   "texte": "Des conseils personnalisés en parfaite adéquation avec ma demande."
+  },
+  {
+   "nom": "Sabine et Nicolas",
+   "texte": "Merci Julien, pour ton professionnalisme dans la résolution de notre dossier qui n'était pas simple."
+  },
+  {
+   "nom": "Marie et Hugues",
+   "texte": "Julien nous a accompagné tout au long de notre projet d'achat."
+  },
+  {
+   "nom": "Pauline",
+   "texte": "Julien est de très bon conseil et d'une grande aide."
+  },
+  {
+   "nom": "Anita",
+   "texte": "Des conseils avisés pour un placement qui correspond à nos attentes et notre besoin."
+  },
+  {
+   "nom": "Grégoire",
+   "texte": "Très bon professionnel, à l'écoute et toujours disponible."
+  }
+ ],
+ "missions": [
+  {
+   "cle": "financement",
+   "titre": "Financement",
+   "texte": "Négociation de votre taux et suivi de votre budget, jusqu'à la signature chez le notaire.",
+   "points": [
+    "Négociation du taux",
+    "Suivi du dossier",
+    "Jusqu'au notaire"
+   ],
+   "image": "grok/mission-financement",
+   "page": "financement",
+   "ancre": "",
+   "alt": "Clés d'une maison posées sur un dossier, à côté d'un stylo plume"
+  },
+  {
+   "cle": "placements",
+   "titre": "Placements",
+   "texte": "Gestion de portefeuilles selon vos objectifs, diversification et optimisation fiscale.",
+   "points": [
+    "Objectifs fixés avec vous",
+    "Diversification",
+    "Optimisation fiscale"
+   ],
+   "image": "grok/mission-placements",
+   "page": "patrimoine",
+   "ancre": "placements",
+   "alt": "Carnet ouvert sur des courbes tracées à l'encre, un stylo plume en travers"
+  },
+  {
+   "cle": "immobilier",
+   "titre": "Immobilier",
+   "texte": "Investir pour l'avenir : développer votre patrimoine et vos revenus.",
+   "points": [
+    "Immobilier locatif",
+    "Revenus",
+    "Financement compris"
+   ],
+   "image": "grok/mission-immobilier",
+   "page": "patrimoine",
+   "ancre": "immobilier",
+   "alt": "Façade d'un hôtel particulier en pierre claire aux balcons en fer forgé"
+  },
+  {
+   "cle": "assurances",
+   "titre": "Assurances",
+   "texte": "Retraite et prévoyance : protéger votre famille et préparer la transmission.",
+   "points": [
+    "Retraite",
+    "Prévoyance",
+    "Transmission"
+   ],
+   "image": "grok/mission-assurances",
+   "page": "patrimoine",
+   "ancre": "assurances",
+   "alt": "Couple âgé marchant bras dessus bras dessous au bord d'un fleuve, vu de dos"
+  }
+ ],
+ "garanties": [
+  {
+   "grand": "15006348",
+   "titre": "Numéro ORIAS",
+   "texte": "Inscrit au registre unique des intermédiaires en assurance, banque et finance."
+  },
+  {
+   "grand": "IOBSP · COA · CIF",
+   "titre": "Trois inscriptions",
+   "texte": "Crédit immobilier, assurance et placements. Membre de La Compagnie IOBSP, de La Compagnie CIF et de la CNCEF Assurance.",
+   "petit": true
+  },
+  {
+   "grand": "Master II",
+   "titre": "Gestion de patrimoine",
+   "texte": "Université de Nantes, mention finance et affaires internationales."
+  },
+  {
+   "grand": "2015",
+   "titre": "Création du cabinet",
+   "texte": "À Nantes, par Julien Morinière."
+  }
+ ],
+ "honorairesModes": [
+  {
+   "id": "conseil",
+   "nom": "Honoraires de conseil",
+   "resume": "Audit de patrimoine, SCI, donation",
+   "prix": "selon la complexité",
+   "texte": "Pour des missions de conseil comme un audit de patrimoine, la création d'une SCI ou une donation. Le montant est fonction de la complexité du sujet soumis.",
+   "points": [
+    "Audit de patrimoine",
+    "Création d'une SCI",
+    "Donation"
+   ],
+   "sujet": "patrimoine"
+  },
+  {
+   "id": "courtage",
+   "nom": "Frais de courtage",
+   "resume": "Immobilier, financement, contrats, placements",
+   "prix": "inclus",
+   "texte": "Pour un investissement immobilier, son financement, des contrats ou des placements financiers : les frais sont inclus dans une solution clé en main.",
+   "points": [
+    "Investissement immobilier et financement",
+    "Contrats d'assurance",
+    "Placements financiers"
+   ],
+   "sujet": "financement"
+  },
+  {
+   "id": "assistance",
+   "nom": "Assistance administrative",
+   "resume": "Services à la personne",
+   "prix": "50 % déductibles*",
+   "texte": "Vous bénéficiez de 50 % de réduction ou de crédit d'impôt sur les sommes versées au titre des services à la personne (loi Borloo).",
+   "points": [
+    "* Sous réserve de la déclaration du cabinet comme organisme de services à la personne."
+   ],
+   "sujet": "autre"
+  }
+ ]
+}

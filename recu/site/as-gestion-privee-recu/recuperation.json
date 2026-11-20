@@ -1,0 +1,394 @@
+{
+  "site": "https://www.asgestionprivee.fr/",
+  "date": "2026-11-20T19:18:14.948Z",
+  "pages": [
+    "https://www.asgestionprivee.fr/",
+    "https://www.asgestionprivee.fr/mentions-legales",
+    "https://www.asgestionprivee.fr/contact",
+    "https://www.asgestionprivee.fr/on-parle-de-nous",
+    "https://www.asgestionprivee.fr/combien-ca-coute",
+    "https://www.asgestionprivee.fr/qui-sommes-nous",
+    "https://www.asgestionprivee.fr/"
+  ],
+  "images": [
+    {
+      "fichier": "logo-clair.png",
+      "nom": "logo-clair",
+      "origine": "https://static.wixstatic.com/media/90a441_02158733b6ec416fae819a4d25bee209~mv2.jpg",
+      "page": "https://www.asgestionprivee.fr/",
+      "pages": 6,
+      "emplacement": "img (entete)",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "AS GESTION PRIVEE",
+        "fichier_origine": ""
+      },
+      "largeur": 862,
+      "hauteur": 485,
+      "poids": 52997,
+      "format": "png",
+      "transparence": true,
+      "drapeau": "logo",
+      "marque": "principale"
+    },
+    {
+      "fichier": "as-gestion-privee.jpg",
+      "nom": "as-gestion-privee",
+      "origine": "https://static.wixstatic.com/media/6df526_c575e0bd6cf245f5ba388edf1222d2bf~mv2.jpg",
+      "page": "https://www.asgestionprivee.fr/",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "AS GESTION PRIVEE",
+        "fichier_origine": ""
+      },
+      "largeur": 896,
+      "hauteur": 1200,
+      "poids": 474177,
+      "format": "jpeg",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "as-gestion-privee-2.jpg",
+      "nom": "as-gestion-privee-2",
+      "origine": "https://static.wixstatic.com/media/90a441_fc9f425aa67d41feb285518f1f22d09a~mv2.jpg",
+      "page": "https://www.asgestionprivee.fr/",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "AS GESTION PRIVEE",
+        "fichier_origine": ""
+      },
+      "largeur": 1000,
+      "hauteur": 1000,
+      "poids": 186623,
+      "format": "jpeg",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "as-gestion-privee-3.jpg",
+      "nom": "as-gestion-privee-3",
+      "origine": "https://static.wixstatic.com/media/90a441_caf49d322cfc4702b5d06b10d578a335~mv2.jpg",
+      "page": "https://www.asgestionprivee.fr/",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "AS GESTION PRIVEE",
+        "fichier_origine": ""
+      },
+      "largeur": 1000,
+      "hauteur": 1000,
+      "poids": 191223,
+      "format": "jpeg",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "cb-scout5-hdpi.png",
+      "nom": "cb-scout5-hdpi",
+      "origine": "https://maps.gstatic.com/mapfiles/api-3/images/cb_scout5_hdpi.png",
+      "page": "https://www.asgestionprivee.fr/contact",
+      "pages": 1,
+      "emplacement": "reseau",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "AS GESTION PRIVEE Contact",
+        "fichier_origine": "cb_scout5_hdpi"
+      },
+      "largeur": 430,
+      "hauteur": 1670,
+      "poids": 104139,
+      "format": "png",
+      "transparence": true,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "as-gestion-privee-contact.webp",
+      "nom": "as-gestion-privee-contact",
+      "origine": "https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i10!2i506!3i358!4i256!2m3!1e0!2sm!3i804570536!3m13!2sen!3sUS!5e18!12m5!1e68!2m2!1sset!2sRoadmap!4e2!12m3!1e37!2m1!1ssmartmaps!4e0!5m2!1e3!5f2!23i46991212!23i47054750!23i47083502&key=AIzaSyCu6mU4lWgbxynxwy3yYJZcEZKO0QYnFu4&token=7445",
+      "page": "https://www.asgestionprivee.fr/contact",
+      "pages": 1,
+      "emplacement": "reseau",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "AS GESTION PRIVEE Contact",
+        "fichier_origine": ""
+      },
+      "largeur": 512,
+      "hauteur": 512,
+      "poids": 42358,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "as-gestion-privee-contact-2.webp",
+      "nom": "as-gestion-privee-contact-2",
+      "origine": "https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i10!2i507!3i359!4i256!2m3!1e0!2sm!3i804570536!3m13!2sen!3sUS!5e18!12m5!1e68!2m2!1sset!2sRoadmap!4e2!12m3!1e37!2m1!1ssmartmaps!4e0!5m2!1e3!5f2!23i46991212!23i47054750!23i47083502&key=AIzaSyCu6mU4lWgbxynxwy3yYJZcEZKO0QYnFu4&token=107361",
+      "page": "https://www.asgestionprivee.fr/contact",
+      "pages": 1,
+      "emplacement": "reseau",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "AS GESTION PRIVEE Contact",
+        "fichier_origine": ""
+      },
+      "largeur": 512,
+      "hauteur": 512,
+      "poids": 69672,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "as-gestion-privee-contact-3.webp",
+      "nom": "as-gestion-privee-contact-3",
+      "origine": "https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i10!2i507!3i358!4i256!2m3!1e0!2sm!3i804570536!3m13!2sen!3sUS!5e18!12m5!1e68!2m2!1sset!2sRoadmap!4e2!12m3!1e37!2m1!1ssmartmaps!4e0!5m2!1e3!5f2!23i46991212!23i47054750!23i47083502&key=AIzaSyCu6mU4lWgbxynxwy3yYJZcEZKO0QYnFu4&token=64887",
+      "page": "https://www.asgestionprivee.fr/contact",
+      "pages": 1,
+      "emplacement": "reseau",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "AS GESTION PRIVEE Contact",
+        "fichier_origine": ""
+      },
+      "largeur": 512,
+      "hauteur": 512,
+      "poids": 33728,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "as-gestion-privee-contact-4.webp",
+      "nom": "as-gestion-privee-contact-4",
+      "origine": "https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i10!2i508!3i358!4i256!2m3!1e0!2sm!3i804570536!3m13!2sen!3sUS!5e18!12m5!1e68!2m2!1sset!2sRoadmap!4e2!12m3!1e37!2m1!1ssmartmaps!4e0!5m2!1e3!5f2!23i46991212!23i47054750!23i47083502&key=AIzaSyCu6mU4lWgbxynxwy3yYJZcEZKO0QYnFu4&token=122329",
+      "page": "https://www.asgestionprivee.fr/contact",
+      "pages": 1,
+      "emplacement": "reseau",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "AS GESTION PRIVEE Contact",
+        "fichier_origine": ""
+      },
+      "largeur": 512,
+      "hauteur": 512,
+      "poids": 46598,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "as-gestion-privee-contact-5.webp",
+      "nom": "as-gestion-privee-contact-5",
+      "origine": "https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i10!2i508!3i359!4i256!2m3!1e0!2sm!3i804570536!3m13!2sen!3sUS!5e18!12m5!1e68!2m2!1sset!2sRoadmap!4e2!12m3!1e37!2m1!1ssmartmaps!4e0!5m2!1e3!5f2!23i46991212!23i47054750!23i47083502&key=AIzaSyCu6mU4lWgbxynxwy3yYJZcEZKO0QYnFu4&token=33732",
+      "page": "https://www.asgestionprivee.fr/contact",
+      "pages": 1,
+      "emplacement": "reseau",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "AS GESTION PRIVEE Contact",
+        "fichier_origine": ""
+      },
+      "largeur": 512,
+      "hauteur": 512,
+      "poids": 53324,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "as-gestion-privee-contact-6.webp",
+      "nom": "as-gestion-privee-contact-6",
+      "origine": "https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i10!2i506!3i359!4i256!2m3!1e0!2sm!3i804570536!3m13!2sen!3sUS!5e18!12m5!1e68!2m2!1sset!2sRoadmap!4e2!12m3!1e37!2m1!1ssmartmaps!4e0!5m2!1e3!5f2!23i46991212!23i47054750!23i47083502&key=AIzaSyCu6mU4lWgbxynxwy3yYJZcEZKO0QYnFu4&token=49919",
+      "page": "https://www.asgestionprivee.fr/contact",
+      "pages": 1,
+      "emplacement": "reseau",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "AS GESTION PRIVEE Contact",
+        "fichier_origine": ""
+      },
+      "largeur": 512,
+      "hauteur": 512,
+      "poids": 30458,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "staticmapservice.png",
+      "nom": "staticmapservice",
+      "origine": "https://maps.googleapis.com/maps/api/js/StaticMapService.GetMapImage?1m2&1i129668&2i91788&2e1&3u10&4m2&1u540&2u360&5m6&1e0&5sen&6sus&10b1&12b1&14i47083502&8e1&key=AIzaSyCu6mU4lWgbxynxwy3yYJZcEZKO0QYnFu4&token=26014",
+      "page": "https://www.asgestionprivee.fr/contact",
+      "pages": 1,
+      "emplacement": "reseau",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "AS GESTION PRIVEE Contact",
+        "fichier_origine": "StaticMapService"
+      },
+      "largeur": 540,
+      "hauteur": 360,
+      "poids": 65537,
+      "format": "png",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "as-gestion-privee-combien.jpg",
+      "nom": "as-gestion-privee-combien",
+      "origine": "https://static.wixstatic.com/media/90a441_77952bb0a27b4416ae9c1ef33b1492cc~mv2.jpg",
+      "page": "https://www.asgestionprivee.fr/combien-ca-coute",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "AS GESTION PRIVEE Combien ça coûte ?",
+        "fichier_origine": ""
+      },
+      "largeur": 1000,
+      "hauteur": 562,
+      "poids": 136762,
+      "format": "jpeg",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "as-gestion-privee-combien-2.jpg",
+      "nom": "as-gestion-privee-combien-2",
+      "origine": "https://static.wixstatic.com/media/90a441_56ed167861bb42399af0562723923f51~mv2.jpg",
+      "page": "https://www.asgestionprivee.fr/combien-ca-coute",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "AS GESTION PRIVEE Combien ça coûte ?",
+        "fichier_origine": ""
+      },
+      "largeur": 1000,
+      "hauteur": 562,
+      "poids": 154928,
+      "format": "jpeg",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "as-gestion-privee-combien-3.jpg",
+      "nom": "as-gestion-privee-combien-3",
+      "origine": "https://static.wixstatic.com/media/90a441_a8a1d7dd4a8040f6a3a807dd664448d6~mv2.jpg",
+      "page": "https://www.asgestionprivee.fr/combien-ca-coute",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "AS GESTION PRIVEE Combien ça coûte ?",
+        "fichier_origine": ""
+      },
+      "largeur": 1000,
+      "hauteur": 562,
+      "poids": 129986,
+      "format": "jpeg",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "as-gestion-privee-sommes.jpg",
+      "nom": "as-gestion-privee-sommes",
+      "origine": "https://static.wixstatic.com/media/90a441_eb175b76194b4fd5b302a0f077115065~mv2.jpg",
+      "page": "https://www.asgestionprivee.fr/qui-sommes-nous",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "AS GESTION PRIVEE Qui sommes nous ?",
+        "fichier_origine": ""
+      },
+      "largeur": 701,
+      "hauteur": 701,
+      "poids": 82575,
+      "format": "jpeg",
+      "transparence": false,
+      "drapeau": "autre"
+    }
+  ],
+  "ecartees": [
+    {
+      "url": "https://static.parastorage.com/services/santa-resources/resources/editor/designPanel/panelTypes/google_maps_pin_icon.png",
+      "raison": "icone"
+    },
+    {
+      "url": "https://maps.gstatic.com/mapfiles/transparent.png",
+      "raison": "icone"
+    },
+    {
+      "url": "https://static.wixstatic.com/media/90a441_d431da5e062440cfa46cd3b49ad60dbd~mv2.jpg",
+      "raison": "300 px de large"
+    },
+    {
+      "url": "https://static.wixstatic.com/media/90a441_61e98d5f0ff44faa980c9cac318f65e1~mv2.jpg",
+      "raison": "331 px de large"
+    },
+    {
+      "url": "https://maps.gstatic.com/mapfiles/openhand_8_8.cur",
+      "raison": "echec : Input buffer contains unsupported image format"
+    },
+    {
+      "url": "https://maps.gstatic.com/mapfiles/api-3/images/drag-cross_hdpi.png",
+      "raison": "26 px de large"
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+[
+ {
+  "source": "recu/julien-nb-1344.jpg",
+  "nom": "julien-nb",
+  "role": "portrait",
+  "ratio": "3:4",
+  "largeurs": [
+   480,
+   720,
+   960,
+   1280
+  ],
+  "mobile": "4:5",
+  "cadrage": [
+   78,
+   32
+  ],
+  "beaute": 4,
+  "alt": "Julien Morinière, conseiller en gestion de patrimoine, portrait en noir et blanc",
+  "page": "accueil"
+ },
+ {
+  "source": "recu/site/as-gestion-privee-recu/as-gestion-privee-sommes.jpg",
+  "nom": "julien-couleur",
+  "role": "portrait",
+  "ratio": "4:5",
+  "largeurs": [
+   480,
+   560
+  ],
+  "cadrage": [
+   50,
+   40
+  ],
+  "beaute": 3,
+  "alt": "Julien Morinière, fondateur d'AS Gestion Privée",
+  "page": "cabinet"
+ },
+ {
+  "source": "recu/grok/mission-financement.jpg",
+  "nom": "grok/mission-financement",
+  "role": "galerie",
+  "page": "Accueil et Financement",
+  "emplacement": "carte Financement",
+  "priorite": "Indispensable",
+  "gabarit": "scene-metier",
+  "consigne_scene": "A set of house keys on a plain dark leather key ring resting on a closed cream document folder, a black fountain pen beside it, on a polished oak desk in a bright room with a tall window, nobody, the keys sharp and the background softly blurred",
+  "alt": "Clés d'une maison posées sur un dossier, à côté d'un stylo plume",
+  "beaute": 4,
+  "largeurs": [
+   640,
+   960,
+   1280
+  ]
+ },
+ {
+  "source": "recu/grok/mission-placements.jpg",
+  "nom": "grok/mission-placements",
+  "role": "galerie",
+  "page": "Accueil et Patrimoine",
+  "emplacement": "carte Placements",
+  "priorite": "Indispensable",
+  "gabarit": "scene-metier",
+  "consigne_scene": "An open leather-bound sketchbook on an oak desk, its cream paper covered with a few smooth hand-drawn ink curves running sideways and gently crossing each other, no grid, a brass fountain pen lying across it, a cup of coffee in the background, nobody",
+  "alt": "Carnet ouvert sur des courbes tracées à l'encre, un stylo plume en travers",
+  "beaute": 4,
+  "largeurs": [
+   640,
+   960,
+   1280
+  ]
+ },
+ {
+  "source": "recu/grok/mission-immobilier.jpg",
+  "nom": "grok/mission-immobilier",
+  "role": "galerie",
+  "page": "Accueil et Patrimoine",
+  "emplacement": "carte Immobilier",
+  "priorite": "Indispensable",
+  "gabarit": "lieu",
+  "consigne_scene": "Looking up at the facade of an elegant 18th-century townhouse built in pale cream limestone, tall windows with thin white frames, black wrought-iron balconies with curling ironwork, a dark slate roof against a soft sky, carved stone details around the windows, nobody",
+  "alt": "Façade d'un hôtel particulier en pierre claire aux balcons en fer forgé",
+  "beaute": 5,
+  "largeurs": [
+   640,
+   960,
+   1280
+  ]
+ },
+ {
+  "source": "recu/grok/mission-assurances.jpg",
+  "nom": "grok/mission-assurances",
+  "role": "galerie",
+  "page": "Accueil et Patrimoine",
+  "emplacement": "carte Assurances",
+  "priorite": "Indispensable",
+  "gabarit": "lieu",
+  "consigne_scene": "An older couple walking away arm in arm along a wide tree-lined riverside promenade, seen from behind and small in the frame, autumn leaves on the path, the calm river on one side, golden late-afternoon light",
+  "alt": "Couple âgé marchant bras dessus bras dessous au bord d'un fleuve, vu de dos",
+  "beaute": 5,
+  "largeurs": [
+   640,
+   960,
+   1280
+  ]
+ },
+ {
+  "source": "recu/grok/accueil-appel.jpg",
+  "nom": "grok/accueil-appel",
+  "role": "section-fond",
+  "ratio": "16:9",
+  "mobile": "4:5",
+  "zone_texte": "gauche",
+  "page": "Accueil",
+  "emplacement": "appel final",
+  "priorite": "Indispensable",
+  "gabarit": "lieu",
+  "consigne_scene": "A calm meeting room in an 18th-century building: a round oak table by a tall window, two upholstered chairs facing each other, two cups of coffee and a closed cream folder on the table, pale limestone walls, wide oak floorboards, the table and chairs placed in the right half of the frame, nobody",
+  "alt": "Deux fauteuils face à face autour d'une table en chêne, près d'une grande fenêtre",
+  "beaute": 4,
+  "largeurs": [
+   640,
+   1280,
+   1920
+  ]
+ },
+ {
+  "source": "recu/grok/financement-ouverture.jpg",
+  "nom": "grok/financement-ouverture",
+  "role": "section-fond",
+  "ratio": "16:9",
+  "mobile": "4:5",
+  "zone_texte": "haut",
+  "page": "Financement",
+  "emplacement": "bandeau d'ouverture",
+  "priorite": "Indispensable",
+  "gabarit": "scene-metier",
+  "consigne_scene": "A wide view of a long oak table in a bright notary's office: a closed cream document folder, a black fountain pen with its cap off, a pair of reading glasses folded beside it, tall window light, bookshelves softly blurred in the background, nobody, the objects in the lower half of the frame",
+  "alt": "Table en chêne d'une étude de notaire avec un dossier fermé et un stylo plume",
+  "beaute": 4,
+  "largeurs": [
+   640,
+   1280,
+   1920
+  ]
+ },
+ {
+  "source": "recu/grok/patrimoine-ouverture.jpg",
+  "source_mobile": "recu/grok/patrimoine-ouverture-mobile.jpg",
+  "nom": "grok/patrimoine-ouverture",
+  "role": "ouverture",
+  "ratio": "16:9",
+  "mobile": "9:16",
+  "zone_texte": "gauche",
+  "page": "Patrimoine",
+  "emplacement": "ouverture plein cadre",
+  "priorite": "Indispensable",
+  "gabarit": "lieu",
+  "consigne_scene": "A wide riverside quay lined with 18th-century pale limestone townhouses with black wrought-iron balconies and slate roofs, a few plane trees, the calm wide river reflecting the soft sky, golden late-afternoon light, nobody, the buildings in the right half of the frame and calm sky and water on the left",
+  "alt": "Quai bordé d'hôtels particuliers en pierre claire au bord d'un fleuve",
+  "beaute": 5,
+  "largeurs": [
+   640,
+   1280,
+   1920
+  ]
+ },
+ {
+  "source": "recu/grok/404.jpg",
+  "nom": "grok/page-404",
+  "role": "404",
+  "ratio": "16:9",
+  "mobile": "4:5",
+  "zone_texte": "gauche",
+  "page": "404",
+  "emplacement": "tête de page",
+  "priorite": "Conseillée",
+  "gabarit": "404",
+  "alt": "Bureau vide avec un carnet fermé et un crayon",
+  "consigne_scene": "A tidy empty oak desk by a tall window, a closed dark leather folder and a single pencil lying slightly askew on it, an empty chair pushed back, calm and quiet with a gentle touch of humour, nobody",
+  "beaute": 4,
+  "largeurs": [
+   640,
+   1280,
+   1920
+  ]
+ }
+]

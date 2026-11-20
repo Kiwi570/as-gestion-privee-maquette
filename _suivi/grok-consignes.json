@@ -1,0 +1,131 @@
+{
+  "client": "AS Gestion Privée",
+  "activite": "finance",
+  "direction": "Affectio",
+  "date": "2026-11-20T19:35:45.407Z",
+  "images": [
+    {
+      "nom": "mission-financement",
+      "fichier": "mission-financement.jpg",
+      "page": "Accueil et Financement",
+      "emplacement": "carte Financement",
+      "role": "galerie",
+      "format": "4:5",
+      "grok": "784×1168",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "A set of house keys on a plain dark leather key ring resting on a closed cream document folder, a black fountain pen beside it, on a polished oak desk in a bright room with a tall window, nobody, the keys sharp and the background softly blurred. Vertical composition, aspect ratio 4:5, main subject well inside the central area with generous margins on every side, so the image can be cropped. Cinematic editorial photograph, calm, warm and trustworthy mood, palette of warm limestone cream, slate blue-grey and a small touch of deep wine red, soft golden late-afternoon light, tactile pale limestone, oak wood, linen paper and dark leather, set in a historic river city of western France with pale limestone townhouses on an early autumn afternoon, fine 35mm film grain, shallow depth of field, calm and serious, modern premium magazine look. No numbers, no prices, no currency symbols, no upward trend, no gold coins, no banknotes, no piggy bank, no stock-photo handshake, no readable chart, no recognizable face. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "mission-placements",
+      "fichier": "mission-placements.jpg",
+      "page": "Accueil et Patrimoine",
+      "emplacement": "carte Placements",
+      "role": "galerie",
+      "format": "4:5",
+      "grok": "784×1168",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "An open leather-bound sketchbook on an oak desk, its cream paper covered with a few smooth hand-drawn ink curves running sideways and gently crossing each other, no grid, a brass fountain pen lying across it, a cup of coffee in the background, nobody. Vertical composition, aspect ratio 4:5, main subject well inside the central area with generous margins on every side, so the image can be cropped. Cinematic editorial photograph, calm, warm and trustworthy mood, palette of warm limestone cream, slate blue-grey and a small touch of deep wine red, soft golden late-afternoon light, tactile pale limestone, oak wood, linen paper and dark leather, set in a historic river city of western France with pale limestone townhouses on an early autumn afternoon, fine 35mm film grain, shallow depth of field, calm and serious, modern premium magazine look. No numbers, no prices, no currency symbols, no upward trend, no gold coins, no banknotes, no piggy bank, no stock-photo handshake, no readable chart, no recognizable face. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "mission-immobilier",
+      "fichier": "mission-immobilier.jpg",
+      "page": "Accueil et Patrimoine",
+      "emplacement": "carte Immobilier",
+      "role": "galerie",
+      "format": "4:5",
+      "grok": "784×1168",
+      "priorite": "Indispensable",
+      "gabarit": "lieu",
+      "pieges": [],
+      "consigne": "Looking up at the facade of an elegant 18th-century townhouse built in pale cream limestone, tall windows with thin white frames, black wrought-iron balconies with curling ironwork, a dark slate roof against a soft sky, carved stone details around the windows, nobody. Vertical composition, aspect ratio 4:5, main subject well inside the central area with generous margins on every side, so the image can be cropped. Cinematic editorial photograph, calm, warm and trustworthy mood, palette of warm limestone cream, slate blue-grey and a small touch of deep wine red, soft golden late-afternoon light, tactile pale limestone, oak wood, linen paper and dark leather, set in a historic river city of western France with pale limestone townhouses on an early autumn afternoon, fine 35mm film grain, shallow depth of field, calm and serious, modern premium magazine look. No numbers, no prices, no currency symbols, no upward trend, no gold coins, no banknotes, no piggy bank, no stock-photo handshake, no readable chart, no recognizable face. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "mission-assurances",
+      "fichier": "mission-assurances.jpg",
+      "page": "Accueil et Patrimoine",
+      "emplacement": "carte Assurances",
+      "role": "galerie",
+      "format": "4:5",
+      "grok": "784×1168",
+      "priorite": "Indispensable",
+      "gabarit": "lieu",
+      "pieges": [
+        "paysage qui dérive"
+      ],
+      "consigne": "An older couple walking away arm in arm along a wide tree-lined riverside promenade, seen from behind and small in the frame, autumn leaves on the path, the calm river on one side, golden late-afternoon light. Vertical composition, aspect ratio 4:5, main subject well inside the central area with generous margins on every side, so the image can be cropped. Cinematic editorial photograph, calm, warm and trustworthy mood, palette of warm limestone cream, slate blue-grey and a small touch of deep wine red, soft golden late-afternoon light, tactile pale limestone, oak wood, linen paper and dark leather, set in a historic river city of western France with pale limestone townhouses on an early autumn afternoon, fine 35mm film grain, shallow depth of field, calm and serious, modern premium magazine look. No numbers, no prices, no currency symbols, no upward trend, no gold coins, no banknotes, no piggy bank, no stock-photo handshake, no readable chart, no recognizable face. A historic river city of western France with pale limestone townhouses landscape only, described by its real features: no tea plantation, no rice terraces, no high mountains, no tropical vegetation, no power lines, no pylons, no modern buildings. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "accueil-appel",
+      "fichier": "accueil-appel.jpg",
+      "page": "Accueil",
+      "emplacement": "appel final",
+      "role": "section-fond",
+      "format": "16:9",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "lieu",
+      "pieges": [],
+      "consigne": "A calm meeting room in an 18th-century building: a round oak table by a tall window, two upholstered chairs facing each other, two cups of coffee and a closed cream folder on the table, pale limestone walls, wide oak floorboards, the table and chairs placed in the right half of the frame, nobody. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, generous empty space on the left third of the frame for a title. Cinematic editorial photograph, calm, warm and trustworthy mood, palette of warm limestone cream, slate blue-grey and a small touch of deep wine red, soft golden late-afternoon light, tactile pale limestone, oak wood, linen paper and dark leather, set in a historic river city of western France with pale limestone townhouses on an early autumn afternoon, fine 35mm film grain, shallow depth of field, calm and serious, modern premium magazine look. No numbers, no prices, no currency symbols, no upward trend, no gold coins, no banknotes, no piggy bank, no stock-photo handshake, no readable chart, no recognizable face. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "financement-ouverture",
+      "fichier": "financement-ouverture.jpg",
+      "page": "Financement",
+      "emplacement": "bandeau d'ouverture",
+      "role": "section-fond",
+      "format": "16:9",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "A wide view of a long oak table in a bright notary's office: a closed cream document folder, a black fountain pen with its cap off, a pair of reading glasses folded beside it, tall window light, bookshelves softly blurred in the background, nobody, the objects in the lower half of the frame. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, quiet uncluttered area in the upper half for a title. Cinematic editorial photograph, calm, warm and trustworthy mood, palette of warm limestone cream, slate blue-grey and a small touch of deep wine red, soft golden late-afternoon light, tactile pale limestone, oak wood, linen paper and dark leather, set in a historic river city of western France with pale limestone townhouses on an early autumn afternoon, fine 35mm film grain, shallow depth of field, calm and serious, modern premium magazine look. No numbers, no prices, no currency symbols, no upward trend, no gold coins, no banknotes, no piggy bank, no stock-photo handshake, no readable chart, no recognizable face. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "patrimoine-ouverture",
+      "fichier": "patrimoine-ouverture.jpg",
+      "page": "Patrimoine",
+      "emplacement": "ouverture plein cadre (ordinateur)",
+      "role": "ouverture",
+      "format": "16:9",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "lieu",
+      "pieges": [
+        "paysage qui dérive"
+      ],
+      "consigne": "A wide riverside quay lined with 18th-century pale limestone townhouses with black wrought-iron balconies and slate roofs, a few plane trees, the calm wide river reflecting the soft sky, golden late-afternoon light, nobody, the buildings in the right half of the frame and calm sky and water on the left. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, generous empty space on the left third of the frame for a title. Cinematic editorial photograph, calm, warm and trustworthy mood, palette of warm limestone cream, slate blue-grey and a small touch of deep wine red, soft golden late-afternoon light, tactile pale limestone, oak wood, linen paper and dark leather, set in a historic river city of western France with pale limestone townhouses on an early autumn afternoon, fine 35mm film grain, shallow depth of field, calm and serious, modern premium magazine look. No numbers, no prices, no currency symbols, no upward trend, no gold coins, no banknotes, no piggy bank, no stock-photo handshake, no readable chart, no recognizable face. A historic river city of western France with pale limestone townhouses landscape only, described by its real features: no tea plantation, no rice terraces, no high mountains, no tropical vegetation, no power lines, no pylons, no modern buildings. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "patrimoine-ouverture",
+      "fichier": "patrimoine-ouverture-mobile.jpg",
+      "page": "Patrimoine",
+      "emplacement": "ouverture plein cadre (téléphone)",
+      "role": "ouverture",
+      "format": "9:16",
+      "grok": "784×1168",
+      "priorite": "Indispensable",
+      "gabarit": "lieu",
+      "pieges": [
+        "paysage qui dérive"
+      ],
+      "consigne": "A wide riverside quay lined with 18th-century pale limestone townhouses with black wrought-iron balconies and slate roofs, a few plane trees, the calm wide river reflecting the soft sky, golden late-afternoon light, nobody, the buildings in the right half of the frame and calm sky and water on the left. Vertical composition, aspect ratio 9:16, highest resolution available, at least 1080 pixels wide, main subject well inside the central area with generous margins on every side, so the image can be cropped, main subject in the lower half, quiet uncluttered area in the upper half for a title. Cinematic editorial photograph, calm, warm and trustworthy mood, palette of warm limestone cream, slate blue-grey and a small touch of deep wine red, soft golden late-afternoon light, tactile pale limestone, oak wood, linen paper and dark leather, set in a historic river city of western France with pale limestone townhouses on an early autumn afternoon, fine 35mm film grain, shallow depth of field, calm and serious, modern premium magazine look. No numbers, no prices, no currency symbols, no upward trend, no gold coins, no banknotes, no piggy bank, no stock-photo handshake, no readable chart, no recognizable face. A historic river city of western France with pale limestone townhouses landscape only, described by its real features: no tea plantation, no rice terraces, no high mountains, no tropical vegetation, no power lines, no pylons, no modern buildings. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "page-404",
+      "fichier": "404.jpg",
+      "page": "404",
+      "emplacement": "tête de page",
+      "role": "404",
+      "format": "16:9",
+      "grok": "1168×784",
+      "priorite": "Conseillée",
+      "gabarit": "404",
+      "pieges": [],
+      "consigne": "A tidy empty oak desk by a tall window, a closed dark leather folder and a single pencil lying slightly askew on it, an empty chair pushed back, calm and quiet with a gentle touch of humour, nobody. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, generous empty space on the left third of the frame for a title. Cinematic editorial photograph, calm, warm and trustworthy mood, palette of warm limestone cream, slate blue-grey and a small touch of deep wine red, soft golden late-afternoon light, tactile pale limestone, oak wood, linen paper and dark leather, set in a historic river city of western France with pale limestone townhouses on an early autumn afternoon, fine 35mm film grain, shallow depth of field, calm and serious, modern premium magazine look. No numbers, no prices, no currency symbols, no upward trend, no gold coins, no banknotes, no piggy bank, no stock-photo handshake, no readable chart, no recognizable face. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    }
+  ]
+}

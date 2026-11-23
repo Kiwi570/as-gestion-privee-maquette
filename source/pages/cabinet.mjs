@@ -21,9 +21,12 @@ export default (c) => html`
 
 <section class="parcours conteneur" id="parcours">
   ${tete(c, 'cabinet.parcours', { classe: 'tete-section--large' })}
-  <ol class="parcours-liste" data-anime="cascade">
-    ${listes(c, 'cabinet.parcours.items').map((p) => html`<li class="parcours-item"><p class="parcours-date">${p.date}</p><div><h3>${p.titre}</h3><p>${p.texte}</p></div></li>`)}
+  <div class="parcours-cadre" data-effet="parcours">
+  <span class="parcours-fil" aria-hidden="true"></span>
+  <ol class="parcours-liste">
+    ${listes(c, 'cabinet.parcours.items').map((p) => html`<li class="parcours-item"><span class="parcours-point" aria-hidden="true"></span><p class="parcours-date">${p.date}</p><div><h3>${p.titre}</h3><p>${p.texte}</p></div></li>`)}
   </ol>
+  </div>
 </section>
 
 <section class="engagements theme-sombre" id="engagements">

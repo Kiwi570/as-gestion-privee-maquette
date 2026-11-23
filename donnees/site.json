@@ -2,7 +2,7 @@
   "nom": "AS Gestion Privée",
   "adresse": "https://as-gestion-privee-maquette.vercel.app",
   "siteActuel": "www.asgestionprivee.fr",
-  "version": 1,
+  "version": 2,
   "langues": ["fr"],
   "navigation": ["accueil", "financement", "patrimoine", "cabinet", "honoraires", "contact"],
   "actionEntete": { "page": "contact", "ancre": "rendez-vous" },

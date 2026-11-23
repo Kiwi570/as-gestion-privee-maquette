@@ -29,6 +29,13 @@ export default (c) => html`
     ${c.media({ nom: 'julien-nb', alt: 'Julien Morinière, conseiller en gestion de patrimoine, portrait en noir et blanc', cadrage: '78% 30%', cadrageMobile: '72% 30%', priorite: true, classe: 'hero-media', sizes: '(max-width: 760px) 100vw, 46vw', attrs: 'data-iris-centre data-boucle-css' })}
     <span class="hero-jonction" aria-hidden="true"><span class="hero-point" data-effet="jonction"></span></span>
     <p class="hero-legende">${c.t('accueil.hero.legende')}</p>
+    <span class="sceau" data-boucle-css data-effet="sceau" data-audit-ignorer aria-hidden="true">
+      <svg viewBox="0 0 200 200"><defs><path id="sceau-cercle" d="M100 100 m-72 0 a72 72 0 1 1 144 0 a72 72 0 1 1 -144 0"/></defs>
+        <circle class="sceau-fond" cx="100" cy="100" r="97"/>
+        <g class="sceau-texte"><text><textPath href="#sceau-cercle" textLength="452">${c.t('commun.sceau')}</textPath></text></g>
+        <image href="/assets/images/logo.svg" x="62" y="76" width="76" height="45"/>
+      </svg>
+    </span>
   </div>
 </section>
 
@@ -92,7 +99,7 @@ export default (c) => html`
     </svg>
   </div>
   <ul class="conteneur garanties-grille" data-anime="cascade">
-    ${listes(c, 'garanties').map((g) => html`<li class="garantie"><p class="garantie-grand${g.petit ? ' garantie-grand--petit' : ''}">${g.grand}</p><h3>${g.titre}</h3><p>${g.texte}</p></li>`)}
+    ${listes(c, 'garanties').map((g) => html`<li class="garantie"><p class="garantie-grand${g.petit ? ' garantie-grand--petit' : ''}">${g.petit ? g.grand.split(' · ').map((x) => html`<span>${x}</span>`) : g.grand}</p><h3>${g.titre}</h3><p>${g.texte}</p></li>`)}
   </ul>
 </section>
 
@@ -122,6 +129,7 @@ export default (c) => html`
         <span class="hono-nom">${m.nom}</span>
         <span class="hono-prix">${m.prix}</span>
         <span class="hono-resume">${m.resume}</span>
+        <span class="hono-fleche">${fleche}</span>
       </a>
     </li>`)}
   </ol>

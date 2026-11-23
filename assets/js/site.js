@@ -1,7 +1,7 @@
 /* AS Gestion Privée : effets propres au client. Le socle gère l'ouverture, les transitions, l'en-tête,
    le menu, les mesures et la bibliothèque d'effets (posés par attributs dans les pages).
    Effets du plan : jonction, deux-traits, simulateur, courbe, signature, frise, devise, interrogation, credit-impot, carte. */
-import { demarrer, versObjet, quand, rafraichir } from './socle/index.js?v=1';
+import { demarrer, versObjet, quand, rafraichir } from './socle/index.js?v=2';
 
 const gsap = window.gsap;
 const ST = window.ScrollTrigger;
@@ -13,10 +13,10 @@ const pourcent = (v) => new Intl.NumberFormat('fr-FR', { maximumFractionDigits: 
 /* ---------- Modules de la bibliothèque ---------- */
 async function modules() {
   const tep = $('.tep');
-  if (tep) (await import('./modules/temoignages-en-pile/module.js?v=1')).init(tep, { textes: { precedent: 'Avis précédent', suivant: 'Avis suivant' } });
+  if (tep) (await import('./modules/temoignages-en-pile/module.js?v=2')).init(tep, { textes: { precedent: 'Avis précédent', suivant: 'Avis suivant' } });
   const ofr = $('.ofr');
   if (ofr) {
-    const api = await (await import('./modules/offre-a-tiroirs/module.js?v=1')).init(ofr, { visuels: false, unSeul: false });
+    const api = await (await import('./modules/offre-a-tiroirs/module.js?v=2')).init(ofr, { visuels: false, unSeul: false });
     /* Arrivée sur un tiroir par l'adresse (#courtage) : le premier reste ouvert, comme avant le module,
        pour que rien ne bouge au-dessus du tiroir visé. */
     const vise = location.hash.length > 1 && ofr.querySelector(`.ofr__tiroir[id="${CSS.escape(decodeURIComponent(location.hash.slice(1)))}"]`);
@@ -24,7 +24,7 @@ async function modules() {
   }
   const fpe = $('.fpe');
   if (fpe) {
-    (await import('./modules/formulaire-par-etapes/module.js?v=1')).init(fpe, { sujet: 'Demande de rendez-vous' });
+    (await import('./modules/formulaire-par-etapes/module.js?v=2')).init(fpe, { sujet: 'Demande de rendez-vous' });
     fpe.addEventListener('formulaire:envoye', () => {
       const fin = $('.fpe__fin', fpe);
       if (fin) setTimeout(() => fin.scrollIntoView({ block: 'center' }), 60);
@@ -111,11 +111,30 @@ function simuCapacite(form) {
       gsap.to(jn, { strokeDasharray: `0 ${partCharges} ${partNeuf} 100`, duration: anime ? 0.6 : 0, ease: 'power2.out' });
     }
   };
-  form.addEventListener('input', (e) => { if (e.target.type === 'range') remplissage(e.target); calculer(); });
+  form.addEventListener('input', (e) => {
+    if (e.target.type === 'range') remplissage(e.target);
+    if (!form.dataset.profilEnCours) $$('.simu-profil', form).forEach((b) => b.setAttribute('aria-pressed', 'false'));
+    calculer();
+  });
   form.addEventListener('change', () => calculer());
   form.addEventListener('submit', (e) => e.preventDefault());
   $$('input[type="range"]', form).forEach(remplissage);
   calculer(false);
+  /* Profils d'exemple : un clic, les curseurs glissent jusqu'aux valeurs et les chiffres roulent. */
+  $$('.simu-profil', form).forEach((bouton) => bouton.addEventListener('click', () => {
+    const cible = JSON.parse(bouton.dataset.profil);
+    $$('.simu-profil', form).forEach((b) => b.setAttribute('aria-pressed', String(b === bouton)));
+    const radio = form.querySelector(`[type="radio"][value="${cible.duree}"]`);
+    if (radio) radio.checked = true;
+    const champs = ['revenus', 'charges', 'apport'].map((n) => [form.querySelector(`[name$="-${n}"]:not([type="radio"])`), cible[n]]).filter(([el]) => el);
+    form.dataset.profilEnCours = '1';
+    if (!gsap) { champs.forEach(([el, v]) => { el.value = v; remplissage(el); }); delete form.dataset.profilEnCours; calculer(); return; }
+    const o = {}; champs.forEach(([el], i) => { o[i] = +el.value; });
+    const fin = {}; champs.forEach(([, v], i) => { fin[i] = v; });
+    gsap.to(o, { ...fin, duration: 0.8, ease: 'power3.inOut', overwrite: true,
+      onUpdate: () => { champs.forEach(([el], i) => { el.value = Math.round(o[i] / +el.step) * +el.step; remplissage(el); }); calculer(false); },
+      onComplete: () => { delete form.dataset.profilEnCours; calculer(true); } });
+  }));
   /* La jauge se remplit quand le simulateur arrive à l'écran (et se vide si l'on remonte). */
   if (gsap && ST) {
     ST.create({
@@ -132,6 +151,7 @@ function simuMensualite(form) {
   const groupe = $('.courbe-barres', form);
   const NS = 'http://www.w3.org/2000/svg';
   let vu = false;
+  let donnees = [];
   const dessiner = (anime) => {
     const capital = v('montant'), taux = v('taux'), ans = duree();
     const m = mensualiteDe(capital, taux, ans);
@@ -143,6 +163,7 @@ function simuMensualite(form) {
     /* Année par année : capital remboursé et intérêts payés (barres empilées). */
     const t = taux / 100 / 12; let reste = capital; const annees = [];
     for (let a = 0; a < ans; a++) { let ci = 0, ii = 0; for (let k = 0; k < 12; k++) { const i = reste * t; ii += i; ci += m - i; reste -= m - i; } annees.push([ci, ii]); }
+    donnees = annees;
     const W = 600, H = 238, pas = W / ans, l = Math.max(2, pas * 0.68), max = m * 12;
     groupe.replaceChildren();
     annees.forEach(([ci, ii], a) => {
@@ -162,11 +183,38 @@ function simuMensualite(form) {
       if (vu && anime) gsap.from(barres, { scaleY: 0, duration: 0.5, stagger: 0.015, ease: 'power2.out' });
     }
   };
-  form.addEventListener('input', (e) => { if (e.target.type === 'range') remplissage(e.target); dessiner(true); });
-  form.addEventListener('change', () => dessiner(true));
+  const zone = $('.courbe-zone', form), info = $('.courbe-info', form);
+  let lue = 0;
+  const lire = (i, marquer = true) => {
+    if (!donnees.length || !info) return;
+    lue = Math.max(0, Math.min(donnees.length - 1, i));
+    const [ci, ii] = donnees[lue];
+    $('.ci-annee', info).textContent = `Année ${lue + 1}`;
+    $('.ci-cap', info).textContent = `capital ${euros(ci)}`;
+    $('.ci-int', info).textContent = `intérêts ${euros(ii)}`;
+    if (zone) { zone.setAttribute('aria-valuemax', String(donnees.length)); zone.setAttribute('aria-valuenow', String(lue + 1)); zone.setAttribute('aria-valuetext', `Année ${lue + 1} : capital ${euros(ci)}, intérêts ${euros(ii)}`); }
+    groupe.classList.toggle('lecture', marquer);
+    [...groupe.children].forEach((g, k) => g.classList.toggle('est-lue', k === lue));
+  };
+  if (zone) {
+    const depuis = (x) => { const r = zone.getBoundingClientRect(); return Math.floor(((x - r.left) / r.width) * donnees.length); };
+    zone.addEventListener('pointermove', (e) => lire(depuis(e.clientX)));
+    zone.addEventListener('pointerdown', (e) => lire(depuis(e.clientX)));
+    zone.addEventListener('pointerleave', () => groupe.classList.remove('lecture'));
+    zone.addEventListener('keydown', (e) => {
+      const pas = { ArrowRight: 1, ArrowUp: 1, ArrowLeft: -1, ArrowDown: -1 }[e.key];
+      if (pas) { e.preventDefault(); lire(lue + pas); }
+      else if (e.key === 'Home') { e.preventDefault(); lire(0); }
+      else if (e.key === 'End') { e.preventDefault(); lire(donnees.length - 1); }
+    });
+    zone.addEventListener('blur', () => groupe.classList.remove('lecture'));
+  }
+  form.addEventListener('input', (e) => { if (e.target.type === 'range') remplissage(e.target); dessiner(true); lire(lue, false); });
+  form.addEventListener('change', () => { dessiner(true); lire(lue, false); });
   form.addEventListener('submit', (e) => e.preventDefault());
   $$('input[type="range"]', form).forEach(remplissage);
   dessiner(false);
+  lire(0, false);
   if (gsap && ST) {
     ST.create({ trigger: groupe.closest('svg'), start: 'top 88%', once: true, onEnter: () => { vu = true; gsap.to(groupe.children, { scaleY: 1, duration: 0.7, stagger: 0.025, ease: 'power3.out' }); } });
   } else vu = true;
@@ -217,10 +265,16 @@ function frise() {
   mm.add('(min-width: 761px)', () => {
     gsap.fromTo(piste, { x: 0 }, {
       x: () => -Math.max(0, piste.scrollWidth - fenetre.clientWidth), ease: 'none',
-      scrollTrigger: { trigger: section, start: 'top 75%', end: 'bottom 25%', scrub: 0.6, invalidateOnRefresh: true },
+      scrollTrigger: { trigger: section, start: 'top 40%', end: 'bottom 20%', scrub: 0.6, invalidateOnRefresh: true },
     });
     const barre = $('.frise-progres span', section);
-    if (barre) gsap.fromTo(barre, { scaleX: 0 }, { scaleX: 1, ease: 'none', scrollTrigger: { trigger: section, start: 'top 75%', end: 'bottom 25%', scrub: 0.6 } });
+    if (barre) gsap.fromTo(barre, { scaleX: 0 }, { scaleX: 1, ease: 'none', scrollTrigger: { trigger: section, start: 'top 40%', end: 'bottom 20%', scrub: 0.6 } });
+    const cartes = $$('.temps-carte', piste);
+    ST.create({ trigger: section, start: 'top 40%', end: 'bottom 20%', onUpdate: (st) => {
+      const actif = Math.min(cartes.length - 1, Math.floor(st.progress * cartes.length));
+      cartes.forEach((c, i) => c.classList.toggle('est-actif', i === actif));
+    }, onLeaveBack: () => cartes.forEach((c, i) => c.classList.toggle('est-actif', i === 0)) });
+    cartes[0]?.classList.add('est-actif');
   });
   mm.add('(max-width: 760px)', () => {
     gsap.from($$('.temps', piste), { y: 30, opacity: 0, stagger: 0.12, duration: 0.7, ease: 'power3.out', scrollTrigger: { trigger: piste, start: 'top 80%' } });
@@ -242,6 +296,16 @@ function ouvDefilement() {
   if (bandeau) gsap.to($('img', bandeau), { yPercent: 7, ease: 'none', scrollTrigger: { trigger: bandeau, start: 'top 80%', end: 'bottom top', scrub: true } });
   const quai = $('.ouv-plein-media');
   if (quai) gsap.fromTo(quai, { scale: 1 }, { scale: 1.08, ease: 'none', scrollTrigger: { trigger: quai.closest('section'), start: 'top top', end: 'bottom top', scrub: true } });
+}
+
+/* ---------- Parcours du cabinet : la ligne se trace, chaque date s'allume quand elle est atteinte ---------- */
+function parcours() {
+  const cadre = $('[data-effet="parcours"]');
+  if (!gsap || !ST || !cadre) return;
+  const fil = $('.parcours-fil', cadre), items = $$('.parcours-item', cadre);
+  gsap.fromTo(fil, { scaleX: 0 }, { scaleX: 1, ease: 'none', scrollTrigger: { trigger: cadre, start: 'top 80%', end: 'top 30%', scrub: 0.6,
+    onUpdate: (st) => items.forEach((it, i) => it.classList.toggle('est-atteint', st.progress >= i / items.length + 0.02)) } });
+  gsap.from(items, { y: 24, opacity: 0, stagger: 0.12, duration: 0.7, ease: 'power3.out', scrollTrigger: { trigger: cadre, start: 'top 82%' } });
 }
 
 /* ---------- Calculette du crédit d'impôt ---------- */
@@ -325,6 +389,7 @@ demarrer({
     frise();
     devise();
     ouvDefilement();
+    parcours();
     creditImpot();
     carte();
   },

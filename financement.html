@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1" data-curseur>
+<html lang="fr" data-v="2" data-curseur>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -36,15 +36,15 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 <link rel="preload" href="/assets/fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/newsreader-italique.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/modules.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/modules.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#F4EFE6">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -137,6 +137,11 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <p class="tete-texte" data-anime>Deux calculs pour préparer le premier échange : ce que vous pouvez emprunter, et ce que coûtera votre crédit.</p>
 </div></div>
     <form class="simu simu--capacite" data-simu="capacite" data-effet="simulateur" novalidate>
+  <div class="simu-profils" role="group" aria-label="Exemples">
+    <span class="simu-profils-titre">Exemples</span>
+    <button type="button" class="simu-profil" data-profil='{"revenus":2600,"charges":0,"apport":15000,"duree":25}' aria-pressed="false">Premier achat</button><button type="button" class="simu-profil" data-profil='{"revenus":5200,"charges":300,"apport":40000,"duree":20}' aria-pressed="false">Couple</button><button type="button" class="simu-profil" data-profil='{"revenus":6500,"charges":900,"apport":30000,"duree":20}' aria-pressed="false">Investissement locatif</button>
+    <span class="simu-profils-note">profils fictifs, pour essayer</span>
+  </div>
   <div class="simu-entrees">
     <div class="simu-champ">
   <label for="fcap-revenus">Revenus nets mensuels du foyer</label>
@@ -268,7 +273,10 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     </dl>
     <figure class="courbe" data-effet="courbe" data-visuel>
       <figcaption>Capital et intérêts, année par année</figcaption>
-      <svg viewBox="0 0 600 240" preserveAspectRatio="none" aria-hidden="true"><g class="courbe-barres"></g><line class="courbe-axe" x1="0" y1="239" x2="600" y2="239"/></svg>
+      <div class="courbe-zone" tabindex="0" role="slider" aria-label="Survolez ou touchez une année ; flèches gauche et droite au clavier" aria-valuemin="1" aria-valuemax="25" aria-valuenow="1">
+        <svg viewBox="0 0 600 240" preserveAspectRatio="none" aria-hidden="true"><g class="courbe-barres"></g><line class="courbe-axe" x1="0" y1="239" x2="600" y2="239"/></svg>
+      </div>
+      <p class="courbe-info" aria-live="polite"><span class="ci-annee"></span><span class="ci-cap"></span><span class="ci-int"></span></p>
       <p class="courbe-legende"><span class="cl-capital">Capital remboursé</span><span class="cl-interets">Intérêts</span></p>
     </figure>
   </div>

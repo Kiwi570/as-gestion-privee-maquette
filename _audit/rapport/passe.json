@@ -1,15 +1,14 @@
 {
- "id": "20261120-210235-complet-cible-partiel",
- "date": "2026-11-20T21:03:41.628Z",
+ "id": "20261123-140141-complet-cible-partiel",
+ "date": "2026-11-23T14:02:43.638Z",
  "niveau": "complet",
- "pages": "/",
+ "pages": "/cabinet",
  "etapes": [
-  "fichiers",
   "mesures"
  ],
- "version": "1",
+ "version": "2",
  "echecs": 0,
- "aRegarder": 10,
+ "aRegarder": 4,
  "nonLances": 0,
  "manquants": 0,
  "statut": "complet"

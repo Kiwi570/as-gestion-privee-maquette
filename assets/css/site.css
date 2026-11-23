@@ -613,3 +613,106 @@ html:not(.js) :is(.ouv-devise, .ouv-question-section, .ouv-contact) { min-height
   .hero-intro { display: none; }
   .hero-titre { font-size: clamp(2.4rem, min(6vw, 9.4vh), 5rem); }
 }
+
+/* ===== v2 : revue complète du 23 novembre ===== */
+
+/* Sceau qui tourne sur le portrait de l'accueil */
+.sceau { position: absolute; left: clamp(16px, 2vw, 28px); bottom: clamp(16px, 3vh, 32px); z-index: 3; width: clamp(104px, 9.5vw, 148px); aspect-ratio: 1; pointer-events: none; }
+.sceau svg { width: 100%; height: 100%; overflow: visible; animation: sceau-tourne 22s linear infinite; }
+.sceau-fond { fill: var(--tuffeau); stroke: var(--vin); stroke-width: 1.5; }
+.sceau-texte text { font: 500 15px var(--police-texte); letter-spacing: .12em; text-transform: uppercase; fill: var(--encre); }
+.sceau image { transform-box: fill-box; transform-origin: 50% 50%; animation: sceau-tourne 22s linear infinite reverse; }
+@keyframes sceau-tourne { to { transform: rotate(360deg); } }
+.sceau svg { transform-origin: 50% 50%; }
+@media (max-height: 500px) and (min-width: 761px) { .sceau { display: none; } }
+
+/* Garanties : les trois inscriptions en pastilles */
+.garantie-grand--petit { display: flex; flex-wrap: wrap; gap: 6px; }
+.garantie-grand--petit span { white-space: nowrap; padding: 2px 10px 4px; border-radius: 999px; border: 1px solid var(--pierre); font-size: clamp(1.25rem, 1rem + .6vw, 1.6rem); }
+
+/* Honoraires de l'accueil : la carte se remplit au survol */
+.hono-carte { position: relative; overflow: hidden; isolation: isolate; }
+.hono-carte::before { content: ''; position: absolute; inset: 0; z-index: -1; background: var(--vin); transform: translateY(101%); transition: transform .5s var(--courbe); }
+.hono-carte:hover::before, .hono-carte:focus-visible::before { transform: none; }
+.hono-carte:hover, .hono-carte:focus-visible { color: var(--tuffeau); border-color: var(--vin); }
+.hono-carte:hover .hono-prix, .hono-carte:hover .hono-resume, .hono-carte:focus-visible .hono-prix, .hono-carte:focus-visible .hono-resume { color: var(--tuffeau); }
+.hono-carte:hover .hono-icone, .hono-carte:focus-visible .hono-icone { stroke: var(--tuffeau); }
+.hono-carte * { transition: color .35s, stroke .35s; }
+.hono-fleche { display: inline-flex; margin-top: .4rem; color: var(--vin); }
+.hono-carte:hover .hono-fleche, .hono-carte:focus-visible .hono-fleche { color: var(--tuffeau); }
+@media (hover: none) { .hono-carte::before { display: none; } }
+
+/* Simulateur : profils d'exemple */
+.simu-profils { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; padding-bottom: clamp(16px, 2vw, 24px); border-bottom: 1px solid var(--ligne); }
+.simu-profils-titre { font-size: .84rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin-right: 4px; }
+.simu-profil { min-height: 44px; padding: 0 16px; border-radius: 999px; border: 1px dashed var(--ligne); background: transparent; color: var(--texte); font: 500 .95rem var(--police-texte); cursor: pointer; transition: background-color .25s, color .25s, border-color .25s; }
+.simu-profil:hover { border-style: solid; border-color: var(--accent); }
+.simu-profil[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); border-style: solid; color: var(--fond); }
+.simu-profil:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.simu-profils-note { flex-basis: 100%; font-size: .84rem; color: var(--texte-doux); }
+
+/* Courbe : lecture année par année */
+.courbe-zone { position: relative; cursor: crosshair; border-radius: 4px; touch-action: pan-y; }
+.courbe-zone:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+.courbe-zone svg { display: block; }
+.courbe-barres g.cb-annee { transition: opacity .2s; }
+.courbe-barres.lecture g.cb-annee { opacity: .38; }
+.courbe-barres.lecture g.cb-annee.est-lue { opacity: 1; }
+.courbe-info { display: flex; flex-wrap: wrap; gap: 4px 18px; margin: 12px 0 0; min-height: 1.6em; font-variant-numeric: tabular-nums lining-nums; font-size: .95rem; }
+.ci-annee { font-family: var(--police-titres); font-size: 1.15rem; min-width: 5.5ch; }
+.ci-cap { color: var(--accent); }
+.ci-int { color: var(--texte-doux); }
+
+/* Patrimoine : frise des temps qui s'allument */
+.frise-piste { position: relative; padding-top: 28px; }
+.frise-piste::before { content: ''; position: absolute; left: 0; right: 0; top: 7px; height: 2px; background: var(--pierre); }
+.temps-carte { position: relative; transition: background-color .4s, border-color .4s, transform .4s var(--courbe), box-shadow .4s; border-left-color: var(--pierre); }
+.temps-point { position: absolute; top: -27px; left: 22px; width: 14px; height: 14px; border-radius: 50%; background: var(--tuffeau); border: 2px solid var(--pierre); transition: background-color .4s, border-color .4s, transform .4s; }
+.temps-icone { width: 34px; height: 34px; fill: none; stroke: var(--texte-doux); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; display: block; margin-bottom: .8rem; transition: stroke .4s; }
+.temps-carte.est-actif { border-left-color: var(--vin); transform: translateY(-6px); box-shadow: 0 24px 40px -30px rgba(26, 31, 36, .55); }
+.temps-carte.est-actif .temps-point { background: var(--vin); border-color: var(--vin); transform: scale(1.25); }
+.temps-carte.est-actif .temps-icone { stroke: var(--vin); }
+@media (max-width: 760px) { .frise-piste { padding-top: 0; } .frise-piste::before, .temps-point { display: none; } .temps-carte { border-left-color: var(--vin); } }
+
+/* Patrimoine : des photos plus grandes */
+.solution-grille { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.solution-media { width: 100%; max-height: 84svh; }
+
+/* Cabinet : la ligne du parcours se trace, les dates s'allument */
+.parcours-cadre { position: relative; }
+.parcours-fil { position: absolute; left: 0; right: 0; top: 0; height: 2px; background: var(--vin); transform-origin: 0 50%; z-index: 1; }
+.parcours-item { position: relative; border-top: 2px solid var(--pierre); padding-top: 26px; }
+.parcours-point { position: absolute; top: -8px; left: 0; width: 14px; height: 14px; border-radius: 50%; background: var(--tuffeau); border: 2px solid var(--pierre); z-index: 2; transition: background-color .35s, border-color .35s, transform .35s; }
+.parcours-item.est-atteint .parcours-point { background: var(--vin); border-color: var(--vin); transform: scale(1.2); }
+.parcours-liste { list-style: none; }
+@media (max-width: 560px) { .parcours-fil { display: none; } .parcours-item { border-top-color: var(--vin); } }
+
+/* Plan de Nantes */
+.carte-ilots rect { fill: color-mix(in srgb, var(--pierre) 45%, var(--papier)); }
+.carte-jardins ellipse { fill: #d8dfc8; }
+.carte-rues path { fill: none; stroke: var(--papier); stroke-width: 9; stroke-linecap: round; }
+.carte-rive { fill: #d5e0e5; }
+.carte-ile { fill: color-mix(in srgb, var(--pierre) 45%, var(--papier)); }
+.carte-eau { fill: none; stroke: #8fa7b3; stroke-width: 3; stroke-linecap: round; stroke-dasharray: 6 8; }
+.carte-erdre { stroke-width: 10; stroke: #a8bcc6; stroke-dasharray: none; }
+.carte-loire { stroke-width: 2; }
+.carte-nord circle { fill: var(--papier); stroke: var(--pierre); }
+.carte-nord path { fill: var(--vin); }
+.carte-nord text { font: 600 13px var(--police-texte); fill: var(--texte-doux); text-anchor: middle; }
+.carte-halo { fill: color-mix(in srgb, var(--vin) 22%, transparent); transform-box: fill-box; transform-origin: 50% 50%; animation: halo 2.6s ease-out infinite; }
+@keyframes halo { from { transform: scale(.4); opacity: 1; } to { transform: scale(1.8); opacity: 0; } }
+.carte-etiquette rect { fill: var(--encre); }
+.carte-etiquette text { font: 600 16px var(--police-texte); fill: var(--tuffeau); text-anchor: middle; }
+.carte-adresse { display: none; }
+.lien-carte { display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; color: var(--vin); }
+
+/* Honoraires : la tête à gauche, les tiroirs à droite */
+.modes { display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); gap: clamp(24px, 5vw, 80px); align-items: start; }
+.modes .ofr__tete { position: sticky; top: calc(var(--entete-h) + 32px); }
+@media (max-width: 900px) { .modes { grid-template-columns: minmax(0, 1fr); } .modes .ofr__tete { position: static; } }
+
+/* Tablette en portrait : l'arche du cabinet passe sous le texte, à sa proportion (audit complet du 23 novembre) */
+@media (max-width: 900px) and (min-width: 761px) {
+  .ouv-devise { grid-template-columns: minmax(0, 1fr); min-height: 0; }
+  .ouv-arche { width: min(64%, 440px); justify-self: center; align-self: auto; aspect-ratio: 4 / 5; min-height: 0; max-height: none; }
+}

@@ -38,7 +38,17 @@ const durees = (c, id, choix = 20) => html`<fieldset class="simu-champ simu-dure
 
 /* Simulateur de capacité d'emprunt (norme : 35 % des revenus, assurance comprise). */
 export function simuCapacite(c, p = 'cap') {
+  const profils = [
+    ['premier', c.s('simu.profilPremier'), { revenus: 2600, charges: 0, apport: 15000, duree: 25 }],
+    ['couple', c.s('simu.profilCouple'), { revenus: 5200, charges: 300, apport: 40000, duree: 20 }],
+    ['locatif', c.s('simu.profilLocatif'), { revenus: 6500, charges: 900, apport: 30000, duree: 20 }],
+  ];
   return html`<form class="simu simu--capacite" data-simu="capacite" data-effet="simulateur" novalidate>
+  <div class="simu-profils" role="group" aria-label="${c.s('simu.profils')}">
+    <span class="simu-profils-titre">${c.t('simu.profils')}</span>
+    ${profils.map(([id, nom, v]) => html`<button type="button" class="simu-profil" data-profil='${brut(JSON.stringify(v))}' aria-pressed="false">${nom}</button>`)}
+    <span class="simu-profils-note">${c.t('simu.profilsNote')}</span>
+  </div>
   <div class="simu-entrees">
     ${plage(`${p}-revenus`, c.t('simu.revenus'), { min: 1500, max: 15000, pas: 100, valeur: 4200 })}
     ${plage(`${p}-charges`, c.t('simu.charges'), { min: 0, max: 3000, pas: 50, valeur: 0 })}
@@ -80,7 +90,10 @@ export function simuMensualite(c, p = 'men') {
     </dl>
     <figure class="courbe" data-effet="courbe" data-visuel>
       <figcaption>${c.t('simu.courbeTitre')}</figcaption>
-      <svg viewBox="0 0 600 240" preserveAspectRatio="none" aria-hidden="true"><g class="courbe-barres"></g><line class="courbe-axe" x1="0" y1="239" x2="600" y2="239"/></svg>
+      <div class="courbe-zone" tabindex="0" role="slider" aria-label="${c.s('simu.courbeAide')}" aria-valuemin="1" aria-valuemax="25" aria-valuenow="1">
+        <svg viewBox="0 0 600 240" preserveAspectRatio="none" aria-hidden="true"><g class="courbe-barres"></g><line class="courbe-axe" x1="0" y1="239" x2="600" y2="239"/></svg>
+      </div>
+      <p class="courbe-info" aria-live="polite"><span class="ci-annee"></span><span class="ci-cap"></span><span class="ci-int"></span></p>
       <p class="courbe-legende"><span class="cl-capital">${c.t('simu.courbeCapital')}</span><span class="cl-interets">${c.t('simu.courbeInterets')}</span></p>
     </figure>
   </div>
@@ -132,19 +145,26 @@ export function ouvTexte(c, base, { action, ancre = 'rendez-vous', params = '', 
     <p class="ouv-info ouv-suite" data-info-cle data-anime="gsap">${c.t(`${base}.info`)}</p>`;
 }
 
-/* Plan schématique de Nantes : la Loire, l'Erdre, et le bureau (sans précision cartographique). */
+/* Plan schématique de Nantes : la Loire et son île, l'Erdre, des îlots, deux jardins, et le bureau.
+   Sans précision cartographique : il situe le bureau dans la ville, il ne remplace pas un vrai plan. */
 export function carteNantes(c, cleTitre, { effet = 'carte', centre = false } = {}) {
-  return html`<figure class="carte-nantes" data-effet="${effet}" data-visuel${centre ? brut(' data-iris-centre') : ''}>
-  <svg viewBox="0 0 600 420" role="img" aria-label="${c.s(cleTitre)}">
-    <rect class="carte-fond" width="600" height="420" rx="6"/>
-    <g class="carte-rues"><path d="M40 120 L560 150"/><path d="M80 330 L520 290"/><path d="M150 40 L210 400"/><path d="M420 30 L380 400"/><path d="M60 220 L540 210"/><path d="M290 30 L300 400"/></g>
-    <path class="carte-eau carte-loire" d="M-10 300 C 120 280, 200 320, 300 300 S 480 260, 610 280" pathLength="1"/>
-    <path class="carte-eau carte-erdre" d="M330 -10 C 320 60, 350 120, 330 180 S 300 260, 310 296" pathLength="1"/>
-    <text class="carte-nom" x="470" y="320">Loire</text>
-    <text class="carte-nom" x="342" y="70">Erdre</text>
-    <g transform="translate(262 196)"><g class="carte-pin"><path d="M0 -38 C -16 -38 -24 -26 -24 -16 C -24 0 0 18 0 18 C 0 18 24 0 24 -16 C 24 -26 16 -38 0 -38 Z"/><circle cx="0" cy="-16" r="8"/></g></g>
-    <text class="carte-adresse" x="296" y="190">5 rue Le Nôtre</text>
+  const ilots = [[60,40,120,70],[200,30,90,80],[310,60,70,50],[400,30,130,70],[40,140,110,60],[170,150,80,50],[440,130,110,60],[60,330,140,60],[230,340,120,50],[390,320,150,70],[110,400,90,30],[470,400,90,30]];
+  return html`<figure class="carte-nantes" data-effet="${effet}" data-boucle-css data-visuel${centre ? brut(' data-iris-centre') : ''}>
+  <svg viewBox="0 0 600 440" role="img" aria-label="${c.s(cleTitre)}">
+    <rect class="carte-fond" width="600" height="440" rx="8"/>
+    <g class="carte-ilots">${ilots.map(([x, y, w, h]) => brut(`<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="10"/>`))}</g>
+    <g class="carte-jardins"><ellipse cx="520" cy="210" rx="44" ry="26"/><ellipse cx="96" cy="250" rx="34" ry="20"/></g>
+    <g class="carte-rues"><path d="M0 118 C 150 112, 300 128, 600 108"/><path d="M0 222 C 180 214, 380 230, 600 214"/><path d="M160 0 C 170 120, 150 260, 176 440"/><path d="M386 0 C 380 140, 392 300, 372 440"/></g>
+    <path class="carte-rive" d="M-10 268 C 120 250, 210 292, 300 276 S 470 236, 610 256 L 610 318 C 470 300, 380 334, 300 330 S 120 306, -10 322 Z"/>
+    <path class="carte-ile" d="M190 296 C 240 284, 330 288, 420 284 C 440 292, 430 306, 410 308 C 330 314, 250 316, 196 310 C 182 306, 182 300, 190 296 Z"/>
+    <path class="carte-eau carte-loire" d="M-10 272 C 120 254, 210 296, 300 280 S 470 240, 610 260" pathLength="1"/>
+    <path class="carte-eau carte-erdre" d="M300 -10 C 290 50, 318 110, 300 160 S 272 230, 288 262" pathLength="1"/>
+    <text class="carte-nom" x="520" y="296">Loire</text>
+    <text class="carte-nom" x="312" y="56">Erdre</text>
+    <g class="carte-nord" transform="translate(556 52)"><circle r="20"/><path d="M0 -13 L5 4 L0 0 L-5 4 Z"/><text y="17" x="0">N</text></g>
+    <g transform="translate(238 196)"><circle class="carte-halo" r="22"/><g class="carte-pin"><path d="M0 -38 C -16 -38 -24 -26 -24 -16 C -24 0 0 18 0 18 C 0 18 24 0 24 -16 C 24 -26 16 -38 0 -38 Z"/><circle cx="0" cy="-16" r="8"/></g></g>
+    <g class="carte-etiquette" transform="translate(268 156)"><rect width="150" height="34" rx="17"/><text x="75" y="22">5 rue Le Nôtre</text></g>
   </svg>
-  <figcaption>${c.t(cleTitre)}</figcaption>
+  <figcaption>${c.t(cleTitre)} · <a class="lien-carte" href="https://www.google.com/maps/search/?api=1&amp;query=5%20rue%20Le%20N%C3%B4tre%2044000%20Nantes" target="_blank" rel="noopener">${c.t('commun.googleMaps')}</a></figcaption>
 </figure>`;
 }

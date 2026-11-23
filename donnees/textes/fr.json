@@ -26,7 +26,9 @@
   "appelTexte": "Un premier échange pour faire le point sur votre situation, vos objectifs et votre calendrier.",
   "appelAction": "Prendre rendez-vous",
   "appelOu": "ou appelez le",
-  "siteMaquette": "Maquette"
+  "siteMaquette": "Maquette",
+  "googleMaps": "Ouvrir dans Google Maps",
+  "sceau": "Affectio societatis · Nantes · depuis 2015 ·"
  },
  "pages": {
   "accueil": {
@@ -159,7 +161,16 @@
   "courbeTitre": "Capital et intérêts, année par année",
   "courbeCapital": "Capital remboursé",
   "courbeInterets": "Intérêts",
-  "avertissement": "Simulation indicative, sans valeur d'offre de prêt. Le taux et la capacité réels dépendent de votre dossier et des banques."
+  "avertissement": "Simulation indicative, sans valeur d'offre de prêt. Le taux et la capacité réels dépendent de votre dossier et des banques.",
+  "profils": "Exemples",
+  "profilPremier": "Premier achat",
+  "profilCouple": "Couple",
+  "profilLocatif": "Investissement locatif",
+  "profilsNote": "profils fictifs, pour essayer",
+  "courbeAide": "Survolez ou touchez une année ; flèches gauche et droite au clavier",
+  "annee": "Année",
+  "capitalAn": "capital",
+  "interetsAn": "intérêts"
  },
  "financement": {
   "ouverture": {

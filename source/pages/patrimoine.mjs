@@ -16,6 +16,14 @@ const bloc = (c, cle, image, alt, { inverse = false, sombre = false } = {}) => h
   </div>
 </section>`;
 
+const iconesTemps = [
+  '<path d="M12 21v-8M12 13c0-4 3-7 7-7 0 4-3 7-7 7Zm0 0c0-3-2-5-5-5 0 3 2 5 5 5Z"/>',
+  '<path d="M3 19c5-1 7-6 10-10s5-5 8-5M15 4h6v6"/>',
+  '<path d="M12 3l8 3v6c0 5-4 8-8 9-4-1-8-4-8-9V6z"/>',
+  '<path d="M3 17h18M6 17a6 6 0 0 1 12 0M12 5v2M5 9l1.5 1.5M19 9l-1.5 1.5"/>',
+  '<path d="M7 11V7a5 5 0 0 1 10 0v4M5 11h14v10H5zM12 15v2"/>',
+];
+
 const icones = [
   '<circle cx="12" cy="12" r="8"/><path d="M12 8v8M8 12h8"/>',
   '<path d="M4 20V10l8-6 8 6v10M9 20v-6h6v6"/>',
@@ -34,7 +42,7 @@ export default (c) => html`
   <div class="conteneur">${tete(c, 'patrimoine.temps', { texte: true, classe: 'tete-section--large' })}</div>
   <div class="frise-fenetre" data-galerie>
     <ol class="frise-piste">
-      ${listes(c, 'patrimoine.temps.items').map((t, i, l) => html`<li class="temps-carte temps"><span class="temps-rang" aria-hidden="true">${String(i + 1)} / ${String(l.length)}</span><h3>${t.titre}</h3><p>${t.texte}</p></li>`)}
+      ${listes(c, 'patrimoine.temps.items').map((t, i, l) => html`<li class="temps-carte temps"><span class="temps-point" aria-hidden="true"></span><svg class="temps-icone" viewBox="0 0 24 24" aria-hidden="true">${brut(iconesTemps[i])}</svg><span class="temps-rang" aria-hidden="true">${String(i + 1)} / ${String(l.length)}</span><h3>${t.titre}</h3><p>${t.texte}</p></li>`)}
     </ol>
   </div>
   <div class="conteneur frise-progres" aria-hidden="true"><span></span></div>

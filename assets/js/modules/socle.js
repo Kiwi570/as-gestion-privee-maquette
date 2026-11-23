@@ -1,7 +1,7 @@
 /* Pont entre les modules de la bibliothèque et le socle de la maquette.
    Les modules appellent pret([...]) et reçoivent un objet « socle » : ici, GSAP vient des scripts de la page,
    les recalculs passent par le recalcul regroupé du socle, et il n'y a ni Lenis ni mode calme. */
-import { rafraichir } from '../socle/index.js?v=1';
+import { rafraichir } from '../socle/index.js?v=2';
 
 export const socle = {
   gsap: null, ScrollTrigger: null, SplitText: null, Flip: null, OGL: null, lenis: null,
